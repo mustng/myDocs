@@ -1,0 +1,54 @@
+body{
+    background-color: #EEEEEE;
+    padding-bottom: 35px;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+textarea{
+    width: 100%;
+}
+
+#frontPageBody{
+    background: url("../img/black_bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#frontPageBody a{
+    color: #DDDDDD;
+}
+
+#frontPageLoginDiv{
+    margin-top: 150px;
+    /*background-color: #AAAAAA;*/
+    color: #FFFFFF;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: none !important;
+}
+
+.tableWrap>tbody>tr>td{
+    word-wrap:break-word;
+}
+
+.tableWrap{
+    table-layout: fixed;
+}
+
+
+.color-gray{
+    color: #777;
+}
+
+.custom-font-size{
+    font-size: medium;
+    font-weight: normal;
+    white-space: normal;
+    font-style: normal;
+}

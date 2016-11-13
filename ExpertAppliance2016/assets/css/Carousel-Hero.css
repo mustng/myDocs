@@ -1,0 +1,46 @@
+div.jumbotron.carousel-hero {
+  color:#fff;
+  text-align:center;
+  background-size:cover;
+  background-position:center;
+  padding-top:100px;
+  padding-bottom:100px;
+  margin-bottom:0;
+}
+
+div.jumbotron.hero-nature {
+  background-image:url('../../assets/img/10.jpg');
+}
+
+div.jumbotron.hero-photography {
+  background-image:url('../../assets/img/11.jpg');
+}
+
+div.jumbotron.hero-technology {
+  background-image:url('../../assets/img/12.jpg');
+}
+
+div.jumbotron.hero-fod {
+  background-image:url('../../assets/img/13.jpg');
+}
+
+div.jumbotron.hero-music {
+  background-image:url('../../assets/img/14.jpg');
+}
+
+div.jumbotron.hero-travel {
+  background-image:url('../../assets/img/15.jpg');
+}
+
+h1.hero-title, h2.hero-title, h3.hero-title {
+  text-shadow:0 3px 3px #000000;
+  color:#e7ecf1;
+}
+
+p.hero-subtitle {
+  max-width:600px;
+  margin:25px auto;
+  padding:10px 15px;
+  color:#070707;
+}
+

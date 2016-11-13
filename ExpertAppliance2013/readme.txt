@@ -1,0 +1,2 @@
+This is the first Expert Appliance Repair website I made that helped me learn a lot about bootstrap, php mailers, metrics, 
+google api, and many more things. Everything is here except the actual php mailer file.
