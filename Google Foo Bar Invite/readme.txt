@@ -1,0 +1,1 @@
+These are part of the Google Foo Bar testing area and the actual code I was given as part of the game. I did the first two but had no time for the other.
