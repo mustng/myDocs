@@ -1,0 +1,1 @@
+( CUST WHERE CITY >= 4 ) [ CITY ] AS

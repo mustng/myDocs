@@ -1,0 +1,527 @@
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.7).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the `#!/bin/sh' line above, then type `sh FILE'.
+#
+lock_dir=_sh28087
+# Made on 2015-03-26 20:50 EDT by <n00814425@osprey.unfcsd.unf.edu>.
+# Source directory was `/home/25/n00814425/ss/p3'.
+#
+# Existing files will *not* be overwritten, unless `-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#    244 -rw-r--r-- HashObject.java
+#   1419 -rw-r--r-- HashTable.java
+#   5810 -rw-r--r-- P3.java
+#   2542 -rw-r--r-- SicOps.txt
+#     19 -rw-r--r-- makefile
+#    928 -rw-r--r-- text
+#     11 -rwxrwxrwx p3
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=FAILED
+locale_dir=FAILED
+first_param="$1"
+for dir in $PATH
+do
+  if test "$gettext_dir" = FAILED && test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir ;;
+    esac
+  fi
+  if test "$locale_dir" = FAILED && test -f $dir/shar \
+     && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+  then
+    locale_dir=`$dir/shar --print-text-domain-dir`
+  fi
+done
+IFS="$save_IFS"
+if test "$locale_dir" = FAILED || test "$gettext_dir" = FAILED
+then
+  echo=echo
+else
+  TEXTDOMAINDIR=$locale_dir
+  export TEXTDOMAINDIR
+  TEXTDOMAIN=sharutils
+  export TEXTDOMAIN
+  echo="$gettext_dir/gettext -s"
+fi
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+f=shar-touch.$$
+st1=200112312359.59
+st2=123123592001.59
+st2tr=123123592001.5 # old SysV 14-char limit
+st3=1231235901
+
+if touch -am -t ${st1} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st1} && test -f ${f}; then
+  shar_touch='touch -am -t $1$2$3$4$5$6.$7 "$8"'
+
+elif touch -am ${st2} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st2} && test ! -f ${st2tr} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$1$2.$7 "$8"'
+
+elif touch -am ${st3} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st3} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$2 "$8"'
+
+else
+  shar_touch=:
+  echo
+  ${echo} 'WARNING: not restoring timestamps.  Consider getting and'
+  ${echo} 'installing GNU `touch'\'', distributed in GNU coreutils...'
+  echo
+fi
+rm -f ${st1} ${st2} ${st2tr} ${st3} ${f}
+#
+if test ! -d ${lock_dir}
+then : ; else ${echo} 'lock directory '${lock_dir}' exists'
+  exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} 'x - created lock directory `'${lock_dir}\''.'
+else ${echo} 'x - failed to create lock directory `'${lock_dir}\''.'
+  exit 1
+fi
+# ============= HashObject.java ==============
+if test -f 'HashObject.java' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING HashObject.java (file already exists)'
+else
+${echo} 'x - extracting HashObject.java (binary)'
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 HashObject.java
+M<'5B;&EC(&-L87-S($AA<VA/8FIE8W0@>PT*"7!U8FQI8R!3=')I;F<@:V5Y
+M.PT*"7!U8FQI8R!I;G0@=F%L=64[#0H)<')I=F%T92!I;G0@9F]R;6%T.PT*
+M"0T*"7!U8FQI8R!(87-H3V)J96-T*%-T<FEN9R!K+"!I;G0@=BP@:6YT(&8I
+M>PT*"0EF;W)M870@/2!F.PT*"0EK97D@/2!K.PT*"0EV86QU92`]('8[#0H)
+M"0T*"7T-"@D-"@EP=6)L:6,@:6YT(&=E=$9O<FUA="@I>PT*"0ER971U<FX@
+39F]R;6%T.PT*"7T-"@D-"GT-"FYT
+`
+end
+SHAR_EOF
+  (set 20 15 03 14 15 34 58 'HashObject.java'; eval "$shar_touch") &&
+  chmod 0644 'HashObject.java'
+if test $? -ne 0
+then ${echo} 'restore of HashObject.java failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'HashObject.java: MD5 check failed'
+       ) << \SHAR_EOF
+f741166af766ff786961c0da040a0565  HashObject.java
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'HashObject.java'` -ne 244 && \
+  ${echo} 'restoration warning:  size of HashObject.java is not 244'
+  fi
+fi
+# ============= HashTable.java ==============
+if test -f 'HashTable.java' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING HashTable.java (file already exists)'
+else
+${echo} 'x - extracting HashTable.java (binary)'
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 HashTable.java
+M#0IP=6)L:6,@8VQA<W,@2&%S:%1A8FQE('L-"@D-"@EP<FEV871E($AA<VA/
+M8FIE8W0@6UT@=&%B;&4[#0H)#0H)<'5B;&EC($AA<VA486)L92AI;G0@<VEZ
+M92E[#0H)"0T*"0ET86)L92`](&YE=R!(87-H3V)J96-T6W-I>F5=.PT*"7T-
+M"@D-"@EP=6)L:6,@:6YT(&AA<V@H4W1R:6YG(&YA;64I('L)"0D)+R]&:6YD
+M($%30TE)(&YU;6)E<B!M971H;V0-"@D):6YT(&%S8VEI(#T@,#L-"@D)8VAA
+M<B!;771E;7`@/2!N86UE+G1O0VAA<D%R<F%Y*"D[#0H)"69O<B`H:6YT(&D@
+M/2`P.R!I(#P@=&5M<"YL96YG=&@[(&DK*RD@>PT*"0D):6YT('1E;7`R(#T@
+M*&EN="D@=&5M<%MI73L-"@D)"6EF("AT96UP,B`^("=!)RD-"@D)"0EA<V-I
+M:2`](&%S8VEI("L@=&5M<#([#0H)"7T-"@D)<F5T=7)N(&%S8VEI("4@=&%B
+M;&4N;&5N9W1H.PT*"7T-"@D-"@EP=6)L:6,@8F]O;&5A;B!A9&0H4W1R:6YG
+M(&ME>2P@:6YT('9A;'5E+"!I;G0@9F]R;6%T*7L-"@D):6YT(&D@/2!H87-H
+M*&ME>2D[#0H)"6EF("AF:6YD*&ME>2D@(3T@;G5L;"E[#0H)"0ER971U<FX@
+M9F%L<V4[#0H)"7T-"@D)=VAI;&4@*'1A8FQE(%MI72`A/2!N=6QL*7L-"@D)
+M"6D@/2`H:2`K(#$I("4@=&%B;&4N;&5N9W1H.PT*"0E]#0H)"71A8FQE6VE=
+M(#T@;F5W($AA<VA/8FIE8W0@*&ME>2`L('9A;'5E+"!F;W)M870I.PT*"0ER
+M971U<FX@=')U93L-"@E]#0H)#0H)<'5B;&EC(&)O;VQE86X@861D*%-T<FEN
+M9R!K97DL(&EN="!V86QU92E[#0H)"7)E='5R;B!A9&0H:V5Y+"!V86QU92P@
+M+3$I.PT*"7T-"@EP=6)L:6,@=F]I9"!P<FEN=%1A8FQE*"D@>PT*"0E3>7-T
+M96TN;W5T+G!R:6YT;&XH*3L-"@D)4WES=&5M+F]U="YP<FEN=&QN*")(87-H
+M($QO8SH@("`@($QA8F5L.B`@("!!9&1R97-S.B`@1F]R;6%T.B(I.PT*"0EF
+M;W(@*&EN="!I(#T@,#L@:2`\('1A8FQE+FQE;F=T:#L@:2LK*0T*"0D):68@
+M*'1A8FQE6VE=("$](&YU;&PI#0H)"0D)4WES=&5M+F]U="YP<FEN=&8H(B4T
+M9"`E,35S("4Y6"`E.61<;B(L(&DL('1A8FQE6VE=+FME>2P@=&%B;&5;:5TN
+M=F%L=64L('1A8FQE6VE=+F=E=$9O<FUA="@I*3L-"@E]#0H)#0H)<'5B;&EC
+M($AA<VA/8FIE8W0@9FEN9"`H4W1R:6YG(&ME>2E[#0H)"6EN="!I(#T@:&%S
+M:"AK97DI.PT*"0EW:&EL92`H=&%B;&4@6VE=("$](&YU;&PI>PT*"0D):68@
+M*&ME>2YE<75A;',H=&%B;&5;:5TN:V5Y*2D@>PT*"0D)"7)E='5R;B!T86)L
+M95MI73L-"@D)"7T-"@D)"6D@/2`H:2`K(#$I("4@=&%B;&4N;&5N9W1H.PT*
+M"0E]#0H)"0T*"0ER971U<FX@;G5L;#L-"@E]#0H)#0H)<'5B;&EC(&EN="!G
+M971686QU92AI;G0@:2E[#0H)"6EF("AT86)L95MI72`A/2!N=6QL*7L-"@D)
+M"7)E='5R;B!T86)L95MI72YV86QU93L-"@D)?0T*"0ER971U<FX@26YT96=E
+8<BY-05A?5D%,544[#0H)?0T*"0T*?0T*
+`
+end
+SHAR_EOF
+  (set 20 15 03 25 22 40 51 'HashTable.java'; eval "$shar_touch") &&
+  chmod 0644 'HashTable.java'
+if test $? -ne 0
+then ${echo} 'restore of HashTable.java failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'HashTable.java: MD5 check failed'
+       ) << \SHAR_EOF
+ea295c3e5694e9efd890d51bc816067a  HashTable.java
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'HashTable.java'` -ne 1419 && \
+  ${echo} 'restoration warning:  size of HashTable.java is not 1419'
+  fi
+fi
+# ============= P3.java ==============
+if test -f 'P3.java' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING P3.java (file already exists)'
+else
+${echo} 'x - extracting P3.java (binary)'
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 P3.java
+M#0II;7!O<G0@:F%V82YI;RY&:6QE.PT*:6UP;W)T(&IA=F$N:6\N1FEL94YO
+M=$9O=6YD17AC97!T:6]N.PT*:6UP;W)T(&IA=F$N=71I;"Y38V%N;F5R.PT*
+M:6UP;W)T(&IA=F$N=71I;"Y3=&%C:SL-"@T*<'5B;&EC(&-L87-S(%`S('L-
+M"@EP=6)L:6,@<W1A=&EC('9O:60@;6%I;B`H4W1R:6YG6UT@87)G<RE[#0H)
+M"4AA<VA486)L92!O<%1A8FQE(#T@<F5A9$]P5&%B;&4H(E-I8T]P<RYT>'0B
+M*3L-"@D)2&%S:%1A8FQE('-Y;51A8FQE(#T@8V]N=')U8W13>6U486)L92`H
+M87)G<ULP72P@;W!486)L92D[#0H)"7-Y;51A8FQE+G!R:6YT5&%B;&4H*3L-
+M"@E]#0H)#0H)<')I=F%T92!S=&%T:6,@2&%S:%1A8FQE(&-O;G1R=6-T4WEM
+M5&%B;&4H4W1R:6YG('!A=&@L($AA<VA486)L92!O<%1A8FQE*7L-"@D)2&%S
+M:%1A8FQE('-Y;51A8FQE(#T@;F5W($AA<VA486)L92@S,#`I.R`O+U1H:7,@
+M<VEZ92!I<R!S=6)J96-T('1O(&-H86YG90T*"0EI;G0@861D<F5S<R`](#`[
+M#0H)"71R>2![#0H)"0E38V%N;F5R(&EN<'5T(#T@;F5W(%-C86YN97(@*&YE
+M=R!&:6QE*'!A=&@I*3L-"@D)"6)O;VQE86X@9FER<W1,:6YE(#T@=')U93L-
+M"@D)"5-T86-K/%-T<FEN9SX@;&ET97)A;%-T86-K(#T@;F5W(%-T86-K/%-T
+M<FEN9SXH*3L-"@D)"6EN="!L:6YE3G5M8F5R(#T@,3L-"@D)"7=H:6QE*&EN
+M<'5T+FAA<TYE>'1,:6YE*"DI>PT*"0D)"5-T<FEN9R!L:6YE(#T@:6YP=70N
+M;F5X=$QI;F4H*3L-"@D)"0EI9B`H;&EN92YL96YG=&@H*2`]/2`P*7L-"@D)
+M"0D)8V]N=&EN=64[#0H)"0D)?0T*"0D)"65L<V4@:68@*&QI;F4N8VAA<D%T
+M*#`I(#T]("<N)RE["2\O('1H:7,@:7,@9F]R(&-O;6UE;G1S#0H)"0D)"6-O
+M;G1I;G5E.PT*"0D)"7T-"@D)"0E3=')I;F<@;&%B96P@/2!L:6YE+G-U8G-T
+M<FEN9R@P+"`X*3L-"@D)"0E3=')I;F<@;W!S(#T@;&EN92YS=6)S=')I;F<H
+M.2P@,3<I.PT*"0D)"5-T<FEN9R!O<&5R86YD<R`]("(B+"!C;VUM96YT(#T@
+M(B([#0H)"0D):68@*&QI;F4N;&5N9W1H*"D@/CT@,CDI('L-"@D)"0D);W!E
+M<F%N9',@/2!L:6YE+G-U8G-T<FEN9R@Q."P@,CDI.PT*"0D)"0EC;VUM96YT
+M(#T@;&EN92YS=6)S=')I;F<H,CDI.PT*"0D)"7T@96QS92![#0H)"0D)"6]P
+M97)A;F1S(#T@;&EN92YS=6)S=')I;F<H,3@I.PT*"0D)"7T-"@D)"0EI9B`H
+M;W!E<F%N9',N8VAA<D%T*#`I(#T]("<])RE[#0H)"0D)"6QI=&5R86Q3=&%C
+M:RYP=7-H*&]P97)A;F1S+G1R:6TH*2D[#0H)"0D)?0T*"0D)"6EF("AF:7)S
+M=$QI;F4I>PT*"0D)"0EF:7)S=$QI;F4@/2!F86QS93L-"@D)"0D):68@*&]P
+M<RYT<FEM*"DN97%U86QS26=N;W)E0V%S92@B4U1!4E0B*2E[#0H)"0D)"0EA
+M9&1R97-S(#T@26YT96=E<BYP87)S94EN="AO<&5R86YD<RYT<FEM*"DL(#$V
+M*3L-"@D)"0D)?0T*"0D)"7T-"@D)"0EI9B`H(6QA8F5L+G1R:6TH*2YE<75A
+M;',H(B(I*7L-"@D)"0D)4W1R:6YG('-Y;6)O;"`](&QA8F5L+G1R:6TH*3L-
+M"@D)"0D):68@*'-Y;51A8FQE+F%D9"AS>6UB;VP@+"!A9&1R97-S*2`]/2!F
+M86QS92E[#0H)"0D)"0E3>7-T96TN;W5T+G!R:6YT;&XH(D5R<F]R(&]N(&QI
+M;F4@9F]R(&$@9'5P;&EC871E('-Y;6)O;"(I.PT*"0D)"0D)8V]N=&EN=64[
+M#0H)"0D)"7T-"@D)"0E]#0H)"0D)4WES=&5M+F]U="YP<FEN=&8H(B4S9"`@
+M(BP@;&EN94YU;6)E<BD[#0H)"0D)4WES=&5M+F]U="YP<FEN=&8H(B4M-E@@
+M("`B+"!A9&1R97-S*3L-"@D)"0E3>7-T96TN;W5T+G!R:6YT;&XH;&%B96P@
+M*R!O<',@*R!O<&5R86YD<R`K(&-O;6UE;G0I.PT*"0D)"4AA<VA/8FIE8W0@
+M;W!/8FH@/2!O<%1A8FQE+F9I;F0H;W!S+G1R:6TH*2D[#0H)"0D):68@*&]P
+M3V)J("$](&YU;&PI>PT*"0D)"0EA9&1R97-S("L](&]P3V)J+F=E=$9O<FUA
+M="@I.PT*"0D)"7T-"@D)"0EE;'-E(&EF("AO<',N=')I;2@I+F5Q=6%L<TEG
+M;F]R94-A<V4H(E)%4U<B*2E[#0H)"0D)"6%D9')E<W,@/2`H*$EN=&5G97(N
+M<&%R<V5);G0H;W!E<F%N9',N=')I;2@I*2D@*B`S*2`K(&%D9')E<W,[#0H)
+M"0D)?0T*"0D)"65L<V4@:68@*&]P<RYT<FEM*"DN97%U86QS26=N;W)E0V%S
+M92@B5T]21"(I*7L-"@D)"0D)861D<F5S<R`](&%D9')E<W,@*R`S.PT*"0D)
+M"7T-"@D)"0EE;'-E(&EF("AO<',N=')I;2@I+F5Q=6%L<TEG;F]R94-A<V4H
+M(E)%4T(B*2E[#0H)"0D)"6%D9')E<W,@/2`H*$EN=&5G97(N<&%R<V5);G0H
+M;W!E<F%N9',N=')I;2@I*2DI("L@861D<F5S<SL-"@D)"0E]#0H)"0D)96QS
+M92!I9B`H;W!S+G1R:6TH*2YE<75A;'-)9VYO<F5#87-E*")"651%(BDI>PT*
+M"0D)"0EI;G0@8GET97,@/2!B0V]U;G0H;W!E<F%N9',N=')I;2@I*3L-"@D)
+M"0D):68@*&)Y=&5S(#T]("TQ*7L-"@D)"0D)"5-Y<W1E;2YO=70N<')I;G1L
+M;B@B26YV86QI9"!">71E('9A;'5E(&%T(&QI;F4@(B`K(&QI;F5.=6UB97(I
+M.PT*"0D)"0D)8V]N=&EN=64[#0H)"0D)"7T-"@D)"0D)96QS92!A9&1R97-S
+M("L](&)Y=&5S.PT*"0D)"7T-"@D)"0EE;'-E(&EF("AO<',N=')I;2@I+F5Q
+M=6%L<TEG;F]R94-A<V4H(DQ43U)'(BDI>PT*"0D)"0EI;G0@<W1A8VM#;W5N
+M="`](#$[#0H)"0D)"6EN="!B>71E<R`](#`[#0H)"0D)"6EN="!T96UP(#T@
+M,#L-"@D)"0D)=VAI;&4@*"%L:71E<F%L4W1A8VLN96UP='DH*2E[#0H)"0D)
+M"0E3=')I;F<@;&ET(#T@;&ET97)A;%-T86-K+G!O<"@I.PT*"0D)"0D)8GET
+M97,@/2!B0V]U;G0H;&ET+G-U8G-T<FEN9R@Q*2D[#0H)"0D)"0ET96UP(#T@
+M8GET97,[#0H)"0D)"0EI9B`H8GET97,@(3T@+3$I>PT*"0D)"0D)"7-Y;51A
+M8FQE+F%D9"AL:70L(&%D9')E<W,I.PT*"0D)"0D)"6EF("AS=&%C:T-O=6YT
+M("$](#$I>PT*"0D)"0D)"0E3>7-T96TN;W5T+G!R:6YT9B@B("HE9"H@(BP@
+M<W1A8VM#;W5N="D[#0H)"0D)"0D)"5-Y<W1E;2YO=70N<')I;G1F*"(E+398
+M("`@(BP@861D<F5S<RD[#0H)"0D)"0D)"6%D9')E<W,@*ST@8GET97,[#0H)
+M"0D)"0D)?0T*"0D)"0D)"65L<V5[#0H)"0D)"0D)4WES=&5M+F]U="YP<FEN
+M=&8H(B`J)60J("(L('-T86-K0V]U;G0I.PT*"0D)"0D)"5-Y<W1E;2YO=70N
+M<')I;G1F*"(E+398("`@(BP@861D<F5S<RD[#0H)"0D)"0D)861D<F5S<R`K
+M/2!T96UP.PT*"0D)"0D)"7T-"@D)"0D)"0E3>7-T96TN;W5T+G!R:6YT*&QI
+M="D[#0H)"0D)"0D)4W1R:6YG(&QI=#$@/2!L:70N<W5B<W1R:6YG*#$I.PT*
+M"0D)"0D)"5-Y<W1E;2YO=70N<')I;G1L;B@B($)95$4@(B`K(&QI=#$I.PT*
+M"0D)"0D)"7-T86-K0V]U;G0K*SL-"@D)"0D)"7T-"@D)"0D)"65L<V5[#0H)
+M"0D)"0D)4WES=&5M+F]U="YP<FEN=&QN*"));G9A;&ED($)Y=&4@=F%L=65S
+M('5S960B*3L-"@D)"0D)"0EC;VYT:6YU93L-"@D)"0D)"7T-"@D)"0D)?0T*
+M"0D)"7T-"@D)"0EE;'-E(&EF("AO<',N=')I;2@I+F5Q=6%L<TEG;F]R94-A
+M<V4H(D)!4T4B*2E[#0H)"0D)"2\O(&1O;B=T(&%D9"!A;GET:&EN9R!T;R!A
+M9&1R97-S#0H)"0D)?0T*"0D)"65L<V4@:68@*&]P<RYT<FEM*"DN97%U86QS
+M26=N;W)E0V%S92@B3D]"05-%(BDI>PT*"0D)"0DO+R!D;VXG="!A9&0@86YY
+M=&AI;F<@=&\@861D<F5S<PT*"0D)"7T-"@D)"0EE;'-E(&EF("AO<',N=')I
+M;2@I+F5Q=6%L<TEG;F]R94-A<V4H(D5.1"(I*7L-"@D)"0D):6YT('-T86-K
+M0V]U;G0@/2`Q.PT*"0D)"0EW:&EL92`H(6QI=&5R86Q3=&%C:RYE;7!T>2@I
+M*7L-"@D)"0D)"5-T<FEN9R!L:70@/2!L:71E<F%L4W1A8VLN<&]P*"D[#0H)
+M"0D)"0EI;G0@8GET97,@/2!B0V]U;G0H;&ET+G-U8G-T<FEN9R@Q*2D[#0H)
+M"0D)"0EI9B`H8GET97,@(3T@+3$I>PT*"0D)"0D)"7-Y;51A8FQE+F%D9"AL
+M:70L(&%D9')E<W,I.PT*"0D)"0D)"5-Y<W1E;2YO=70N<')I;G1F*"(@*B5D
+M*B`B+"!S=&%C:T-O=6YT*3L-"@D)"0D)"0E3>7-T96TN;W5T+G!R:6YT9B@B
+M)2TV6"`@("(L(&%D9')E<W,I.PT*"0D)"0D)"5-Y<W1E;2YO=70N<')I;G0H
+M;&ET*3L-"@D)"0D)"0E3=')I;F<@;&ET,2`](&QI="YS=6)S=')I;F<H,2D[
+M#0H)"0D)"0D)4WES=&5M+F]U="YP<FEN=&QN*"(@0EE412`B("L@;&ET,2D[
+M#0H)"0D)"0D)<W1A8VM#;W5N="LK.PT*"0D)"0D)"6EF("AS=&%C:T-O=6YT
+M("$](#$I>PT*"0D)"0D)"0EA9&1R97-S("L](&)Y=&5S.PT*"0D)"0D)"7T-
+M"@D)"0D)"7T-"@D)"0D)"65L<V5[#0H)"0D)"0D)4WES=&5M+F]U="YP<FEN
+M=&QN*"));G9A;&ED($)Y=&4@=F%L=65S('5S960B*3L-"@D)"0D)"0EC;VYT
+M:6YU93L-"@D)"0D)"7T-"@D)"0D)?0T*"0D)"0EB<F5A:SL-"@D)"0E]#0H)
+M"0D)96QS92!I9B`H(6]P<RYT<FEM*"DN97%U86QS26=N;W)E0V%S92@B4U1!
+M4E0B*2E[#0H)"0D)"5-Y<W1E;2YO=70N<')I;G1L;B@B17)R;W(@:6YV86QI
+M9"!N=6UO;FEC(&%T(&QI;F4@(B`K(&QI;F5.=6UB97(I.PT*"0D)"7T-"@D)
+M"0EL:6YE3G5M8F5R("L](#$[#0H)"0E]#0H)"0D-"@D)"6EN<'5T+F-L;W-E
+M*"D[#0H)"7T@8V%T8V@@*$9I;&5.;W1&;W5N9$5X8V5P=&EO;B!E*2![#0H)
+M"0DO+R!43T1/($%U=&\M9V5N97)A=&5D(&-A=&-H(&)L;V-K#0H)"0EE+G!R
+M:6YT4W1A8VM4<F%C92@I.PT*"0E]#0H)"0T*"0ER971U<FX@<WEM5&%B;&4[
+M#0H)?0T*"0T*"7!R:79A=&4@<W1A=&EC(&EN="!B0V]U;G0H4W1R:6YG(&QI
+M=&5R86PI>PT*"0EI9B`H;&ET97)A;"YC:&%R070H,"D@/3T@)U@G*7L-"@D)
+M"5-T<FEN9R!V86QU92`]("!L:71E<F%L+G-U8G-T<FEN9R@R+&QI=&5R86PN
+M;&5N9W1H*"DM,2D[#0H)"0EI9B`H=F%L=64N;&5N9W1H*"D@)2`R(#T](#`I
+M>PT*"0D)<F5T=7)N('9A;'5E+FQE;F=T:"@I+S([#0H)"0E]#0H)"0EE;'-E
+M#0H)"0D)<F5T=7)N("TQ.PT*"0E]#0H)"65L<V4@:68@*&QI=&5R86PN8VAA
+M<D%T*#`I(#T]("=#)RE[#0H)"0E3=')I;F<@=F%L=64@/2`@;&ET97)A;"YS
+M=6)S=')I;F<H,BQL:71E<F%L+FQE;F=T:"@I+3$I.PT*"0D)<F5T=7)N('9A
+M;'5E+FQE;F=T:"@I.PT*"0E]#0H)"65L<V4@#0H)"0ER971U<FX@+3$[#0H)
+M?0T*"0T*"7!R:79A=&4@<W1A=&EC($AA<VA486)L92!R96%D3W!486)L92A3
+M=')I;F<@<&%T:"E[#0H)"4AA<VA486)L92!O<%1A8FQE(#T@;F5W($AA<VA4
+M86)L92@Q-3`I.PT*"0ET<GD@>PT*"0D)4V-A;FYE<B!I;G!U="`](&YE=R!3
+M8V%N;F5R("AN97<@1FEL92AP871H*2D[#0H)"0EW:&EL92AI;G!U="YH87-.
+M97AT3&EN92@I*7L-"@D)"0E3=')I;F<@;&EN92`](&EN<'5T+FYE>'1,:6YE
+M*"D[#0H)"0D)4W1R:6YG(%M=(&1A=&$@/2!L:6YE+G-P;&ET*")<7',K(BD[
+M#0H)"0D);W!486)L92YA9&0H9&%T85LP72P@26YT96=E<BYP87)S94EN="AD
+M871A6S%=+"`Q-BDL($EN=&5G97(N<&%R<V5);G0H9&%T85LR72DI.PT*"0D)
+M?0T*"0D):6YP=70N8VQO<V4H*3L-"@D)?2!C871C:"`H1FEL94YO=$9O=6YD
+M17AC97!T:6]N(&4I('L-"@D)"2\O(%1/1$\@075T;RUG96YE<F%T960@8V%T
+M8V@@8FQO8VL-"@D)"64N<')I;G13=&%C:U1R86-E*"D[#0H)"7T-"@D)<F5T
+M=7)N(&]P5&%B;&4[#0H)?0T*#0H)#0H)<'5B;&EC('-T871I8R!B;V]L96%N
+M(&ES3G5M8F5R*%-T<FEN9R!N86UE*7L-"@D)8VAA<B!;771E;7`@/2!N86UE
+M+G1O0VAA<D%R<F%Y*"D[#0H)"69O<B`H:6YT(&D@/2`P.R!I(#P@=&5M<"YL
+M96YG=&@[(&DK*RD@>PD)+R]R971U<FYS('1R=64@:68@=&AE<F4@:7,@82!N
+M=6UB97(@:6X@87)R87D-"@D)"6EN="!T96UP,B`]("AI;G0I('1E;7!;:5T[
+M#0H)"0EI9B`H=&5M<#(@/B`T-R`F)B!T96UP,B`\(#4X("D-"@D)"0ER971U
+M<FX@=')U93L-"@D)"0T*"0E]#0H)"7)E='5R;B!F86QS93L-"@E]#0I]#0H-
+%"@D)#0IU
+`
+end
+SHAR_EOF
+  (set 20 15 03 26 20 21 35 'P3.java'; eval "$shar_touch") &&
+  chmod 0644 'P3.java'
+if test $? -ne 0
+then ${echo} 'restore of P3.java failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'P3.java: MD5 check failed'
+       ) << \SHAR_EOF
+9de08a3e7c7c8e2a5a299fe453ff5f54  P3.java
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'P3.java'` -ne 5810 && \
+  ${echo} 'restoration warning:  size of P3.java is not 5810'
+  fi
+fi
+# ============= SicOps.txt ==============
+if test -f 'SicOps.txt' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING SicOps.txt (file already exists)'
+else
+${echo} 'x - extracting SicOps.txt (binary)'
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 SicOps.txt
+M*TQ$0B`@("`V."`@("`T("`@,PI-54Q2("`@(#DX("`@(#(@("`P"BM34TL@
+M("`@14,@("`@-"`@(#`*5T0@("`@("!$0R`@("`S("`@,0HJ4U18("`@(#$P
+M("`@(#,@("`P"BI/4B`@("`@-#0@("`@,R`@(#,*04Y$("`@("`T,"`@("`S
+M("`@,PHJ3$1!("`@(#`P("`@(#,@("`S"BM*1U0@("`@,S0@("`@-"`@(#`*
+M*U-43"`@("`Q-"`@("`T("`@,`HJ5T0@("`@($1#("`@(#,@("`Q"BM35$D@
+M("`@1#0@("`@-"`@(#`*3%!3("`@("!$,"`@("`S("`@,`HK3$14("`@(#<T
+M("`@(#0@("`S"BI,1$-(("`@-3`@("`@,R`@(#$**DQ$3"`@("`P."`@("`S
+M("`@,PI425A2("`@($(X("`@(#(@("`P"E-50D8@("`@-4,@("`@,R`@(#`*
+M*DI354(@("`T."`@("`S("`@,`I,1%@@("`@(#`T("`@(#,@("`S"BM-54Q&
+M("`@-C`@("`@-"`@(#`**TH@("`@("`S0R`@("`T("`@,`I35D,@("`@($(P
+M("`@(#(@("`P"E-45"`@("`@.#0@("`@,R`@(#`**T-/35`@("`R."`@("`T
+M("`@,PI425@@("`@(#)#("`@(#,@("`P"D9,3T%4("`@0S`@("`@,2`@(#`*
+M3$14("`@("`W-"`@("`S("`@,PI35$$@("`@(#!#("`@(#,@("`P"BI41"`@
+M("`@13`@("`@,R`@(#$*4TA)1E12("!!."`@("`R("`@,`I35$(@("`@(#<X
+M("`@(#,@("`P"E-)3R`@("`@1C`@("`@,2`@(#`*3$1!("`@("`P,"`@("`S
+M("`@,PI(24\@("`@($8T("`@(#$@("`P"BM35%,@("`@-T,@("`@-"`@(#`*
+M1$E61B`@("`V-"`@("`S("`@,`HJ5$E8("`@(#)#("`@(#,@("`P"BM*4U5"
+M("`@-#@@("`@-"`@(#`*3$1#2"`@("`U,"`@("`S("`@,0HK0T]-4$8@(#@X
+M("`@(#0@("`P"DI%42`@("`@,S`@("`@,R`@(#`**D1)5B`@("`R-"`@("`S
+M("`@,PHK4U14("`@(#@T("`@(#0@("`P"BM354)&("`@-4,@("`@-"`@(#`*
+M*D%.1"`@("`T,"`@("`S("`@,PHK3U(@("`@(#0T("`@(#0@("`S"E-32R`@
+M("`@14,@("`@,R`@(#`**TI,5"`@("`S."`@("`T("`@,`HJ4D0@("`@($0X
+M("`@(#,@("`Q"DQ$4R`@("`@-D,@("`@,R`@(#,**DU53"`@("`R,"`@("`S
+M("`@,PHK3$13("`@(#9#("`@(#0@("`S"BM$258@("`@,C0@("`@-"`@(#,@
+M("`*2B`@("`@("`S0R`@("`S("`@,`HK355,("`@(#(P("`@(#0@("`S"BI#
+M3TU0("`@,C@@("`@,R`@(#,**U-46"`@("`Q,"`@("`T("`@,`HJ2B`@("`@
+M(#-#("`@(#,@("`P"BM,1$$@("`@,#`@("`@-"`@(#,**U-50B`@("`Q0R`@
+M("`T("`@,PHK4U1"("`@(#<X("`@(#0@("`P"BI*3%0@("`@,S@@("`@,R`@
+M(#`*4U5"("`@("`Q0R`@("`S("`@,PHK041$1B`@(#4X("`@(#0@("`P"E)$
+M("`@("`@1#@@("`@,R`@(#$**DI%42`@("`S,"`@("`S("`@,`I,1$(@("`@
+M(#8X("`@(#,@("`S"E)354(@("`@-$,@("`@,R`@(#`*355,1B`@("`V,"`@
+M("`S("`@,`I*4U5"("`@(#0X("`@(#,@("`P"E-50E(@("`@.30@("`@,B`@
+M(#`*1$E64B`@("`Y0R`@("`R("`@,`I,1$P@("`@(#`X("`@(#,@("`S"BM*
+M15$@("`@,S`@("`@-"`@(#`**U-40T@@("`U-"`@("`T("`@,`HJ4U1,("`@
+M(#$T("`@(#,@("`P"BM35$$@("`@,$,@("`@-"`@(#`*4U135R`@("!%."`@
+M("`S("`@,`I#3TU01B`@(#@X("`@(#,@("`P"BM$259&("`@-C0@("`@-"`@
+M(#`**U-41B`@("`X,"`@("`T("`@,`I424\@("`@($8X("`@(#$@("`P"BI!
+M1$0@("`@,3@@("`@,R`@(#,**E-44U<@("!%."`@("`S("`@,`HK4U135R`@
+M($4X("`@(#0@("`P"BM,4%,@("`@1#`@("`@-"`@(#`*2DQ4("`@("`S."`@
+M("`S("`@,`HJ2D=4("`@(#,T("`@(#,@("`P"DU53"`@("`@,C`@("`@,R`@
+M(#,**TQ$3"`@("`P."`@("`T("`@,PI/4B`@("`@(#0T("`@(#,@("`S"D-/
+M35`@("`@,C@@("`@,R`@(#,*5$0@("`@("!%,"`@("`S("`@,0I35%,@("`@
+M(#=#("`@(#,@("`P"BI35$-(("`@-30@("`@,R`@(#`*3$1&("`@("`W,"`@
+M("`S("`@,`I!1$0@("`@(#$X("`@(#,@("`S"D9)6"`@("`@0S0@("`@,2`@
+M(#`**E)354(@("`T0R`@("`S("`@,`I.3U)-("`@($,X("`@(#$@("`P"E-4
+M1B`@("`@.#`@("`@,R`@(#`**DQ$6"`@("`P-"`@("`S("`@,PI#3$5!4B`@
+M($(T("`@(#(@("`P"BM24U5"("`@-$,@("`@-"`@(#`*041$1B`@("`U."`@
+M("`S("`@,`HK5T0@("`@($1#("`@(#0@("`Q"BM,1$-(("`@-3`@("`@-"`@
+M(#$**TQ$1B`@("`W,"`@("`T("`@,`HK3$18("`@(#`T("`@(#0@("`S"E-4
+M0T@@("`@-30@("`@,R`@(#`**T%$1"`@("`Q."`@("`T("`@,PHK04Y$("`@
+M(#0P("`@(#0@("`S"BI354(@("`@,4,@("`@,R`@(#,*4U18("`@("`Q,"`@
+M("`S("`@,`I234\@("`@($%#("`@(#(@("`P"D-/35!2("`@03`@("`@,B`@
+M(#`*4TA)1E1,("!!-"`@("`R("`@,`I35$P@("`@(#$T("`@(#,@("`P"BM4
+M1"`@("`@13`@("`@-"`@(#$*041$4B`@("`Y,"`@("`R("`@,`I35$D@("`@
+M($0T("`@(#,@("`P"BM425@@("`@,D,@("`@-"`@(#`**E-402`@("`P0R`@
+M("`S("`@,`I*1U0@("`@(#,T("`@(#,@("`P"D1)5B`@("`@,C0@("`@,R`@
+6(#,**U)$("`@("!$."`@("`T("`@,3,@
+`
+end
+SHAR_EOF
+  (set 20 15 03 14 15 52 24 'SicOps.txt'; eval "$shar_touch") &&
+  chmod 0644 'SicOps.txt'
+if test $? -ne 0
+then ${echo} 'restore of SicOps.txt failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'SicOps.txt: MD5 check failed'
+       ) << \SHAR_EOF
+ac5a4cbddd64bdd0ae0154f4ae1f203f  SicOps.txt
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'SicOps.txt'` -ne 2542 && \
+  ${echo} 'restoration warning:  size of SicOps.txt is not 2542'
+  fi
+fi
+# ============= makefile ==============
+if test -f 'makefile' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING makefile (file already exists)'
+else
+${echo} 'x - extracting makefile (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 'makefile' &&
+all:
+X	javac *.java
+SHAR_EOF
+  (set 20 15 03 26 20 43 20 'makefile'; eval "$shar_touch") &&
+  chmod 0644 'makefile'
+if test $? -ne 0
+then ${echo} 'restore of makefile failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'makefile: MD5 check failed'
+       ) << \SHAR_EOF
+7676b0d85e301838082f6e721c7e43f6  makefile
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'makefile'` -ne 19 && \
+  ${echo} 'restoration warning:  size of makefile is not 19'
+  fi
+fi
+# ============= text ==============
+if test -f 'text' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING text (file already exists)'
+else
+${echo} 'x - extracting text (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 'text' &&
+The program is for David Hughes (n00814425) written 3/24/15 and submitted to
+X Roger Eggen System Software class. The following project 3 runs through Sic
+X Xe assembly code and translates addresses to each line. Its checks for
+X duplicates, makes sure start is on the first line, and checks many LTORG 
+issues that may come up. The Sic Xe project code must be in the following 
+format for this to work:
+Col 1-8    label optional
+Col 9      blank
+Col 10     + optional
+Col 11-17  mnemonic
+Col 18     blank
+Col 19     #, @, =  ... optional
+Col 20-29  (operand) label, register, ',',X optional  ...
+Col 30-31  blank
+Col 32-80  comments optional (NO PERIOD REQUIRED)
+The SicOps file  must also be included and is scanned in at run time to help 
+calculate all the addresses. It is hashed into a table of size 300. In
+the end as the addresses are created and they are also stored into a separate hash
+tables for the future project 4. 
+X
+SHAR_EOF
+  (set 20 15 03 25 12 29 27 'text'; eval "$shar_touch") &&
+  chmod 0644 'text'
+if test $? -ne 0
+then ${echo} 'restore of text failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'text: MD5 check failed'
+       ) << \SHAR_EOF
+9242e8fdc557e2598a0bca6002caacd7  text
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'text'` -ne 928 && \
+  ${echo} 'restoration warning:  size of text is not 928'
+  fi
+fi
+# ============= p3 ==============
+if test -f 'p3' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING p3 (file already exists)'
+else
+${echo} 'x - extracting p3 (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 'p3' &&
+java P3 $1
+SHAR_EOF
+  (set 20 15 03 26 19 29 46 'p3'; eval "$shar_touch") &&
+  chmod 0777 'p3'
+if test $? -ne 0
+then ${echo} 'restore of p3 failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'p3: MD5 check failed'
+       ) << \SHAR_EOF
+70febe778da687a00fd199cc7f234541  p3
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'p3'` -ne 11 && \
+  ${echo} 'restoration warning:  size of p3 is not 11'
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} 'x - removed lock directory `'${lock_dir}\''.'
+else ${echo} 'x - failed to remove lock directory `'${lock_dir}\''.'
+  exit 1
+fi
+exit 0

@@ -1,0 +1,129 @@
+Proc 1 sent message: 1 29107 R XXXX @ 02-11-2015 11:20:04
+Store Manager received message: 1 29107 R XXXX @ 02-11-2015 11:20:04
+Proc 2 sent message: 2 29108 R INTEL @ 02-11-2015 11:20:04
+Store Manager at time sent message: R 1 XXXX @ 02-11-2015 11:20:04
+Store Manager received message: 2 29108 R INTEL @ 02-11-2015 11:20:04
+Store Manager at time sent message: R 0 INTEL @ 02-11-2015 11:20:04
+Proc 1 recieved response  @ 02-11-2015 11:20:04
+Proc 2 recieved response  @ 02-11-2015 11:20:04
+Proc 1 sent message: 1 29107 R DISNEY @ 02-11-2015 11:20:07
+Store Manager received message: 1 29107 R DISNEYd @ 02-11-2015 11:20:07
+Store Manager at time sent message: R 1 DISNEYd @ 02-11-2015 11:20:07
+Proc 1 recieved response  @ 02-11-2015 11:20:07
+Proc 2 sent message: 2 29108 U INTEL 45 @ 02-11-2015 11:20:07
+Store Manager received message: 2 29108 U INTEL 45 @ 02-11-2015 11:20:07
+Store Manager at time sent message: U 0 INTEL 45 @ 02-11-2015 11:20:07
+Proc 2 recieved response  @ 02-11-2015 11:20:07
+Proc 2 sent message: 2 29108 U DISNEY 21 @ 02-11-2015 11:20:08
+Store Manager received message: 2 29108 U DISNEY 21 @ 02-11-2015 11:20:08
+Store Manager at time sent message: U 0 DISNEY 21 @ 02-11-2015 11:20:08
+Proc 2 recieved response  @ 02-11-2015 11:20:08
+Proc 2 sent message: 2 29108 U DISNEY 21 @ 02-11-2015 11:20:09
+Store Manager received message: 2 29108 U DISNEY 21 @ 02-11-2015 11:20:09
+Store Manager at time sent message: U 0 DISNEY 21 @ 02-11-2015 11:20:09
+Proc 2 recieved response  @ 02-11-2015 11:20:09
+Proc 2 sent message: 2 29108 R DISNEY @ 02-11-2015 11:20:11
+Store Manager received message: 2 29108 R DISNEY @ 02-11-2015 11:20:11
+Store Manager at time sent message: R 0 DISNEY @ 02-11-2015 11:20:11
+Proc 2 recieved response  @ 02-11-2015 11:20:11
+Proc 2 sent message: 2 29108 U DISNEY 21 @ 02-11-2015 11:20:12
+Store Manager received message: 2 29108 U DISNEY 21 @ 02-11-2015 11:20:12
+Store Manager at time sent message: U 0 DISNEY 21 @ 02-11-2015 11:20:12
+Proc 2 recieved response  @ 02-11-2015 11:20:12
+Proc 2 sent message: 2 29108 U DIY 21 @ 02-11-2015 11:20:14
+Store Manager received message: 2 29108 U DIY 21 @ 02-11-2015 11:20:14
+Store Manager at time sent message: U 1 DIY 21 @ 02-11-2015 11:20:14
+Proc 2 recieved response  @ 02-11-2015 11:20:14
+Proc 2 sent message: 2 29502 R INTEL @ 02-11-2015 11:31:49
+Proc 1 sent message: 1 29501 R XXXX @ 02-11-2015 11:31:49
+Store Manager received message: 2 29502 R INTEL1 29501 R XXXX @ 02-11-2015 11:31:49
+Store Manager at time sent message: R 1 INTEL1 @ 02-11-2015 11:31:49
+Proc 2 recieved response  @ 02-11-2015 11:31:49
+Proc 2 sent message: 2 29502 U INTEL 45 @ 02-11-2015 11:31:52
+Store Manager received message: 2 29502 U INTEL 459501 R XXXX @ 02-11-2015 11:31:52
+Store Manager at time sent message: U 0 INTEL 459501 @ 02-11-2015 11:31:52
+Proc 2 recieved response  @ 02-11-2015 11:31:52
+Proc 2 sent message: 2 29502 U DISNEY 21 @ 02-11-2015 11:31:55
+Store Manager received message: 2 29502 U DISNEY 21501 @ 02-11-2015 11:31:55
+Store Manager at time sent message: U 0 DISNEY 21501 @ 02-11-2015 11:31:55
+Proc 2 recieved response  @ 02-11-2015 11:31:55
+Proc 2 sent message: 2 29502 U DISNEY 21 @ 02-11-2015 11:31:56
+Store Manager received message: 2 29502 U DISNEY 21501 @ 02-11-2015 11:31:56
+Store Manager at time sent message: U 0 DISNEY 21501 @ 02-11-2015 11:31:56
+Proc 2 recieved response  @ 02-11-2015 11:31:56
+Proc 2 sent message: 2 29502 R DISNEY @ 02-11-2015 11:31:57
+Store Manager received message: 2 29502 R DISNEY @ 02-11-2015 11:31:57
+Store Manager at time sent message: R 0 DISNEY @ 02-11-2015 11:31:57
+Proc 2 recieved response  @ 02-11-2015 11:31:57
+Store Manager received message: 2 29502 U DISNEY 21501 @ 02-11-2015 11:32:00
+Proc 2 sent message: 2 29502 U DISNEY 21 @ 02-11-2015 11:32:00
+Store Manager at time sent message: U 0 DISNEY 21501 @ 02-11-2015 11:32:00
+Proc 2 recieved response  @ 02-11-2015 11:32:00
+Store Manager received message: 2 29502 U DIY 21 @ 02-11-2015 11:32:01
+Store Manager at time sent message: U 1 DIY 21 @ 02-11-2015 11:32:01
+Proc 2 sent message: 2 29502 U DIY 21 @ 02-11-2015 11:32:01
+Proc 2 recieved response  @ 02-11-2015 11:32:01
+Store Manager received message: 1 29512 R XXXX @ 02-11-2015 11:32:10
+Store Manager at time sent message: R 1 XXXX @ 02-11-2015 11:32:10
+Store Manager received message: 2 29513 R INTEL @ 02-11-2015 11:32:10
+Store Manager at time sent message: R 0 INTEL @ 02-11-2015 11:32:10
+Proc 1 sent message: 1 29512 R XXXX @ 02-11-2015 11:32:10
+Proc 2 sent message: 2 29513 R INTEL @ 02-11-2015 11:32:10
+Proc 1 recieved response  @ 02-11-2015 11:32:10
+Proc 2 recieved response  @ 02-11-2015 11:32:10
+Store Manager received message: 1 29512 R DISNEYd @ 02-11-2015 11:32:12
+Store Manager at time sent message: R 1 DISNEYd @ 02-11-2015 11:32:12
+Proc 1 sent message: 1 29512 R DISNEY @ 02-11-2015 11:32:12
+Proc 1 recieved response  @ 02-11-2015 11:32:12
+Proc 2 sent message: 2 29513 U INTEL 45 @ 02-11-2015 11:32:13
+Store Manager received message: 2 29513 U INTEL 45 @ 02-11-2015 11:32:13
+Store Manager at time sent message: U 0 INTEL 45 @ 02-11-2015 11:32:13
+Proc 2 recieved response  @ 02-11-2015 11:32:13
+Proc 2 sent message: 2 29513 U DISNEY 21 @ 02-11-2015 11:32:14
+Store Manager received message: 2 29513 U DISNEY 21 @ 02-11-2015 11:32:14
+Store Manager at time sent message: U 0 DISNEY 21 @ 02-11-2015 11:32:14
+Proc 2 recieved response  @ 02-11-2015 11:32:14
+Proc 2 sent message: 2 29513 U DISNEY 21 @ 02-11-2015 11:32:15
+Store Manager received message: 2 29513 U DISNEY 21 @ 02-11-2015 11:32:15
+Store Manager at time sent message: U 0 DISNEY 21 @ 02-11-2015 11:32:15
+Proc 2 recieved response  @ 02-11-2015 11:32:15
+Proc 2 sent message: 2 29513 R DISNEY @ 02-11-2015 11:32:18
+Store Manager received message: 2 29513 R DISNEY @ 02-11-2015 11:32:18
+Store Manager at time sent message: R 0 DISNEY @ 02-11-2015 11:32:18
+Proc 2 recieved response  @ 02-11-2015 11:32:18
+Proc 2 sent message: 2 29513 U DISNEY 21 @ 02-11-2015 11:32:20
+Store Manager received message: 2 29513 U DISNEY 21 @ 02-11-2015 11:32:20
+Store Manager at time sent message: U 0 DISNEY 21 @ 02-11-2015 11:32:20
+Proc 2 recieved response  @ 02-11-2015 11:32:20
+Proc 2 sent message: 2 29513 U DIY 21 @ 02-11-2015 11:32:21
+Store Manager received message: 2 29513 U DIY 21 @ 02-11-2015 11:32:21
+Store Manager at time sent message: U 1 DIY 21 @ 02-11-2015 11:32:21
+Proc 2 recieved response  @ 02-11-2015 11:32:21
+Store Manager received message: 1 29532 R XXXX @ 02-11-2015 11:32:33
+Store Manager at time sent message: R 1 XXXX @ 02-11-2015 11:32:33
+Proc 1 sent message: 1 29532 R XXXX @ 02-11-2015 11:32:33
+Store Manager received message: 2 29533 R INTEL @ 02-11-2015 11:32:33
+Store Manager at time sent message: R 0 INTEL @ 02-11-2015 11:32:33
+Proc 2 sent message: 2 29533 R INTEL @ 02-11-2015 11:32:33
+Proc 1 recieved response  @ 02-11-2015 11:32:33
+Proc 2 recieved response  @ 02-11-2015 11:32:33
+Store Manager received message: 1 29532 R DISNEYd @ 02-11-2015 11:32:35
+Store Manager at time sent message: R 1 DISNEYd @ 02-11-2015 11:32:35
+Proc 1 sent message: 1 29532 R DISNEY @ 02-11-2015 11:32:35
+Proc 1 recieved response  @ 02-11-2015 11:32:35
+Store Manager received message: 2 29533 U INTEL 45 @ 02-11-2015 11:32:36
+Store Manager at time sent message: U 0 INTEL 45 @ 02-11-2015 11:32:36
+Proc 2 sent message: 2 29533 U INTEL 45 @ 02-11-2015 11:32:36
+Proc 2 recieved response  @ 02-11-2015 11:32:36
+Proc 2 sent message: 2 29533 U DISNEY 21 @ 02-11-2015 11:32:38
+Store Manager received message: 2 29533 U DISNEY 21 @ 02-11-2015 11:32:38
+Store Manager at time sent message: U 0 DISNEY 21 @ 02-11-2015 11:32:38
+Proc 2 recieved response  @ 02-11-2015 11:32:38
+Proc 2 sent message: 2 29533 U DISNEY 21 @ 02-11-2015 11:32:38
+Store Manager received message: 2 29533 U DISNEY 21 @ 02-11-2015 11:32:38
+Store Manager at time sent message: U 0 DISNEY 21 @ 02-11-2015 11:32:38
+Proc 2 recieved response  @ 02-11-2015 11:32:38
+Store Manager received message: 2 29533 R DISNEY @ 02-11-2015 11:32:41
+Store Manager at time sent message: R 0 DISNEY @ 02-11-2015 11:32:41
+Proc 2 sent message: 2 29533 R DISNEY @ 02-11-2015 11:32:41
+Proc 2 recieved response  @ 02-11-2015 11:32:42

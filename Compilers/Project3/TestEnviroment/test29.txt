@@ -1,0 +1,11 @@
+/*
+  Error: Same variable (but different type) declared in same scope.
+*/
+
+int x;
+int x[10];
+
+void main(void)
+{
+
+}

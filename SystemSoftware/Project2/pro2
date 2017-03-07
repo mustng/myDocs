@@ -1,0 +1,407 @@
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.7).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the `#!/bin/sh' line above, then type `sh FILE'.
+#
+lock_dir=_sh02663
+# Made on 2015-02-04 14:45 EST by <n00814425@osprey.unfcsd.unf.edu>.
+# Source directory was `/home/25/n00814425/ss/p2/final'.
+#
+# Existing files will *not* be overwritten, unless `-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#    751 -rw-r--r-- t
+#    883 -rw-r--r-- doc
+#   2218 -rw-r--r-- t.lst
+#    305 -rw-r--r-- t.obj
+#    961 -rw-r--r-- sic.log
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=FAILED
+locale_dir=FAILED
+first_param="$1"
+for dir in $PATH
+do
+  if test "$gettext_dir" = FAILED && test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir ;;
+    esac
+  fi
+  if test "$locale_dir" = FAILED && test -f $dir/shar \
+     && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+  then
+    locale_dir=`$dir/shar --print-text-domain-dir`
+  fi
+done
+IFS="$save_IFS"
+if test "$locale_dir" = FAILED || test "$gettext_dir" = FAILED
+then
+  echo=echo
+else
+  TEXTDOMAINDIR=$locale_dir
+  export TEXTDOMAINDIR
+  TEXTDOMAIN=sharutils
+  export TEXTDOMAIN
+  echo="$gettext_dir/gettext -s"
+fi
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+f=shar-touch.$$
+st1=200112312359.59
+st2=123123592001.59
+st2tr=123123592001.5 # old SysV 14-char limit
+st3=1231235901
+
+if touch -am -t ${st1} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st1} && test -f ${f}; then
+  shar_touch='touch -am -t $1$2$3$4$5$6.$7 "$8"'
+
+elif touch -am ${st2} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st2} && test ! -f ${st2tr} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$1$2.$7 "$8"'
+
+elif touch -am ${st3} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st3} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$2 "$8"'
+
+else
+  shar_touch=:
+  echo
+  ${echo} 'WARNING: not restoring timestamps.  Consider getting and'
+  ${echo} 'installing GNU `touch'\'', distributed in GNU coreutils...'
+  echo
+fi
+rm -f ${st1} ${st2} ${st2tr} ${st3} ${f}
+#
+if test ! -d ${lock_dir}
+then : ; else ${echo} 'lock directory '${lock_dir}' exists'
+  exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} 'x - created lock directory `'${lock_dir}\''.'
+else ${echo} 'x - failed to create lock directory `'${lock_dir}\''.'
+  exit 1
+fi
+# ============= t ==============
+if test -f 't' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING t (file already exists)'
+else
+${echo} 'x - extracting t (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 't' &&
+X		START	100
+X		LDA 	HOWMANY
+X		SUB	#1		SUBTRACT 1 FROM HOWMANY
+X		STA	C		STORE C INTO ACC
+X		LDA	#0		LOAD 0 INTO A
+X		STA 	D		STORE 0 INTO D
+X		LDA	C		LOADS C
+LOOP		COMP	HOWMANY		COMPARES C TO ZERO
+X		JGT	FINISH
+X		LDA	C		LOAD C INTO ACC
+X		MUL 	#3		ADD MULT FOR 3 SPACES OF MEMORY
+X		RMO 	A,X 		INDEX REGISTERS A INTO X
+X		LDT 	NUMBERARRAY,X
+X		LDA	D
+X		MUL	#3		MAKES AMPLE STORAGE
+X		RMO	A,X
+X		STT	B,X		FINSIHED B[D] = NUMARRAY[C]
+X		LDA	C			
+X		SUB 	#1		DECREMENET C BY 1
+X		STA	C
+X		LDA	D
+X		ADD	#1		
+X		STA	D		ADD 1 TO D
+X		J 	LOOP		FINSIH LOOP
+FINISH		RSUB
+X				
+X					
+X
+X
+X
+HOWMANY 	WORD 	10
+C		RESW   	1
+D		RESW 	1
+NUMBERARRAY	WORD	10
+X		WORD 	9
+X		WORD 	8		LOADS 1-10 INTO NUMBERARRAY
+X		WORD 	7
+X		WORD	6
+X		WORD	5
+X		WORD 	4
+X		WORD	3
+X		WORD	2
+X		WORD	1
+B		RESW	10
+X
+X		END
+X
+SHAR_EOF
+  (set 20 15 02 04 12 53 44 't'; eval "$shar_touch") &&
+  chmod 0644 't'
+if test $? -ne 0
+then ${echo} 'restore of t failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 't: MD5 check failed'
+       ) << \SHAR_EOF
+ed65ebbb805336c8c35d04c30d61af60  t
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 't'` -ne 751 && \
+  ${echo} 'restoration warning:  size of t is not 751'
+  fi
+fi
+# ============= doc ==============
+if test -f 'doc' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING doc (file already exists)'
+else
+${echo} 'x - extracting doc (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 'doc' &&
+The program is for David Hughes (n00814425) written 2/2/15 and submitted to 
+Roger Eggen System Software class. The program written in assembly language 
+takes in integers going from 10 down to 1 and reverses them to become 1 
+through 10. The program written in C which I started first to make sure I had a stable 
+algorithm looks like the following:
+#include <stdio.h>
+int main()
+{
+X    int howMany = 10;
+X	int c, d;
+X	int numberArray[10] = {10,9,8,7,6,5,4,3,2,1};
+X	int b[10];
+X   for (c = howMany - 1, d = 0; c >= 0; c--, d++){
+X      b[d] = numberArray[c];
+X  }
+X   return 0;
+}
+It was directly translated to the assembly language line by line and works to 
+produce the objective. The "word" location(10) begins at line 14F where its shows 
+the array before it was revered and ends at line 16C. The reversed "word" array starts 
+immediately in the next location from 16D and goes to 18A.
+SHAR_EOF
+  (set 20 15 02 04 14 36 54 'doc'; eval "$shar_touch") &&
+  chmod 0644 'doc'
+if test $? -ne 0
+then ${echo} 'restore of doc failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'doc: MD5 check failed'
+       ) << \SHAR_EOF
+faaf7e9fa7f6822104f38ae38770b7b4  doc
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'doc'` -ne 883 && \
+  ${echo} 'restoration warning:  size of doc is not 883'
+  fi
+fi
+# ============= t.lst ==============
+if test -f 't.lst' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING t.lst (file already exists)'
+else
+${echo} 'x - extracting t.lst (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 't.lst' &&
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n00814425; Wed Feb  4 12:53:47 2015
+*********************************************
+ASSEMBLER REPORT
+----------------
+X     Loc   Object Code       Source Code
+X     ---   -----------       -----------
+001- 00100                   		START	100
+002- 00100 032043            		LDA 	HOWMANY
+003- 00103 1D0001            		SUB	#1		SUBTRACT 1 FROM HOWMANY
+004- 00106 0F2040            		STA	C		STORE C INTO ACC
+005- 00109 010000            		LDA	#0		LOAD 0 INTO A
+006- 0010C 0F203D            		STA 	D		STORE 0 INTO D
+007- 0010F 032037            		LDA	C		LOADS C
+008- 00112 2B2031            LOOP		COMP	HOWMANY		COMPARES C TO ZERO
+009- 00115 37202B            		JGT	FINISH
+010- 00118 03202E            		LDA	C		LOAD C INTO ACC
+011- 0011B 210003            		MUL 	#3		ADD MULT FOR 3 SPACES OF MEMORY
+012- 0011E AC01              		RMO 	A,X 		INDEX REGISTERS A INTO X
+013- 00120 77A02C            		LDT 	NUMBERARRAY,X
+014- 00123 032026            		LDA	D
+015- 00126 210003            		MUL	#3		MAKES AMPLE STORAGE
+016- 00129 AC01              		RMO	A,X
+017- 0012B 87A03F            		STT	B,X		FINSIHED B[D] = NUMARRAY[C]
+018- 0012E 032018            		LDA	C			
+019- 00131 1D0001            		SUB 	#1		DECREMENET C BY 1
+020- 00134 0F2012            		STA	C
+021- 00137 032012            		LDA	D
+022- 0013A 190001            		ADD	#1		
+023- 0013D 0F200C            		STA	D		ADD 1 TO D
+024- 00140 3F2FCF            		J 	LOOP		FINSIH LOOP
+025- 00143 4F0000            FINISH		RSUB
+026- 00146 00000A            HOWMANY 	WORD 	10
+027- 00149                   C		RESW   	1
+028- 0014C                   D		RESW 	1
+029- 0014F 00000A            NUMBERARRAY	WORD	10
+030- 00152 000009            		WORD 	9
+031- 00155 000008            		WORD 	8		LOADS 1-10 INTO NUMBERARRAY
+032- 00158 000007            		WORD 	7
+033- 0015B 000006            		WORD	6
+034- 0015E 000005            		WORD	5
+035- 00161 000004            		WORD 	4
+036- 00164 000003            		WORD	3
+037- 00167 000002            		WORD	2
+038- 0016A 000001            		WORD	1
+039- 0016D                   B		RESW	10
+040- 0018B                   		END
+SHAR_EOF
+  (set 20 15 02 04 12 53 47 't.lst'; eval "$shar_touch") &&
+  chmod 0644 't.lst'
+if test $? -ne 0
+then ${echo} 'restore of t.lst failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 't.lst: MD5 check failed'
+       ) << \SHAR_EOF
+d5c5a905d97b4af402dacc0b5abc2d8d  t.lst
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 't.lst'` -ne 2218 && \
+  ${echo} 'restoration warning:  size of t.lst is not 2218'
+  fi
+fi
+# ============= t.obj ==============
+if test -f 't.obj' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING t.obj (file already exists)'
+else
+${echo} 'x - extracting t.obj (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 't.obj' &&
+000100
+000000
+032043
+1D0001
+0F2040
+010000
+0F203D
+032037
+2B2031
+37202B
+03202E
+210003
+AC01
+77A02C
+032026
+210003
+AC01
+87A03F
+032018
+1D0001
+0F2012
+032012
+190001
+0F200C
+3F2FCF
+4F0000
+00000A
+!
+00014C
+000000
+!
+00014F
+000000
+00000A
+000009
+000008
+000007
+000006
+000005
+000004
+000003
+000002
+000001
+!
+00018B
+000100
+!
+SHAR_EOF
+  (set 20 15 02 04 12 53 47 't.obj'; eval "$shar_touch") &&
+  chmod 0644 't.obj'
+if test $? -ne 0
+then ${echo} 'restore of t.obj failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 't.obj: MD5 check failed'
+       ) << \SHAR_EOF
+85600ff69ae5c8bbc97b4a9c1b2a36b3  t.obj
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 't.obj'` -ne 305 && \
+  ${echo} 'restoration warning:  size of t.obj is not 305'
+  fi
+fi
+# ============= sic.log ==============
+if test -f 'sic.log' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING sic.log (file already exists)'
+else
+${echo} 'x - extracting sic.log (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 'sic.log' &&
+X
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+d 100-200
+X
+0100 0320431D 00010F20 40010000 0F203D03
+0110 20372B20 3137202B 03202E21 0003AC01
+0120 77A02C03 20262100 03AC0187 A03F0320
+0130 181D0001 0F201203 20121900 010F200C
+0140 3F2FCF4F 00000000 0AFFFFFE 00000B00  Starts here at location 14F
+0150 000A0000 09000008 00000700 00060000
+0160 05000004 00000300 00020000 01000001  Finshes at 16C and Reverses at 16C 
+0170 00000200 00030000 04000005 00000600
+0180 00070000 08000009 00000A00 000AFFFF  End reversed loop at loc 18A
+0190 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01A0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01B0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01C0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01D0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01E0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+01F0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+0200 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+X
+COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+X
+SHAR_EOF
+  (set 20 15 02 04 14 43 55 'sic.log'; eval "$shar_touch") &&
+  chmod 0644 'sic.log'
+if test $? -ne 0
+then ${echo} 'restore of sic.log failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'sic.log: MD5 check failed'
+       ) << \SHAR_EOF
+c023deb2146937fb191af536bb9b3ca6  sic.log
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'sic.log'` -ne 961 && \
+  ${echo} 'restoration warning:  size of sic.log is not 961'
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} 'x - removed lock directory `'${lock_dir}\''.'
+else ${echo} 'x - failed to remove lock directory `'${lock_dir}\''.'
+  exit 1
+fi
+exit 0

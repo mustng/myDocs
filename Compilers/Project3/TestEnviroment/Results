@@ -1,0 +1,177 @@
+#
+#
+#	The following document was created by a script written by Travis King and edited
+#by David Hughes for Professor Egen project 3. Tests 1 through 24 are from one 
+#source and 25 through 39 another. Good Luck
+#	This script is made for personal use and is free to use for anyone else
+#However no assurance is given that this test is accurate. If one excecutes this script
+#and passess all tests as defined by the user of this script this does not assure that
+#a passing grade on the project itself.
+#
+#
+#
+#The test file test1.txt successfully passed
+#
+#
+#
+#The test file test2.txt successfully passed
+#
+#
+#
+#The test file test3.txt successfully passed
+#
+#
+#
+#The test file test4.txt successfully passed
+#
+#
+#
+#The test file test5.txt successfully passed
+#
+#
+#
+#The test file test6.txt successfully passed
+#
+#
+#
+#The test file test7.txt successfully passed
+#
+#
+#
+#The test file test8.txt successfully passed
+#
+#
+#
+#The test file test9.txt successfully passed
+#
+#
+#
+#The test file test10.txt successfully passed
+#
+#
+#
+#The test file test11.txt successfully passed
+#
+#
+#
+#The test file test12.txt successfully passed
+#
+#
+#
+#The test file test13.txt successfully passed
+#
+#
+#
+#The test file test14.txt successfully passed
+#
+#
+#
+#The test file test15.txt successfully passed
+#
+#
+#
+#The test file test16.txt successfully passed
+#
+#
+#
+#The test file test17.txt successfully passed
+#
+#
+#
+#The test file test18.txt successfully passed
+#
+#
+#
+#The test file test19.txt successfully passed
+#
+#
+#
+#The test file test20.txt successfully passed
+#
+#
+#
+#The test file test21.txt successfully passed
+#
+#
+#
+#The test file test22.txt successfully passed
+#
+#
+#
+#The test file test23.txt successfully passed
+#
+#
+#
+#The test file test24.txt successfully passed
+#
+#
+#
+#The test file test25.txt successfully passed
+#
+#
+#
+#The test file test26.txt successfully passed
+#
+#
+#
+#The test file test27.txt successfully passed
+#
+#
+#
+#The test file test28.txt successfully passed
+#
+#
+#
+#The test file test29.txt successfully passed
+#
+#
+#
+#The test file test30.txt successfully passed
+#
+#
+#
+#The test file test31.txt did not pass the test
+#The Response given by the program was ACCEPT
+#
+/*
+  Error: Last function declared is not main.
+*/
+
+void main(void)
+{ }
+
+void foo(void)
+{ }#
+#
+#
+#The test file test32.txt successfully passed
+#
+#
+#
+#The test file test33.txt successfully passed
+#
+#
+#
+#The test file test34.txt successfully passed
+#
+#
+#
+#The test file test35.txt successfully passed
+#
+#
+#
+#The test file test36.txt successfully passed
+#
+#
+#
+#The test file test37.txt successfully passed
+#
+#
+#
+#The test file test38.txt successfully passed
+#
+#
+#
+#The test file test39.txt successfully passed
+#
+#

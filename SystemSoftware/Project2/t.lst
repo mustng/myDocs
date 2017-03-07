@@ -1,0 +1,49 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n00814425; Wed Feb  4 12:53:47 2015
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00100                   		START	100
+002- 00100 032043            		LDA 	HOWMANY
+003- 00103 1D0001            		SUB	#1		SUBTRACT 1 FROM HOWMANY
+004- 00106 0F2040            		STA	C		STORE C INTO ACC
+005- 00109 010000            		LDA	#0		LOAD 0 INTO A
+006- 0010C 0F203D            		STA 	D		STORE 0 INTO D
+007- 0010F 032037            		LDA	C		LOADS C
+008- 00112 2B2031            LOOP		COMP	HOWMANY		COMPARES C TO ZERO
+009- 00115 37202B            		JGT	FINISH
+010- 00118 03202E            		LDA	C		LOAD C INTO ACC
+011- 0011B 210003            		MUL 	#3		ADD MULT FOR 3 SPACES OF MEMORY
+012- 0011E AC01              		RMO 	A,X 		INDEX REGISTERS A INTO X
+013- 00120 77A02C            		LDT 	NUMBERARRAY,X
+014- 00123 032026            		LDA	D
+015- 00126 210003            		MUL	#3		MAKES AMPLE STORAGE
+016- 00129 AC01              		RMO	A,X
+017- 0012B 87A03F            		STT	B,X		FINSIHED B[D] = NUMARRAY[C]
+018- 0012E 032018            		LDA	C			
+019- 00131 1D0001            		SUB 	#1		DECREMENET C BY 1
+020- 00134 0F2012            		STA	C
+021- 00137 032012            		LDA	D
+022- 0013A 190001            		ADD	#1		
+023- 0013D 0F200C            		STA	D		ADD 1 TO D
+024- 00140 3F2FCF            		J 	LOOP		FINSIH LOOP
+025- 00143 4F0000            FINISH		RSUB
+026- 00146 00000A            HOWMANY 	WORD 	10
+027- 00149                   C		RESW   	1
+028- 0014C                   D		RESW 	1
+029- 0014F 00000A            NUMBERARRAY	WORD	10
+030- 00152 000009            		WORD 	9
+031- 00155 000008            		WORD 	8		LOADS 1-10 INTO NUMBERARRAY
+032- 00158 000007            		WORD 	7
+033- 0015B 000006            		WORD	6
+034- 0015E 000005            		WORD	5
+035- 00161 000004            		WORD 	4
+036- 00164 000003            		WORD	3
+037- 00167 000002            		WORD	2
+038- 0016A 000001            		WORD	1
+039- 0016D                   B		RESW	10
+040- 0018B                   		END

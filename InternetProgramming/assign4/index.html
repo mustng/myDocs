@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+  
+  <menu>
+  <box><a class="active" href="../index.html">Home</a></box>
+  <box><a href="../assign1/index.html">Assignment 1</a></box>
+  <box><a href="../assign2/index.html">Assignment 2</a></box>
+  <box><a href="../assign3/index.html">Assignment 3</a></box>
+  <box><a href="index.html">Assignment 4</a></box>
+  <box><a href="../assign5/login.php">Assignment 5</a></box>
+  <box><a href="../assign6/index.php">Assignment 6</a></box>
+  <box><a href="../assign7/index.php">Assignment 7</a></box>
+  <box><a href="mailto:maildavidhughes@yahoo.com">Email Me</a></box>
+</menu>
+<TITLE>COP 4813 :  Assignment 4</TITLE>
+
+<center>
+<H1>Watch out for Pac-Man!</H1>
+   
+    <canvas id="canvas3" width="578" height="200"></canvas>
+    <audio id="soundEfx" src="chomp.wav" style="display: none;"></audio>
+	
+    <script>
+    var soundEfx; // Sound Efx
+    var soundLoad = "death.wav"; //Game Over sound efx
+    
+     window.requestAnimFrame = (function(callback) {
+         return window.requestAnimationFrame || 
+         window.webkitRequestAnimationFrame || 
+         window.mozRequestAnimationFrame || 
+         window.oRequestAnimationFrame || 
+         window.msRequestAnimationFrame ||
+         function(callback) {
+           window.setTimeout(callback, 1000 / 60);
+         };
+       })();
+
+var canvas, c;
+window.addEventListener('load', function () {
+  canvas = document.getElementById('canvas3');
+  c = canvas.getContext('2d');
+  words = canvas.getContext('2d');
+  soundEfx = document.getElementById("soundEfx");
+  window.requestAnimationFrame(drawLoop);
+  
+}, false);
+
+function drawLoop() {
+	  
+  pacman.x += 1;  //speed
+  c.clearRect(0, 0, canvas.width, canvas.height);
+  if (pacman.x < 250){
+	  words.fillText("Assignment 4", 280, 110);
+ 	}
+  else if (pacman.x > 250 && pacman.x < 275){		//pacman chomps when these pixels are hit
+	  words.fillText("signment 4", 300, 110);
+	  soundEfx.play();
+	}
+  else if (pacman.x > 275 && pacman.x < 300){
+	  words.fillText("nment 4", 320, 110);
+	  soundEfx.play();
+	}
+  else if (pacman.x > 300 && pacman.x < 325){
+	  words.fillText("ent 4", 340, 110);
+	  soundEfx.play();
+	}
+  else if (pacman.x > 325 && pacman.x < 375){
+	  words.fillText(" 4", 350, 110);
+	  soundEfx.play();
+	}
+  else if (pacman.x > 525 && pacman.x < 550){		//play ending sound
+	  soundEfx.src = soundLoad;
+	  soundEfx.play();
+	}
+  else if (pacman.x > 560){
+	  words.fillText("Assignment 4 By: David", 50, 110);
+	}
+ 	pacman.draw();
+	 words.fillStyle = 'black'; 		 
+ 	 words.font = '40pt Calibri';
+ 	 	 
+  window.requestAnimationFrame(drawLoop);
+}
+var pacman = {
+		  x: 100,
+		  mouthOpenValue: 40,
+		  mouthPosition: -1,
+		  
+		  draw: function () {
+		    if (this.mouthOpenValue <= 0)
+		      this.mouthPosition = 1;
+		    else if (this.mouthOpenValue >= 40)			//pac man parts 
+		      this.mouthPosition = -1;
+		    this.mouthOpenValue += (5 * this.mouthPosition);
+		    c.beginPath();
+		    c.arc(this.x, 100, 50, 
+		      (Math.PI / 180) * this.mouthOpenValue,
+		      (Math.PI / 180) * (360 - this.mouthOpenValue));
+		    c.lineTo(this.x, 100);
+		    c.fillStyle = '#FF0';
+		    c.fill();
+		    
+		    words.beginPath();			
+	 	 	words.moveTo(25, 20);
+	 		words.lineTo(560, 20);
+	   		words.lineWidth = 25;
+	 		words.lineCap = 'round';			//top bar blue
+	 		words.strokeStyle = 'blue';
+	 		words.fill();
+	 		words.stroke();
+	 		
+	 		words.beginPath();
+	 		words.moveTo(25, 20);
+	   		words.lineTo(560, 20);			//top bar overloay black
+	 		words.lineWidth = 15;
+	 		words.lineCap = 'round';
+	 		words.strokeStyle = 'black';
+	 		words.fill();
+	 		words.stroke();
+	 		
+	 		words.beginPath();			
+	 	 	words.moveTo(25, 180);
+	 		words.lineTo(560, 180);
+	   		words.lineWidth = 25;
+	 		words.lineCap = 'round';			//bottom bar blue
+	 		words.strokeStyle = 'blue';
+	 		words.fill();
+	 		words.stroke();
+	 		
+	 		words.beginPath();
+	 		words.moveTo(25, 180);
+	   		words.lineTo(560, 180);			//bottom bar overloay black
+	 		words.lineWidth = 15;
+	 		words.lineCap = 'round';
+	 		words.strokeStyle = 'black';
+	 		words.fill();
+	 		words.stroke();
+		  }
+		};
+    </script>
+	</center>
+  </body>
+</html> 
+

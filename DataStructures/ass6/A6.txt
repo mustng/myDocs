@@ -1,0 +1,95 @@
+﻿Assignment #6       NO LATE ASSIGNMENTS ACCEPTED PLEASE.     
+DUE 11pm, Tuesday, April 7, 2015                  
+
+HAVE THE PROGRAM PROMPT FOR ONE  INT, THE MAXIMUM VALUE OF
+THE INTS THAT ARE INSERTED AND THE MAXIMUM VALUE OF THE INTS THAT ARE SEARCHED FOR: IT 
+SHOULD NOT EXCEED 2**31-1 (the minimum value in each case should always be 1.)
+A reasonable such value for testing purposes would be around 35000 although you may 
+find that theoretical results differ significantly from empirical results for some high load
+factors in hashing.
+
+Note:  There is a method named hashcode() in Object
+and a class named java.util.HashTable that overrides
+hashcode(). Do NOT use either of these. I want you to write a  hash()
+method that is "polynomial" based; do not use the one on page 536.
+Use the hash() idea on page 523 where he shows how to hash() 7546.
+Use this same hash() method for both linear and quadratic probing.
+It is required that you compute that polynomial using the technique we discussed
+in class so as to avoid overflow at each stage. See:
+http://math.fullerton.edu/mathews/n2003/HornerMod.html and/or pages 564-565.
+
+You are going to study linear probing and quadratic probing with load factors of .1, .2 , .3, 
+....,  and .9.   The formulas (different formulas for quadratic probing) that you will be testing are:
+The average probe length using linear probing is roughly 
+( 1 + 1/(1-L)**2)/2 (UNsuccessful) or (1+1/(1-L))/2 (successful).  See page 567 (they are
+reversed there.)  THESE FORMULAS DO TAKE INTO ACCOUNT THAT THE PROBE LENGTH DOES COUNT THE TOTAL LENGTH, 
+NOT JUST THE LENGTH AFTER
+THE HASH. TO SEE THIS, SIMPLY ASK DO THE FORMULAS MAKE SENSE WHEN L==0. IN BOTH CASES,
+THE AVERAGE PROBE LENGTH IS 1.
+
+For each load factor, the same 10,000 randomly generated positive ints between 1 and 
+THE MAXIMUM VALUE (inclusive) will be 
+inserted into a table of the "right" size, where "right" is strictly based upon the
+load factor you are testing. Repeats are allowed and searches stop when the first such
+occurence is found. Be sure that your formula for randomly generated ints is correct.
+There is a class called Random in java.util. USE it!
+
+After a table of the right (based upon L) size is loaded with 10,000 ints, 
+do 100 searches of newly generated random ints (use the same ints for each load factor) 
+between 1 and the max value from the original prompt.
+
+You will be computing the theoretical average probe length (for both success and failure) using  each of the two formulas
+and comparing those results with experimental results.
+
+So, for example, each test for a .5 load would have a table of size 
+approximately 20,000 (adjusted UPWARD to be prime) and similarly each test for a .9 load would 
+have a table of approximate size 10,000/.9 (again adjusted to be prime).
+Don't hardcode these prime numbers, but rather use an algorithm to find , for example,
+the first prime number larger than or equal to 10,000/.9.
+
+The program should run displaying the various load factors tested (all using the same experimental data), the 
+average probe length for each search (the two denominators used to compute
+the averages will add to 100), and the theoretical 
+answers using the formula above.
+
+The "empirical" columns below are the observed averages from your experiments and
+the "theoretical" columns are the results from the formulas.
+The demoninator columns are listed so that you know exactly how many times a random int
+was either found or not found.
+
+ES = average of the probe lengths for the experimental succcesses.
+DS = denominator used to compute ES. 
+TS = theoretical average probe length for success.
+
+EF = average of the probe lengths for the experimental failures.
+DF = denominator uses to compute EF. (DS +DF==100)
+TF = theoretical average probe length for failure.
+ 
+Your output should  have six answers in each row on the console (use two digits after the decimal point for
+your experimental averages and for the theoretical averages):
+
+load    ES  DS TS           EF DF TF 
+----    --  -- --           -- -- --
+.1  
+.2 
+.3
+.4
+.5
+.6
+.7
+.8
+.9
+
+Now, also produce similar output using quadratic probing (use same experimental data) 
+to compare with the theoretical results from page 568.
+DO NOT HAVE A MENU SYSTEM FOR EITHER OF THESE OUTPUTS....SIMPLY PRODUCE BOTH OUTPUT TABLES.
+
+
+Enjoy!
+
+The whole purpose here is to study different size arrays with the same data using different load factors
+for comparing the performance of linear and quadratic probing.
+In every case you are searching for 100 random ints.
+ 
+	turnin an electronic version using
+	$ turnin bigone kmartin.cop3530.a6

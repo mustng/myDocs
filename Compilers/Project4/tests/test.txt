@@ -1,0 +1,10 @@
+
+void main(void)
+{
+   if (x + y * 7 <= 3){
+   m = 4 + x * 5 + z;
+   }
+   else{
+   z = 8;
+   }
+}

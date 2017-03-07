@@ -1,0 +1,27 @@
+int sub(int x)
+{
+	int x[10];
+   	int y;
+   	y = (x[5] + 2) * y;
+   	return(x+x);
+}
+
+void main (void){
+
+	int x;
+	while (x + y == m + n / 2){
+		while (x + y == m + n / 2){
+			if (x + y * 7 <= 3){
+   				m = 4 + x * 5 + z;
+   			}
+   			else{
+   			z = 8;
+   			}
+			w = q - (3 * (q / 3));
+			i = 1;  
+		}
+		w = q - (3 * (q / 3));
+		i = 1;  
+	}
+	x = 4;
+}

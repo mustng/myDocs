@@ -1,0 +1,381 @@
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.15.2).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the '#!/bin/sh' line above, then type 'sh FILE'.
+#
+lock_dir=_sh02248
+# Made on 2015-12-03 16:36 EST by <david@laptop>.
+# Source directory was '/home/david/linux/p3'.
+#
+# Existing files will *not* be overwritten, unless '-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#     20 -rwxrwxrwx makefile
+#   7004 -rwxrwxrwx p3.java
+#   1386 -rwxrwxrwx p3.txt
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+if test "X$1" = "X-c"
+then keep_file=''
+else keep_file=true
+fi
+echo=echo
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=
+locale_dir=
+set_echo=false
+
+for dir in $PATH
+do
+  if test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir
+      set_echo=true
+      break ;;
+    esac
+  fi
+done
+
+if ${set_echo}
+then
+  set_echo=false
+  for dir in $PATH
+  do
+    if test -f $dir/shar \
+       && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+    then
+      locale_dir=`$dir/shar --print-text-domain-dir`
+      set_echo=true
+      break
+    fi
+  done
+
+  if ${set_echo}
+  then
+    TEXTDOMAINDIR=$locale_dir
+    export TEXTDOMAINDIR
+    TEXTDOMAIN=sharutils
+    export TEXTDOMAIN
+    echo="$gettext_dir/gettext -s"
+  fi
+fi
+IFS="$save_IFS"
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+f=shar-touch.$$
+st1=200112312359.59
+st2=123123592001.59
+st2tr=123123592001.5 # old SysV 14-char limit
+st3=1231235901
+
+if   touch -am -t ${st1} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st1} && test -f ${f}; then
+  shar_touch='touch -am -t $1$2$3$4$5$6.$7 "$8"'
+
+elif touch -am ${st2} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st2} && test ! -f ${st2tr} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$1$2.$7 "$8"'
+
+elif touch -am ${st3} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st3} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$2 "$8"'
+
+else
+  shar_touch=:
+  echo
+  ${echo} 'WARNING: not restoring timestamps.  Consider getting and
+installing GNU '\''touch'\'', distributed in GNU coreutils...'
+  echo
+fi
+rm -f ${st1} ${st2} ${st2tr} ${st3} ${f}
+#
+if test ! -d ${lock_dir} ; then :
+else ${echo} "lock directory ${lock_dir} exists"
+     exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} "x - created lock directory ${lock_dir}."
+else ${echo} "x - failed to create lock directory ${lock_dir}."
+     exit 1
+fi
+# ============= makefile ==============
+if test -n "${keep_file}" && test -f 'makefile'
+then
+${echo} "x - SKIPPING makefile (file already exists)"
+
+else
+${echo} "x - extracting makefile (text)"
+  sed 's/^X//' << 'SHAR_EOF' > 'makefile' &&
+all:
+X	javac p3.java
+SHAR_EOF
+  (set 20 15 11 16 13 43 26 'makefile'
+   eval "${shar_touch}") && \
+  chmod 0777 'makefile'
+if test $? -ne 0
+then ${echo} "restore of makefile failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'makefile': 'MD5 check failed'
+       ) << \SHAR_EOF
+fe37e82c01331ec3c69cf0a8463b6bb2  makefile
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'makefile'` -ne 20 && \
+  ${echo} "restoration warning:  size of 'makefile' is not 20"
+  fi
+fi
+# ============= p3.java ==============
+if test -n "${keep_file}" && test -f 'p3.java'
+then
+${echo} "x - SKIPPING p3.java (file already exists)"
+
+else
+${echo} "x - extracting p3.java (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 p3.java
+M:6UP;W)T(&IA=F$N=71I;"Y286YD;VT[#0H-"G!U8FQI8R!C;&%S<R!P,R![
+M#0H)#0H)<W1A=&EC(&EN="!F875L="`](#`[#0H-"@EP=6)L:6,@<W1A=&EC
+M('9O:60@;6%I;BA3=')I;F=;72!A<F=S*2![#0H)"5-T<FEN9R!M87A3:7IE
+M(#T@(B([#0H)"5-T<FEN9R!B:6=G97-T3G5M8F5R(#T@(B([#0H)"0T*"0EI
+M;G0@87)R87E3:7IE(#T@,3`P,#L-"@D)#0H)"6EF("AA<F=S+FQE;F=T:"`\
+M(#$I>PT*"0D)4WES=&5M+F]U="YP<FEN=&QN*").;R!I;G!U="!P<F]V:61E
+M9"$B*3L-"@D)"5-Y<W1E;2YE>&ET*#`I.PT*"0E]#0H)"65L<V5[#0H)"0EM
+M87A3:7IE(#T@87)G<ULP73L-"@D)"6)I9V=E<W1.=6UB97(@/2!A<F=S6S%=
+M.PT*"0E]#0H)"0T*"0EI;G0@<VEZ93T@26YT96=E<BYP87)S94EN="AM87A3
+M:7IE*3L-"@D):6YT(')A;F13:7IE(#T@26YT96=E<BYP87)S94EN="AB:6=G
+M97-T3G5M8F5R*3L-"@D)#0H)"0T*"0EI;G1;72!A<G)A>2`](&=E;F5R871E
+M07)R87DH87)R87E3:7IE+"!R86YD4VEZ92D[#0H)"0D)#0H)"5-Y<W1E;2YO
+M=70N<')I;G0H(EQT7'1<=%QT85QT7'1<=&)<=%QT4$9<;B(@*R`B1D-&4UQT
+M7'1<=%QT(B`K('-I>F4@*R`B7'1<=%QT(B`K(')A;F13:7IE("L@(EQT7'0B
+M("L@9FEF;RAA<G)A>2P@<VEZ92DI.PT*"0E3>7-T96TN;W5T+G!R:6YT*")<
+M;EQN0VQO8VM<=%QT7'1<="(@*R!S:7IE("L@(EQT7'1<="(@*R!R86YD4VEZ
+M92`K(")<=%QT(B`K(&-L:RAA<G)A>2P@<VEZ92DI.PT*"0E3>7-T96TN;W5T
+M+G!R:6YT*")<;EQN3%)57'1<=%QT7'0B("L@<VEZ92`K(")<=%QT7'0B("L@
+M<F%N9%-I>F4@*R`B7'1<="(@*R!L<G4H87)R87DL('-I>F4I*3L-"@D)4WES
+M=&5M+F]U="YP<FEN="@B7&Y<;F]P=&EM86Q<=%QT7'1<="(@*R!S:7IE("L@
+M(EQT7'1<="(@*R!R86YD4VEZ92`K(")<=%QT(B`K(&]P="AA<G)A>2P@<VEZ
+M92D@*R`B7&Y<;B(I.PT*#0H-"@D)<G5N,3`P,#`H<VEZ92P@87)R87E3:7IE
+M+"`@<F%N9%-I>F4I.PT*"0D-"@E]#0H)#0H)<W1A=&EC(&EN=%M=(&=E;F5R
+M871E07)R87DH:6YT(&%R<F%Y4VEZ92P@:6YT(')A;F13:7IE*7L-"@D)4F%N
+M9&]M(')A;F0@/2!N97<@4F%N9&]M*%-Y<W1E;2YC=7)R96YT5&EM94UI;&QI
+M<R@I*3L@(`T*"0EI;G0@87)R87E;72`](&YE=R!I;G0@6V%R<F%Y4VEZ95T[
+M"0T*"0D-"@D)9F]R("AI;G0@:2`](#`[(&D@/"!A<G)A>5-I>F4[(&DK*RE[
+M#0H)"0EA<G)A>5MI72`](')A;F0N;F5X=$EN="AR86YD4VEZ92D@*R`Q.PT*
+M"0E]#0H)"0T*"0ER971U<FX@87)R87D[#0H)?0T*"0T*"7-T871I8R!V;VED
+M(')U;C$P,#`P*&EN="!S:7IE+"!I;G0@87)R87E3:7IE+"!I;G0@<F%N9%-I
+M>F4I>PT*"0EI;G0@=&5S=%1I;65S(#T@,3`P,#`[#0H)"0T*"0ED;W5B;&4@
+M;G5M,2`](#`L(&YU;3%4;W1A;"`](#`[#0H)"61O=6)L92!N=6TR(#T@,"P@
+M;G5M,E1O=&%L(#T@,#L-"@D)9&]U8FQE(&YU;3,@/2`P+"!N=6TS5&]T86P@
+M/2`P.PT*"0ED;W5B;&4@;G5M-"`](#`L(&YU;314;W1A;"`](#`[#0H)"0T*
+M"0E3>7-T96TN;W5T+G!R:6YT*")&875L="!A=F5R86=E(&%F=&5R(')U;FYI
+M;F<@,3`L,#`P('1I;65S('=I=&@@<F%N9&]M(&%R<F%Y<R(I.PT*"0D-"@D)
+M:6YT(&-A;&-097)I;V0@/2!T97-T5&EM97,@+R`R,#L-"@D):6YT('!R:6YT
+M4&5R:6]D(#T@,#L-"@D)#0H)"69O<B`H:6YT(&D@/2`P.R!I(#P@=&5S=%1I
+M;65S.R!I*RLI>PT*"0D-"@D)"6YU;3$@/2!F:69O*&=E;F5R871E07)R87DH
+M87)R87E3:7IE+"!R86YD4VEZ92DL('-I>F4I.PT*"0D);G5M,51O=&%L("L]
+M;G5M,3L-"@D)"0T*"0D);G5M,B`](&-L:RAG96YE<F%T94%R<F%Y*&%R<F%Y
+M4VEZ92P@<F%N9%-I>F4I+"!S:7IE*3L-"@D)"6YU;3)4;W1A;"`K/6YU;3([
+M#0H)"0D-"@D)"6YU;3,@/2!L<G4H9V5N97)A=&5!<G)A>2AA<G)A>5-I>F4L
+M(')A;F13:7IE*2P@<VEZ92D[#0H)"0EN=6TS5&]T86P@*SUN=6TS.PT*"0D)
+M#0H)"0EN=6TT(#T@;W!T*&=E;F5R871E07)R87DH87)R87E3:7IE+"!R86YD
+M4VEZ92DL('-I>F4I.PT*"0D);G5M-%1O=&%L("L];G5M-#L-"@D)"6EF("AI
+M(#T]('!R:6YT4&5R:6]D("E[#0H)"0D)4WES=&5M+F]U="YP<FEN="@B+B(I
+M.PT*"0D)"7!R:6YT4&5R:6]D("L](&-A;&-097)I;V0[#0H)"0E]#0H)"7T-
+M"@D);G5M,51O=&%L+SUT97-T5&EM97,[#0H)"6YU;3)4;W1A;"\]=&5S=%1I
+M;65S.PT*"0EN=6TS5&]T86PO/71E<W14:6UE<SL-"@D);G5M-%1O=&%L+SUT
+M97-T5&EM97,[#0H)"0T*"0E3>7-T96TN;W5T+G!R:6YT;&XH(EQN7&XB("L@
+M(D9#1E,Z("(@*R!N=6TQ5&]T86P@*R`B($-L;V-K.B`B("L@;G5M,E1O=&%L
+M("L@(B!,4E4Z("(@#0H)"2L@;G5M,U1O=&%L("L@(B!O<'1I;6%L.B`B("MN
+M=6TT5&]T86P@*R`B7&XB*3L-"@E]#0H)#0H)<W1A=&EC(&EN="!O<'0H:6YT
+M(&%R<F%Y6UTL(&EN="!S:7IE*7L-"@D):6YT('!O:6YT97(@/2`P.PT*"0EI
+M;G0@;W!T07)R87E;72`](&YE=R!I;G0@6W-I>F5=.PT*"0EI;G0@9F%U;'0@
+M/2`P.PT*"0EI;G0@;6EN=7-0;VEN=&5R(#T@,#L-"@D)#0H)"69O<B`H:6YT
+M(&D@/2`P.R!I(#P@87)R87DN;&5N9W1H.R!I*RLI>PD)#0H)"0EP;VEN=&5R
+M(#T@*&D@+2!M:6YU<U!O:6YT97(I("4@<VEZ93L-"@D-"@D)"6EF("AO<'1!
+M<G)A>5MP;VEN=&5R72`]/2`P("8F("%D=7!L:6-A=&5.=6UB97(H;W!T07)R
+M87DL(&%R<F%Y6VE=*2E[#0H)"0D);W!T07)R87E;<&]I;G1E<ET@/2!A<G)A
+M>5MI73L-"@D)"7T-"@D)"65L<V4@:68@*&1U<&QI8V%T94YU;6)E<BAO<'1!
+M<G)A>2P@87)R87E;:5T@*2E["0DO+V1O(&YO=&AI;F<-"@D)"0EM:6YU<U!O
+M:6YT97(K*SL-"@D)"7T-"@D)"65L<V4@>PT*"0D)"6]P=$%R<F%Y6V9I;F1(
+M:6=H97-T26YD97@H(&%R<F%Y+"!O<'1!<G)A>2P@<VEZ92`L(&DI72`](&%R
+M<F%Y6VE=.PT*"0D)"69A=6QT*RL[#0H)"0E]"0T*"0E]#0H)"7)E='5R;B!F
+M875L=#L-"@E]#0H)#0H)<W1A=&EC(&EN="!F:6YD2&EG:&5S=$EN9&5X*&EN
+M="!A<G)A>5M=+"!I;G0@;W!T07)R87E;72P@:6YT('-I>F4L(&EN="!I*7L-
+M"@D):6YT(&AI9VAE<W1);F1E>"`](#`L('1E;7`@/2`P.PT*"0EI;G0@9FEN
+M9$AI9VAE<W1);F1E>%M=(#T@;F5W(&EN="!;<VEZ95T[#0H)"0T*"0EI;G0@
+M:R`](&DK,3L-"@D)9F]R("AI;G0@:B`](#`[(&H@/"!O<'1!<G)A>2YL96YG
+M=&@[(&HK*RE[#0H)"0EK(#T@:2LQ.PT*"0D)9F]R("@[(&L@/"!A<G)A>2YL
+M96YG=&@[(&LK*RE[#0H)"0D):68@*&]P=$%R<F%Y6VI=(#T](&%R<F%Y6VM=
+M*7L)"2\O9FEN9"!M871C:&EN9R!I;F1E>"!A;F0@<W1O<F4@:6X@87)R87D-
+M"@D)"0D)9FEN9$AI9VAE<W1);F1E>%MJ72`](&L[#0H)"0D)"6)R96%K.PT*
+M"0D)"7T-"@D)"7T-"@D)?0T*"0EF;W(@*&EN="!M(#T@,#L@;2`\(&9I;F1(
+M:6=H97-T26YD97@N;&5N9W1H.R!M*RLI>PT*"0D):68@*&9I;F1(:6=H97-T
+M26YD97A;;5T@/3T@,"E[#0H)"0D):&EG:&5S=$EN9&5X(#T@9FEN9$AI9VAE
+M<W1);F1E>%MM73L-"@D)"0ER971U<FX@;3L-"@D)"7T-"@D)"65L<V5["0D)
+M"0D)"0D)+R]F:6YD(&EN9&5X('1O(&)E(')E;6]V960-"@D)"0ET96UP(#T@
+M:&EG:&5S=$EN9&5X.PT*"0D)"6EF*'1E;7`@/B!F:6YD2&EG:&5S=$EN9&5X
+M6VU=*7L-"@D)"0D):&EG:&5S=$EN9&5X(#T@=&5M<#L-"@D)"0E]#0H)"0D)
+M96QS97L-"@D)"0D):&EG:&5S=$EN9&5X(#T@9FEN9$AI9VAE<W1);F1E>%MM
+M73L-"@D)"0E]#0H)"0D)#0H)"0E]#0H)"7T-"@D)#0H)"69O<B`H:6YT(&X@
+M/2`P.R!N(#P@;W!T07)R87DN;&5N9W1H.R!N*RLI>PD)"0D)+R]G970@:6YD
+M97@@=&\@9&5L971E(&9R;VT@;W!T07)R87D-"@D)"6EF("AA<G)A>5MH:6=H
+M97-T26YD97A=(#T](&]P=$%R<F%Y6VY=*7L-"@D)"0D-"@D)"0ER971U<FX@
+M;CL-"@D)"7T-"@D)?0T*"0EI;G0@;G5M(#T@,#L-"@D)#0H)"7)E='5R;B!N
+M=6T[("`@+R]E<G)O<@T*"7T-"@D-"@ES=&%T:6,@:6YT(&-L:RAI;G0@87)R
+M87E;72P@:6YT('-I>F4I>PT*"0EI;G0@<&]I;G1E<B`](#`[#0H)"6EN="!F
+M875L="`](#`[#0H)"6EN="!M:6YU<U!O:6YT97(@/2`P.PT*"0D-"@D):6YT
+M(&-L:T%R<F%Y6UT@/2!N97<@:6YT(%MS:7IE73L-"@D):6YT(&-L:T%R<F%Y
+M,EM=(#T@;F5W(&EN="!;<VEZ95T[(`T*"0D-"@D)9F]R("AI;G0@:2`](#`[
+M(&D@/"!C;&M!<G)A>3(N;&5N9W1H.R!I*RLI>PD)#0H)"0EC;&M!<G)A>3);
+M:5T@/2`M,3L)"0D)"0T*"0E]#0H)"0T*"0EF;W(@*&EN="!I(#T@,#L@:2`\
+M(&%R<F%Y+FQE;F=T:#L@:2LK*7L)"0D-"@D)"7!O:6YT97(@/2`H:2`M(&UI
+M;G5S4&]I;G1E<BD@)2!S:7IE.PT*"0D):68@*&-L:T%R<F%Y,EMP;VEN=&5R
+M72`]/2`M,2`F)B`A9'5P;&EC871E3G5M8F5R*&-L:T%R<F%Y+"!A<G)A>5MI
+M72DI>PT*"0D)"6-L:T%R<F%Y6W!O:6YT97)=(#T@87)R87E;:5T[#0H)"0D)
+M8VQK07)R87DR6W!O:6YT97)=(#T@,3L-"@D)"7T-"@D)"65L<V4@:68@*&1U
+M<&QI8V%T94YU;6)E<BAC;&M!<G)A>2P@87)R87E;:5T@*2E[#0H)"0D)(&EN
+M="!N=6T@/2!A9&1/;F4H8VQK07)R87DL(&%R<F%Y6VE=*3L-"@D)"0D@8VQK
+M07)R87DR6VYU;5T@/2`Q.PT*"0D)"2!M:6YU<U!O:6YT97(K*SL-"@D)"7T-
+M"@D)"65L<V4@:68@*&-L:T%R<F%Y,EMP;VEN=&5R72`]/2`Q("8F("%D=7!L
+M:6-A=&5.=6UB97(H8VQK07)R87DL(&%R<F%Y6VE=*2E[#0H)"0D):6YT(&9I
+M;F1:97)O(#T@<&]I;G1E<CL)#0H)"0D)#0H)"0D)=VAI;&4@*&-L:T%R<F%Y
+M,EMF:6YD6F5R;UT@/3T@,2E[#0H)"0D)"6-L:T%R<F%Y,EMF:6YD6F5R;UT@
+M/2`P.PT*"0D)"0EF:6YD6F5R;RLK.PT*"0D)"0EF:6YD6F5R;R`](&9I;F1:
+M97)O("4@<VEZ93L-"@D)"0E]#0H)"0D)#0H)"0D)8VQK07)R87E;9FEN9%IE
+M<F]=(#T@87)R87E;:5T[#0H)"0D)8VQK07)R87DR6V9I;F1:97)O72`](#$[
+M#0H)"0D)9F%U;'0K*SL-"@D)"7T-"@D)"65L<V4@:68@*&-L:T%R<F%Y,EMP
+M;VEN=&5R72`]/2`P("8F("%D=7!L:6-A=&5.=6UB97(H8VQK07)R87DL(&%R
+M<F%Y6VE=*2E[#0H)"0D)8VQK07)R87E;<&]I;G1E<ET@/2!A<G)A>5MI73L-
+M"@D)"0EC;&M!<G)A>3);<&]I;G1E<ET@/2`Q.PT*"0D)"69A=6QT*RL[#0H)
+M"0E]#0H)"7T-"@D)<F5T=7)N(&9A=6QT.PT*"7T-"@D-"@ES=&%T:6,@:6YT
+M(&9I9F\H:6YT(&%R<F%Y6UTL(&EN="!S:7IE*7L-"@D):6YT('!O:6YT97(@
+M/2`P.PT*"0EI;G0@9F%U;'0@/2`P.PT*"0EI;G0@;6EN=7-0;VEN=&5R(#T@
+M,#L-"@D)#0H)"6EN="!C;&M!<G)A>5M=(#T@;F5W(&EN="!;<VEZ95T[#0H)
+M"0T*"0D-"@D)9F]R("AI;G0@:2`](#`[(&D@/"!A<G)A>2YL96YG=&@[(&DK
+M*RE["0D)#0H)"0EP;VEN=&5R(#T@*&D@+2!M:6YU<U!O:6YT97(I("4@<VEZ
+M93L-"@D)"6EF("AC;&M!<G)A>5MP;VEN=&5R72`]/2`P("8F("%D=7!L:6-A
+M=&5.=6UB97(H8VQK07)R87DL(&%R<F%Y6VE=*2E[#0H)"0D)8VQK07)R87E;
+M<&]I;G1E<ET@/2!A<G)A>5MI73L-"@D)"7T-"@D)"65L<V4@:68@*&1U<&QI
+M8V%T94YU;6)E<BAC;&M!<G)A>2P@87)R87E;:5T@*2E["0DO+V1O(&YO=&AI
+M;F<-"@D)"0EM:6YU<U!O:6YT97(K*SL-"@D)"7T-"@D)"65L<V4@>PT*"0D)
+M"6-L:T%R<F%Y6W!O:6YT97)=(#T@87)R87E;:5T[#0H)"0D)9F%U;'0K*SL-
+M"B`)"0E]#0H)"7T-"@T*"0ER971U<FX@9F%U;'0[#0H)?0T*"0T*"0T*"7-T
+M871I8R!I;G0@;')U*&EN="!A<G)A>5M=+"!I;G0@<VEZ92E[#0H)"69A=6QT
+M(#T@,#L-"@D):6YT(&-O=6YT97(@/2`P.PT*"0EI;G0@;')U07)R87E;72`]
+M(&YE=R!I;G0@6W-I>F5=.PT*"0D-"@D)(&9O<B`H:6YT(&D@/2`P.R!I(#P@
+M87)R87DN;&5N9W1H.R!I*RLI>PT*"0D)(&EF("AI<T5M<'1Y*'-I>F4L(&-O
+M=6YT97(I(#T]('1R=64@)B8@9'5P;&EC871E3G5M8F5R*"!L<G5!<G)A>2P@
+M87)R87E;:5TI(#T](&9A;'-E*7L-"@D)"0EL<G5!<G)A>5MC;W5N=&5R72`]
+M(&%R<F%Y6VE=.PT*"0D)"6-O=6YT97(K*SL-"@D)"2!]#0H)"0D@96QS92!I
+M9B`H:7-%;7!T>2AS:7IE+"!C;W5N=&5R*2`]/2!T<G5E("8F(&1U<&QI8V%T
+M94YU;6)E<B@@;')U07)R87DL(&%R<F%Y6VE=*2`]/2!T<G5E*7L-"@D)"2!]
+M"0D)"2\O;F]T:&EN9R!H87!P96YS#0H)"0D@96QS92!I9B`H:7-%;7!T>2AS
+M:7IE+"!C;W5N=&5R*2`]/2!F86QS92`F)B!D=7!L:6-A=&5.=6UB97(H(&QR
+M=4%R<F%Y+"!A<G)A>5MI72D@/3T@9F%L<V4I>PT*"0D)"2!P86=E1F%U;'0H
+M;')U07)R87DL(&%R<F%Y6VDM,UTL(&%R<F%Y6VE=*3L-"@D)"2!]#0H)"2!]
+M#0H-"@D)(')E='5R;B!F875L=#L-"@E]#0H)#0H)"7-T871I8R!B;V]L96%N
+M(&ES16UP='DH:6YT('-I>F4L(&EN="!C;W5N=&5R*7L-"@D)"6EF("AC;W5N
+M=&5R(#P@<VEZ92D-"@D)"0ER971U<FX@=')U93L-"@D)"65L<V4-"@D)"0ER
+M971U<FX@9F%L<V4[#0H)"7T-"@D)#0H)"7-T871I8R!B;V]L96%N(&1U<&QI
+M8V%T94YU;6)E<BAI;G0@87)R87E;72P@:6YT(&YU;6)E<BE[#0H)"0EF;W(@
+M*&EN="!I(#T@,#L@:2`\(&%R<F%Y+FQE;F=T:#L@:2LK*7L-"@D)"0EI9B`H
+M(&%R<F%Y6VE=(#T](&YU;6)E<BE[#0H)"0D)"7)E='5R;B!T<G5E.PT*"0D)
+M"7T-"@D)"2!]#0H)"0ER971U<FX@9F%L<V4[#0H)"7T-"@D)#0H)"7-T871I
+M8R!V;VED('!A9V5&875L="`H:6YT('A;72P@:6YT('DL(&EN="!N97=.=6UB
+M97(@*7L-"@D)"69O<BAI;G0@:2`](#`[(&D@/"!X+FQE;F=T:#L@:2LK*7L-
+M"@D)"0EI9BAX6VE=(#T]('DI#0H)"0D)"7A;:5T@/2!N97=.=6UB97([#0H)
+M"0E]#0H)"0D-"@D)"69A=6QT*RL[#0H)"7T-"@D)#0H)"7-T871I8R!I;G0@
+M861D3VYE*&EN="!A<G)A>5M=+"!I;G0@;G5M8F5R*7L-"@D)"69O<B`H:6YT
+M(&D@/2`P.R!I(#P@87)R87DN;&5N9W1H.R!I*RLI>PT*"0D)"6EF("@@87)R
+M87E;:5T@/3T@;G5M8F5R*7L-"@D)"0D)<F5T=7)N(&D[#0H)"0D)?0T*"0D)
+=('T-"@D)"7)E='5R;B`M,3L-"@D)?0T*#0I]#0IN
+`
+end
+SHAR_EOF
+  (set 20 15 12 03 16 32 27 'p3.java'
+   eval "${shar_touch}") && \
+  chmod 0777 'p3.java'
+if test $? -ne 0
+then ${echo} "restore of p3.java failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'p3.java': 'MD5 check failed'
+       ) << \SHAR_EOF
+4a5afe098f1f1c5ea6ee3f1ddcab6285  p3.java
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'p3.java'` -ne 7004 && \
+  ${echo} "restoration warning:  size of 'p3.java' is not 7004"
+  fi
+fi
+# ============= p3.txt ==============
+if test -n "${keep_file}" && test -f 'p3.txt'
+then
+${echo} "x - SKIPPING p3.txt (file already exists)"
+
+else
+${echo} "x - extracting p3.txt (text)"
+  sed 's/^X//' << 'SHAR_EOF' > 'p3.txt' &&
+X
+X	The following program is for David Hughes (n00814425) written 11/16/15 
+and submitted to Rogger Eggen Operating System class. The program should be 
+executed with 2 values, the 1st number is the number of page frames and the
+2nd is the number of pages per process. When the program is then ran it 
+loads random numbers from 1 to the the 2nd number typed in and then it calculates 
+the number of errors that are caused by sorting each one.  The sorting used 
+is FIFO, clock, optimal, and LRU. All are really good algorithms and some 
+like the clock which was discussed in class as being used with Linux systems 
+today. Based on my testing the optimal sorting showed to be the best sorting 
+algorithm. The issue with this is the computer doesn't know what the next processes 
+are going to be so it wont show to be near as good in reality. Clock , LRU, and 
+FCFS all seemed to go neck and neck with each other on every test. The smaller the 
+total array size of the FCFS would beat LRU and Clock but as it grew it seemed to be 
+slightly worse. I would say Clock is second in speed in my opinion and LRU is a hair 
+behind it. Both prove to be good sorting systems. This leaves FCFS or FIFO in last 
+although it is simple and very easy to to code. These other sorting algorithms being 
+slightly more complex is why I would imagine are sticking around for the long haul 
+compared to FCFS.
+X
+SHAR_EOF
+  (set 20 15 12 03 16 31 03 'p3.txt'
+   eval "${shar_touch}") && \
+  chmod 0777 'p3.txt'
+if test $? -ne 0
+then ${echo} "restore of p3.txt failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'p3.txt': 'MD5 check failed'
+       ) << \SHAR_EOF
+8d6cda9b698ddb0d3deefbc85949912c  p3.txt
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'p3.txt'` -ne 1386 && \
+  ${echo} "restoration warning:  size of 'p3.txt' is not 1386"
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0

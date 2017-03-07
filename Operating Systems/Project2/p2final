@@ -1,0 +1,705 @@
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.14).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the '#!/bin/sh' line above, then type 'sh FILE'.
+#
+lock_dir=_sh02646
+# Made on 2015-11-02 18:46 EST by <david@laptop>.
+# Source directory was '/home/david/linux/workspace/P2OS'.
+#
+# Existing files will *not* be overwritten, unless '-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#    949 -rwxrwxrwx p2.txt
+#   1978 -rwxrwxrwx main.cpp
+#     37 -rwxrwxrwx makefile
+#   2559 -rwxrwxrwx StoreManager.h
+#   1598 -rwxrwxrwx TransactionProcess.h
+#   2873 -rwxrwxrwx lib.h
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+if test "X$1" = "X-c"
+then keep_file=''
+else keep_file=true
+fi
+echo=echo
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=
+locale_dir=
+set_echo=false
+
+for dir in $PATH
+do
+  if test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir
+      set_echo=true
+      break ;;
+    esac
+  fi
+done
+
+if ${set_echo}
+then
+  set_echo=false
+  for dir in $PATH
+  do
+    if test -f $dir/shar \
+       && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+    then
+      locale_dir=`$dir/shar --print-text-domain-dir`
+      set_echo=true
+      break
+    fi
+  done
+
+  if ${set_echo}
+  then
+    TEXTDOMAINDIR=$locale_dir
+    export TEXTDOMAINDIR
+    TEXTDOMAIN=sharutils
+    export TEXTDOMAIN
+    echo="$gettext_dir/gettext -s"
+  fi
+fi
+IFS="$save_IFS"
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+f=shar-touch.$$
+st1=200112312359.59
+st2=123123592001.59
+st2tr=123123592001.5 # old SysV 14-char limit
+st3=1231235901
+
+if   touch -am -t ${st1} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st1} && test -f ${f}; then
+  shar_touch='touch -am -t $1$2$3$4$5$6.$7 "$8"'
+
+elif touch -am ${st2} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st2} && test ! -f ${st2tr} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$1$2.$7 "$8"'
+
+elif touch -am ${st3} ${f} >/dev/null 2>&1 && \
+     test ! -f ${st3} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$2 "$8"'
+
+else
+  shar_touch=:
+  echo
+  ${echo} 'WARNING: not restoring timestamps.  Consider getting and
+installing GNU '\''touch'\'', distributed in GNU coreutils...'
+  echo
+fi
+rm -f ${st1} ${st2} ${st2tr} ${st3} ${f}
+#
+if test ! -d ${lock_dir} ; then :
+else ${echo} "lock directory ${lock_dir} exists"
+     exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} "x - created lock directory ${lock_dir}."
+else ${echo} "x - failed to create lock directory ${lock_dir}."
+     exit 1
+fi
+# ============= p2.txt ==============
+if test -n "${keep_file}" && test -f 'p2.txt'
+then
+${echo} "x - SKIPPING p2.txt (file already exists)"
+
+else
+${echo} "x - extracting p2.txt (text)"
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 p2.txt
+M[[N_5&AE(&9O;&QO=VEN9R!P<F]G<F%M(&ES(&9O<B!$879I9"!(=6=H97,@
+M*&XP,#@Q-#0R-2D@=W)I='1E;B`Q,"\S,"\Q-2!A;F0@<W5B;6ET=&5D('1O
+M(%)O9V=E<B!%9V=E;B!/<&5R871I;F<@4WES=&5M(&-L87-S+B!4:&4@9F]L
+M;&]W:6YG(&-O9&4@=7-E<R!P:7!E<R!T:&%T(&UE<W-A9V5S(&%R92!S96YT
+M(&)E='=E96X@<')O8V5S<R`Q(&%N9"!T:&4@<W1O<F4@;6%N86=E<B!A;F0@
+M<')O8V5S<R`R(&%N9"!T:&4@<W1O<F4@;6%N86=E<BX@5&AE('-T;W)E(&UA
+M;F%G97(@<F5A9',@=&AE(&UE<W-A9V5S(&%N9"!W<FET97,@:70@=&\@82!L
+M;V<@9FEL92!O9B!A;&P@=&AE('1R86YS86-T:6]N<R!T:&%T(&AA=F4@8F5E
+M;B!D;VYE+B!-96%N=VAI;&4@82!D:7-P;&%Y(&ES('5P(&%T('1H92!T97)M
+M:6YA;"!T:&%T(&$@=7-E<B!C86X@<&]K92!A="!B;W1H('-T;W)E<R!A;F0@
+M9V5T('5P9&%T97,@;VX@=VAA="!T:&5Y(&AA=F4@9&]N92!B>2!P<F5S<VEN
+M9R`Q(&9O<B!P<F]C97-S(#$@;W(@,B!F;W(@<')O8V5S<R`R+B!4:&4@9FEL
+M92!M=7-T(&)E(&5X96-U=&5D('=I=&@@-"!A<F=U;65N=',@:6X@;W)D97(@
+M;V8@24Y)5"Y$050@3$]'+D1!5"!44D%.4S$@5%)!3E,R+B!4:&4@8V]D92!I
+M<R!S<&QI="!U<"!F<F]M('1H92!M86EN('=H97)E('1H92!S=&]R92!M86YA
+M9V5R(&AE861E<B!H86YD;&5S(&%L;"!O9B!T:&4@<W1O<F4@;6%N86=E<B!P
+M<F]C97-S97,@=VAI;&4@=&AE('1R86YS86-T:6]N<R!P<F]C97-S(&AE861E
+M<B!H86YD;&5S('1H92!P<F]C97-S97,N(%1H92!L:6(N:"!F:6QE(&AA<R!M
+M86YY(&5R<F]N96]U<R!F=6YC=&EO;G,@=&AA="!H96QP('!R979E;G0@97)R
+M;W)S('1H92!E;G5M('!A=&-H(&%N9"!O=&AE<B!F=6YC=&EO;G,@=&AA="!H
+M96QP960@9&EA9VYO<V4@;W(@<F5A9"!A;F0@=W)I=&4@=&\@=&AE('1A8FQE
+$<RX*"F0@
+`
+end
+SHAR_EOF
+  (set 20 15 11 01 14 33 45 'p2.txt'
+   eval "${shar_touch}") && \
+  chmod 0777 'p2.txt'
+if test $? -ne 0
+then ${echo} "restore of p2.txt failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'p2.txt': 'MD5 check failed'
+       ) << \SHAR_EOF
+20fe97e35c39bd48ec85b9b8f5b1bed8  p2.txt
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'p2.txt'` -ne 949 && \
+  ${echo} "restoration warning:  size of 'p2.txt' is not 949"
+  fi
+fi
+# ============= main.cpp ==============
+if test -n "${keep_file}" && test -f 'main.cpp'
+then
+${echo} "x - SKIPPING main.cpp (file already exists)"
+
+else
+${echo} "x - extracting main.cpp (text)"
+  sed 's/^X//' << 'SHAR_EOF' > 'main.cpp' &&
+#include <iostream>
+#include <fstream>
+#include <stdlib.h>
+#include <unistd.h>
+#include <strings.h>
+#include <string.h>
+#include <fcntl.h>
+#include <fstream>
+#include <ctime>
+#include <vector>
+#include <sstream>
+#include <iterator>
+#include <signal.h>
+#include "lib.h"
+#include "StoreManager.h"
+#include "TransactionProcess.h"
+X
+using namespace std;
+X
+int main(int argc , char* argv[]) {
+X    if (argc == 1) {
+X		cout << endl <<"Error: You forgot to supply the proper arguments. Try again." << endl << endl;
+X		return 1;
+X    }
+X
+X    char* initFileName = argv[1];
+X    char* logFileName = argv[2];
+X    char* transFile1 = argv[3];
+X    char* transFile2 = argv[4];
+X
+X    int transactionPipe[2];
+X    CreatePipe(transactionPipe, "Transaction");
+X
+X    int proc1Pipe[2];
+X    CreatePipe(proc1Pipe, "Proc1");
+X
+X    int proc2Pipe[2];
+X    CreatePipe(proc2Pipe, "Proc2");
+X
+X    WriteConsole("Forking StoreManager...");
+X    int storeManagerPID = fork();
+X    if (storeManagerPID == 0) {
+X		StoreManagerProcess(initFileName, logFileName, transactionPipe, proc1Pipe, proc2Pipe);
+X    }
+X
+X    WriteConsole("Forking Proc1...");
+X    int proc1ID = fork();
+X    if (proc1ID == 0) { // Child Process
+X        TransactionProcess(1, logFileName, transFile1, transactionPipe, proc1Pipe);
+X    }
+X
+X    WriteConsole("Forking Proc2...");
+X    int proc2ID = fork();
+X    if (proc2ID== 0) { // Child Process
+X        TransactionProcess(2, logFileName, transFile2, transactionPipe, proc2Pipe);
+X    }
+X
+X    while (true) {
+X        char input;
+X        cout << "Please enter '1' for PROC1, '2' for PROC2, and anything else to quit" << endl;
+X        cin >> input;
+X
+X        if (input == '1') {
+X            kill(proc2ID, SIGUSR2);
+X        }
+X        else if (input == '2') {
+X            kill(proc2ID, SIGUSR2);
+X        }
+X        else {
+X            kill(proc1ID, SIGUSR1);
+X            kill(proc2ID, SIGUSR1);
+X            kill(storeManagerPID, SIGUSR1);
+X            return 0;
+X        }
+X    }
+X
+X    WaitForAllChildProcesses();
+X
+X    return 0;
+}
+SHAR_EOF
+  (set 20 15 11 02 18 41 01 'main.cpp'
+   eval "${shar_touch}") && \
+  chmod 0777 'main.cpp'
+if test $? -ne 0
+then ${echo} "restore of main.cpp failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'main.cpp': 'MD5 check failed'
+       ) << \SHAR_EOF
+b9bf6dc88161e82f6a3f00175d9f2ab5  main.cpp
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'main.cpp'` -ne 1978 && \
+  ${echo} "restoration warning:  size of 'main.cpp' is not 1978"
+  fi
+fi
+# ============= makefile ==============
+if test -n "${keep_file}" && test -f 'makefile'
+then
+${echo} "x - SKIPPING makefile (file already exists)"
+
+else
+${echo} "x - extracting makefile (text)"
+  sed 's/^X//' << 'SHAR_EOF' > 'makefile' &&
+n : main.cpp
+X		g++ -g main.cpp -o p2
+SHAR_EOF
+  (set 20 15 10 17 16 46 44 'makefile'
+   eval "${shar_touch}") && \
+  chmod 0777 'makefile'
+if test $? -ne 0
+then ${echo} "restore of makefile failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'makefile': 'MD5 check failed'
+       ) << \SHAR_EOF
+da5da3f59cda07648fd06553ace0a478  makefile
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'makefile'` -ne 37 && \
+  ${echo} "restoration warning:  size of 'makefile' is not 37"
+  fi
+fi
+# ============= StoreManager.h ==============
+if test -n "${keep_file}" && test -f 'StoreManager.h'
+then
+${echo} "x - SKIPPING StoreManager.h (file already exists)"
+
+else
+${echo} "x - extracting StoreManager.h (text)"
+  sed 's/^X//' << 'SHAR_EOF' > 'StoreManager.h' &&
+#include "lib.h"
+X
+#ifndef STOREMANAGER_H_
+#define STOREMANAGER_H_
+X
+void ListenToPipe(int* transactionPipe, int* pipe1, int* pipe2, ofstream& log) {
+X	char message[MAX_MESSAGE_SIZE];
+X	int responseCode = ListenForResponse(transactionPipe[Read], message);
+X
+X
+X	if (responseCode > 0) {
+X		string token;
+X		string originalMessage(message);
+X		string procID = strtok(message, " ");
+X		string procPID = strtok(NULL, " ");
+X		string transType = strtok(NULL, " ");
+X		string recordID = strtok(NULL, " ");
+X		int parsedProcID = atoi(procID.c_str());
+X
+X		int updateVal = -1;
+X		int tableResult = -1;
+X
+X		//WriteConsole("Store Manager received message: " + originalMessage + " @ " + GetCurrentTime());
+X		log << "Store Manager received message: " << originalMessage << " @ " << GetCurrentTime() << endl;
+X
+X		if (transType == "U") {
+X			token = strtok(NULL, " ");
+X			updateVal = atoi(token.c_str());
+X			tableResult = TABLE_UPDATE(recordID.c_str(), updateVal);
+X		}
+X		else if (transType == "R") {
+X			int* readVal = 0;
+X			tableResult = TABLE_READ(recordID.c_str(), readVal);
+X
+X			if (tableResult > 0) {
+X				// failure to read
+X			}
+X		}
+X
+X
+X		string response = transType + " " + patch::to_string(tableResult) + " " +  recordID;
+X
+X		if (transType == "U") {
+X			response = response + " " + patch::to_string(updateVal);
+X		}
+X
+X		int* responsePipe = 0;
+X
+X		if (parsedProcID == 1) {
+X			responsePipe = pipe1;
+X
+X			if (transType == "R") {
+X				if (tableResult == 0) {
+X					proc1ReadSuccess++;
+X				}
+X
+X				proc1ReadCount++;
+X			}
+X			else if (transType == "U") {
+X				if (tableResult == 0) {
+X					proc1UpdateSuccess++;
+X				}
+X
+X				proc1UpdateCount++;
+X
+X			}
+X		}
+X		else if (parsedProcID == 2) {
+X			responsePipe = pipe2;
+X
+X			if (transType == "R") {
+X				if (tableResult == 0) {
+X					proc2ReadSuccess++;
+X				}
+X
+X				proc2ReadCount++;
+X			}
+X			else if (transType == "U") {
+X				if (tableResult == 0) {
+X					proc2UpdateSuccess++;
+X				}
+X
+X				proc2UpdateCount++;
+X
+X			}
+X		}
+X
+X		SendMessage(responsePipe[Write], response);
+X
+X		//WriteConsole("Store Manager at time sent message: "+ response + " @ " + GetCurrentTime());
+X		log << "Store Manager at time sent message: " << response << " @ " << GetCurrentTime() << endl;
+X
+X	}
+}
+X
+void StoreManagerProcess(char* initFileName, char* logFileName, int* transactionPipe, int* pipe1, int* pipe2) {
+X    signal(SIGUSR1, SignalHandler);
+X    close(transactionPipe[Write]);
+X    close(pipe1[Read]);
+X    close(pipe2[Read]);
+X
+X    ReadInitFile(initFileName);
+X    ofstream log(logFileName, ios::out | ios::app);
+X
+X    while (true) {
+X    	ListenToPipe(transactionPipe, pipe1, pipe2, log);
+X    }
+}
+X
+#endif
+SHAR_EOF
+  (set 20 15 11 02 18 41 00 'StoreManager.h'
+   eval "${shar_touch}") && \
+  chmod 0777 'StoreManager.h'
+if test $? -ne 0
+then ${echo} "restore of StoreManager.h failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'StoreManager.h': 'MD5 check failed'
+       ) << \SHAR_EOF
+46e97bf37530d5cdb1c43898232ce7e4  StoreManager.h
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'StoreManager.h'` -ne 2559 && \
+  ${echo} "restoration warning:  size of 'StoreManager.h' is not 2559"
+  fi
+fi
+# ============= TransactionProcess.h ==============
+if test -n "${keep_file}" && test -f 'TransactionProcess.h'
+then
+${echo} "x - SKIPPING TransactionProcess.h (file already exists)"
+
+else
+${echo} "x - extracting TransactionProcess.h (text)"
+  sed 's/^X//' << 'SHAR_EOF' > 'TransactionProcess.h' &&
+#ifndef TRANSACTIONPROCESS_H_
+#define TRANSACTIONPROCESS_H_
+X
+#include <vector>
+#include "lib.h"
+X
+string BuildMessage(int pipeID, string data) {
+X    string message;
+X    message.append(patch::to_string(pipeID));
+X    message.append(" ");
+X    message.append(patch::to_string(getpid()));
+X    message.append(" ");
+X    message.append(data);
+X
+X    return message;
+}
+X
+void TransactionProcess(int procID, char* logFileName, char* transFileName, int* transactionPipe, int* procPipe) {
+X	string procName = "Proc " + patch::to_string(procID);
+X	signal(SIGUSR1, SignalHandler);
+X	signal(SIGUSR2, SignalHandler);
+X
+X    close(transactionPipe[Read]);
+X    close(procPipe[Write]);
+X
+X    ofstream log(logFileName, ios::out | ios::app);
+X    ifstream transFile(transFileName);
+X    vector<string> transactions;
+X
+X    for (std::string transCode; std::getline(transFile, transCode); ) {
+X        string message = BuildMessage(procID, transCode);
+X        transactions.push_back(message);
+X    }
+X
+X    string currTime = "";
+X	for (unsigned int index = 0; index < transactions.size(); index++) {
+X		string message = transactions[index];
+X        SendMessage(transactionPipe[Write], message);
+X
+X        //WriteConsole(procName + " sent message: " + message + " @ " + GetCurrentTime());
+X
+X        char rawResponse[MAX_MESSAGE_SIZE];
+X
+X        ListenForResponse(procPipe[Read], rawResponse);
+X
+X    	string response(rawResponse);
+X        if (rawResponse[0] == 'U'){
+X            proc1UpdateCount++;
+X        } 
+X        else{
+X            proc1ReadCount++;
+X        }   
+X        sleep(3);
+X	}
+X
+X    while (true) { }
+}
+X
+#endif /* TRANSACTIONPROCESS_H_ */
+SHAR_EOF
+  (set 20 15 11 02 18 40 58 'TransactionProcess.h'
+   eval "${shar_touch}") && \
+  chmod 0777 'TransactionProcess.h'
+if test $? -ne 0
+then ${echo} "restore of TransactionProcess.h failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'TransactionProcess.h': 'MD5 check failed'
+       ) << \SHAR_EOF
+1f22fa332359c410195075ba0302716e  TransactionProcess.h
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'TransactionProcess.h'` -ne 1598 && \
+  ${echo} "restoration warning:  size of 'TransactionProcess.h' is not 1598"
+  fi
+fi
+# ============= lib.h ==============
+if test -n "${keep_file}" && test -f 'lib.h'
+then
+${echo} "x - SKIPPING lib.h (file already exists)"
+
+else
+${echo} "x - extracting lib.h (text)"
+  sed 's/^X//' << 'SHAR_EOF' > 'lib.h' &&
+#ifndef LIB_H_
+#define LIB_H_
+X
+#include <fstream>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <string>
+X
+#define MAX_MESSAGE_SIZE 180
+X
+using namespace std;
+X
+static int proc1ReadCount = 0;
+static int proc1ReadSuccess = 0;
+static int proc1UpdateCount = 0;
+static int proc1UpdateSuccess = 0;
+X
+static int proc2ReadCount = 0;
+static int proc2ReadSuccess = 0;
+static int proc2UpdateCount = 0;
+static int proc2UpdateSuccess = 0;
+X
+typedef const char* TABLE_ID;
+typedef int TABLE_ELEM;
+X
+const int NAME_SIZE = 25;
+const int SIZE = 50;
+X
+struct Widget {
+X  char id[NAME_SIZE + 1];
+X  int value;
+} TABLE[SIZE];
+X
+enum PipeDirection {
+X    Read = 0,
+X    Write = 1
+};
+X
+namespace patch
+{
+X    template < typename T > std::string to_string( const T& n )
+X    {
+X        std::ostringstream stm ;
+X        stm << n ;
+X        return stm.str() ;
+X    }
+}
+X
+int TABLE_UPDATE (TABLE_ID WHO, TABLE_ELEM VAL) {
+X    int failure = 1;
+X    for (int i = 0; i < SIZE - 1; i++) {
+X    	string w(WHO);
+X		string id(TABLE[i].id);
+X
+X        if (w == id) {
+X            TABLE[i].value = VAL;
+X            failure = 0;
+X        }
+X    }
+X
+X	return failure;
+}
+X
+X
+int TABLE_READ (TABLE_ID WHO, TABLE_ELEM* VAL) {
+X	int failure = 1;
+X	for (int i = 0; i < SIZE; i++) {
+X		string w(WHO);
+X		string id(TABLE[i].id);
+X
+X        if (w == id) {
+X            VAL = &TABLE[i].value;
+X            failure = 0;
+X        }
+X	}
+X
+X	return failure;
+}
+X
+void ReadInitFile(char* fileName) {
+X    ifstream fs(fileName);
+X    int index = 0;
+X
+X    while (fs >> TABLE[index].id) {
+X        fs >> TABLE[index].value;
+X        index ++;
+X 	}
+X
+X    fs.close();
+}
+X
+void WaitForAllChildProcesses() {
+X	    while (wait((int *)0) != -1);
+}
+X
+string GetCurrentTime() {
+X      time_t rawtime;
+X      struct tm * timeinfo;
+X      char buffer[80];
+X      time (&rawtime);
+X      timeinfo = localtime(&rawtime);
+X
+X      strftime(buffer,80,"%d-%m-%Y %I:%M:%S",timeinfo);
+X      std::string currTime(buffer);
+X
+X      return currTime;
+}
+X
+void SignalHandler(int signal) {
+X    if (signal == SIGUSR1) {
+X        exit(0);
+X    }
+X    else if (signal == SIGUSR2) {
+X    	// Print out statistics of reading
+X    	//cout << proc1ReadSuccess << "/" << proc1ReadCount << endl;
+X      char str[400];
+X      int send = sprintf(str, "\nTotal written %d from first file and %d from second\n", proc1ReadCount, proc1UpdateCount );
+X      write(0,&str,strlen(str));
+X      return;
+X    }
+}
+X
+void WriteLog(ofstream &log, string message) {
+X	log << message << endl;
+}
+X
+void WriteConsole(string message) {
+X	cout << message << endl;
+}
+X
+void CreatePipe(int* userPipe, string name) {
+X	pipe(userPipe);
+X    WriteConsole("Creating " + name + " Pipe...");
+}
+X
+void SendMessage(int pipeID, string message) {
+X	write(pipeID, message.c_str(), strlen(message.c_str()));
+}
+X
+int ListenForResponse(int pipeID, char* response) {
+X    int readResult = read(pipeID, response, MAX_MESSAGE_SIZE);
+X    return readResult;
+}
+X
+#endif /* LIB_H_ */
+SHAR_EOF
+  (set 20 15 11 02 18 44 18 'lib.h'
+   eval "${shar_touch}") && \
+  chmod 0777 'lib.h'
+if test $? -ne 0
+then ${echo} "restore of lib.h failed"
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'lib.h': 'MD5 check failed'
+       ) << \SHAR_EOF
+6171685f8645fff1e1b01eecf4407b93  lib.h
+SHAR_EOF
+
+else
+test `LC_ALL=C wc -c < 'lib.h'` -ne 2873 && \
+  ${echo} "restoration warning:  size of 'lib.h' is not 2873"
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} "x - removed lock directory ${lock_dir}."
+else ${echo} "x - failed to remove lock directory ${lock_dir}."
+     exit 1
+fi
+exit 0

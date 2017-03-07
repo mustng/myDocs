@@ -1,0 +1,12 @@
+/*
+  Error: Empty arg lists work correctly.
+*/
+
+void print(void)
+{
+}
+
+void main(void)
+{
+   print();
+}

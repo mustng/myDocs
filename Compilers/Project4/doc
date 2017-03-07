@@ -1,0 +1,22 @@
+The following program project 4 was written for Dr. Eggen's Compiler class in April 2016. It does the math operations from left to right in order of signs:
+highest
+ |       (  )
+ |       [ ] to assign a temporary
+ |       / * left to right index
+ |       + - left to right index
+ |     <  <=  > >=
+ |      ==  !=
+ v
+lowest
+
+The first temporary starts at 1 instead of 0 like some test files. The code is split up in the p3.java and run by mainly 3 functions. The first handles “functions” and “decorations” then anything in parenthesis and or math operators are broken down to a stringToCalc and sent to the other function to deal with the rest. The last functions is just deals with repetitive lines of code and called calcSomeMoreToSaveLineOfCode. Last the phrases I used goes as follows beside the obvious add/sub.
+comp		<, <=, >, >=
+ISEQ		==
+NOTEQ 		!=
+	and
+BRG		>
+BRL		<
+BRGEQ 		>=
+BRLEQ		<=
+BREEQ		==
+BRNEQ		!=

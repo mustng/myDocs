@@ -1,0 +1,198 @@
+A, f, B
+A, g, B
+A, h, B
+B, f, C B'
+B, g, C B'
+B, h, C B'
+B', f, C B'
+B', g, C B'
+B', h, C B'
+B', $, @
+C, f, F a C'
+C, g, F a C'
+C, h, F a C'
+C', b, D'
+C', c, D'
+C', i, i H j G
+D, f, F a D'
+D, g, F a D'
+D, h, F a D'
+D', b, b
+D', c, c d e b
+F, f, f
+F, g, g
+F, h, h
+E, f, F a i H j G
+E, g, F a i H j G
+E, h, F a i H j G
+H, f, f a J' I'
+H, g, g H'
+H, h, h a J' I'
+H', a, a J' I'
+H', j, @
+H', $, @
+I, f, J I'
+I, g, J I'
+I, h, J I'
+I, j, @
+I', j, @
+I', k, k J I'
+J, f, F a J'
+J, g, F a J'
+J, h, F a J'
+J', c, c e
+J', j, @
+J', k, @
+G, l, l K L m
+K, a, @
+K, b, @
+K, d, @
+K, f, K'
+K, g, K'
+K, h, K'
+K, i, @
+K, l, @
+K, m, @
+K, p, @
+K, r, @
+K, s, @
+K', a, @
+K', b, @
+K', d, @
+K', f, D K'
+K', g, D K'
+K', h, D K'
+K', i, @
+K', l, @
+K', m, @
+K', p, @
+K', r, @
+K', s, @
+L, a, L'
+L, b, L'
+L, d, L'
+L, i, L'
+L, l, L'
+L, m, @
+L, p, L'
+L, r, L'
+L, s, L'
+L', a, M L'
+L', b, M L'
+L', d, M L'
+L', i, M L'
+L', l, M L'
+L', m, @
+L', p, M L'
+L', r, M L'
+L', s, M L'
+M, a, N
+M, d, N
+M, i, N
+M, l, G
+M, p, O
+M, r, P
+M, s, Q
+N, a, R b
+N, b, b
+N, d, R b
+N, i, R b
+O, p, p i R j M O'
+O', a, @
+O', b, @
+O', d, @
+O', i, @
+O', l, @
+O', m, @
+O', p, @
+O', q, q M
+O', r, @
+O', s, @
+P, r, r i R j M
+Q, s, s Q'
+Q', a, R b
+Q', b, b
+Q', d, R b
+Q', i, R b
+R, a, a R'
+R, d, d X' U' T'
+R, i, i R j X' U' T'
+R', b, @
+R', c, S' R''
+R', e, @
+R', i, i 2 j X' U' T'
+R', j, @
+R', k, @
+R', t, S' R''
+R', u, S' R''
+R', v, S' R''
+R', w, S' R''
+R'', b, @
+R'', e, @
+R'', j, @
+R'', k, @
+R'', t, t R
+R'', u, X' U' T'
+R'', v, X' U' T'
+R'', w, X' U' T'
+S, a, a S'
+S', b, @
+S', c, c R e
+S', e, @
+S', j, @
+S', k, @
+S', t, @
+S', u, @
+S', v, @
+S', w, @
+T, a, U T'
+T, d, U T'
+T, i, U T'
+T', b, @
+T', e, @
+T', j, @
+T', k, @
+T', u, V U
+V, u, u
+U, a, X U'
+U, d, X U'
+U, i, X U'
+U', b, @
+U', e, @
+U', j, @
+U', k, @
+U', u, @
+U', v, W X U'
+W, v, v
+X, a, Z X'
+X, d, Z X'
+X, i, Z X'
+X', b, @
+X', e, @
+X', j, @
+X', k, @
+X', u, @
+X', v, @
+X', w, Y Z X'
+Y, w, w
+Z, a, a Z'
+Z, d, d
+Z, i, i R j
+Z', b, @
+Z', c, S'
+Z', e, @
+Z', i, i 2 j
+Z', j, @
+Z', k, @
+Z', u, @
+Z', v, @
+Z', w, @
+2, a, 3
+2, d, 3
+2, i, 3
+2, j, @
+3, a, R 4
+3, d, R 4
+3, i, R 4
+4, j, @
+4, k, k R 4

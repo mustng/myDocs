@@ -1,0 +1,807 @@
+*********************************************
+University of North Florida: SIC/XE assembler
+version date 11/12/2002
+account: n00814425; Wed Feb  4 12:28:09 2015
+*********************************************
+ASSEMBLER REPORT
+----------------
+     Loc   Object Code       Source Code
+     ---   -----------       -----------
+001- 00000                   #!/BIN/SH
+********** WARNING: START statement not found [#18 on line 1]
+002- 00000                   # THIS IS A SHELL ARCHIVE (PRODUCED BY GNU SHARUTILS 4.7).
+********** ERROR: Unsupported opcode found in statement [#4 on line 2]
+003- 00000                   # TO EXTRACT THE FILES FROM THIS ARCHIVE, SAVE IT TO SOME FILE, REMOVE
+********** ERROR: Unsupported opcode found in statement [#4 on line 3]
+004- 00000                   # EVERYTHING BEFORE THE `#!/BIN/SH' line above, then type `sh FILE'.
+********** ERROR: Unsupported opcode found in statement [#4 on line 4]
+005- 00000                   #
+********** ERROR: Unsupported opcode found in statement [#4 on line 5]
+006- 00000                   LOCK_DIR=_SH05255
+********** ERROR: Unsupported opcode found in statement [#4 on line 6]
+007- 00000                   # MADE ON 2015-02-02 13:00 EST BY <N00814425@OSPREY.UNFCSD.UNF.EDU>.
+********** ERROR: Unsupported opcode found in statement [#4 on line 7]
+008- 00000                   # SOURCE DIRECTORY WAS `/HOME/25/N00814425/SS/P2/FINAL'.
+********** ERROR: Unsupported opcode found in statement [#4 on line 8]
+009- 00000                   #
+********** ERROR: Unsupported opcode found in statement [#4 on line 9]
+010- 00000                   # EXISTING FILES WILL *NOT* BE OVERWRITTEN, UNLESS `-C' is specified.
+********** ERROR: Unsupported opcode found in statement [#4 on line 10]
+011- 00000                   #
+********** ERROR: Unsupported opcode found in statement [#4 on line 11]
+012- 00000                   # THIS SHAR CONTAINS:
+********** ERROR: Unsupported opcode found in statement [#4 on line 12]
+013- 00000                   # LENGTH MODE       NAME
+********** ERROR: Unsupported opcode found in statement [#4 on line 13]
+014- 00000                   # ------ ---------- ------------------------------------------
+********** ERROR: Unsupported opcode found in statement [#4 on line 14]
+015- 00000                   #    757 -RW-R--R-- T
+********** ERROR: Unsupported opcode found in statement [#4 on line 15]
+016- 00000                   #    883 -RW-R--R-- DOC
+********** ERROR: Unsupported opcode found in statement [#4 on line 16]
+017- 00000                   #   2224 -RW-R--R-- T.LST
+********** ERROR: Unsupported opcode found in statement [#4 on line 17]
+018- 00000                   #    305 -RW-R--R-- T.OBJ
+********** ERROR: Unsupported opcode found in statement [#4 on line 18]
+019- 00000                   #    958 -RW-R--R-- SIC.LOG
+********** ERROR: Unsupported opcode found in statement [#4 on line 19]
+020- 00000                   #
+********** ERROR: Unsupported opcode found in statement [#4 on line 20]
+021- 00000                   MD5SUM=${MD5SUM-MD5SUM}
+********** ERROR: Unsupported opcode found in statement [#4 on line 21]
+022- 00000                   F=`${MD5SUM} --VERSION | EGREP '^md5sum .*(core|text)utils'`
+********** ERROR: Unsupported opcode found in statement [#4 on line 22]
+023- 00000                   TEST -N "${F}" && MD5CHECK=TRUE || MD5CHECK=FALSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 23]
+024- 00000                   ${MD5CHECK} || \
+********** ERROR: Unsupported opcode found in statement [#4 on line 24]
+025- 00000                     ECHO 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+********** ERROR: Unsupported opcode found in statement [#4 on line 25]
+026- 00000                   SAVE_IFS="${IFS}"
+********** ERROR: Unsupported opcode found in statement [#4 on line 26]
+027- 00000                   IFS="${IFS}:"
+********** ERROR: Unsupported opcode found in statement [#4 on line 27]
+028- 00000                   GETTEXT_DIR=FAILED
+********** ERROR: Unsupported opcode found in statement [#4 on line 28]
+029- 00000                   LOCALE_DIR=FAILED
+********** ERROR: Unsupported opcode found in statement [#4 on line 29]
+030- 00000                   FIRST_PARAM="$1"
+********** ERROR: Unsupported opcode found in statement [#4 on line 30]
+031- 00000                   FOR DIR IN $PATH
+********** ERROR: Unsupported opcode found in statement [#4 on line 31]
+032- 00000                   DO
+********** ERROR: Unsupported opcode found in statement [#4 on line 32]
+033- 00000                     IF TEST "$GETTEXT_DIR" = FAILED && TEST -F $DIR/GETTEXT \
+********** ERROR: Unsupported opcode found in statement [#4 on line 33]
+034- 00000                        && ($DIR/GETTEXT --VERSION >/DEV/NULL 2>&1)
+********** ERROR: Unsupported opcode found in statement [#4 on line 34]
+035- 00000                     THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 35]
+036- 00000                       CASE `$DIR/GETTEXT --VERSION 2>&1 | SED 1Q` IN
+********** ERROR: Unsupported opcode found in statement [#4 on line 36]
+037- 00000                         *GNU*) GETTEXT_DIR=$DIR ;;
+********** ERROR: Unsupported opcode found in statement [#4 on line 37]
+038- 00000                       ESAC
+********** ERROR: Unsupported opcode found in statement [#4 on line 38]
+039- 00000                     FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 39]
+040- 00000                     IF TEST "$LOCALE_DIR" = FAILED && TEST -F $DIR/SHAR \
+********** ERROR: Unsupported opcode found in statement [#4 on line 40]
+041- 00000                        && ($DIR/SHAR --PRINT-TEXT-DOMAIN-DIR >/DEV/NULL 2>&1)
+********** ERROR: Unsupported opcode found in statement [#4 on line 41]
+042- 00000                     THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 42]
+043- 00000                       LOCALE_DIR=`$DIR/SHAR --PRINT-TEXT-DOMAIN-DIR`
+********** ERROR: Unsupported opcode found in statement [#4 on line 43]
+044- 00000                     FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 44]
+045- 00000                   DONE
+********** ERROR: Unsupported opcode found in statement [#4 on line 45]
+046- 00000                   IFS="$SAVE_IFS"
+********** ERROR: Unsupported opcode found in statement [#4 on line 46]
+047- 00000                   IF TEST "$LOCALE_DIR" = FAILED || TEST "$GETTEXT_DIR" = FAILED
+********** ERROR: Unsupported opcode found in statement [#4 on line 47]
+048- 00000                   THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 48]
+049- 00000                     ECHO=ECHO
+********** ERROR: Unsupported opcode found in statement [#4 on line 49]
+050- 00000                   ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 50]
+051- 00000                     TEXTDOMAINDIR=$LOCALE_DIR
+********** ERROR: Unsupported opcode found in statement [#4 on line 51]
+052- 00000                     EXPORT TEXTDOMAINDIR
+********** ERROR: Unsupported opcode found in statement [#4 on line 52]
+053- 00000                     TEXTDOMAIN=SHARUTILS
+********** ERROR: Unsupported opcode found in statement [#4 on line 53]
+054- 00000                     EXPORT TEXTDOMAIN
+********** ERROR: Unsupported opcode found in statement [#4 on line 54]
+055- 00000                     ECHO="$GETTEXT_DIR/GETTEXT -S"
+********** ERROR: Unsupported opcode found in statement [#4 on line 55]
+056- 00000                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 56]
+057- 00000                   IF (ECHO "TESTING\C"; ECHO 1,2,3) | GREP C >/DEV/NULL
+********** ERROR: Unsupported opcode found in statement [#4 on line 57]
+058- 00000                   THEN IF (ECHO -N TEST; ECHO 1,2,3) | GREP N >/DEV/NULL
+********** ERROR: Unsupported opcode found in statement [#4 on line 58]
+059- 00000                        THEN SHAR_N= SHAR_C='
+********** ERROR: Unsupported opcode found in statement [#4 on line 59]
+060- 00000                   '
+********** ERROR: Unsupported opcode found in statement [#4 on line 60]
+061- 00000                        ELSE SHAR_N=-N SHAR_C= ; FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 61]
+062- 00000                   ELSE SHAR_N= SHAR_C='\c' ; FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 62]
+063- 00000                   F=SHAR-TOUCH.$$
+********** ERROR: Unsupported opcode found in statement [#4 on line 63]
+064- 00000                   ST1=200112312359.59
+********** ERROR: Unsupported opcode found in statement [#4 on line 64]
+065- 00000                   ST2=123123592001.59
+********** ERROR: Unsupported opcode found in statement [#4 on line 65]
+066- 00000                   ST2TR=123123592001.5 # OLD SYSV 14-CHAR LIMIT
+********** ERROR: Unsupported opcode found in statement [#4 on line 66]
+067- 00000                   ST3=1231235901
+********** ERROR: Unsupported opcode found in statement [#4 on line 67]
+068- 00000                   IF TOUCH -AM -T ${ST1} ${F} >/DEV/NULL 2>&1 && \
+********** ERROR: Unsupported opcode found in statement [#4 on line 68]
+069- 00000                      TEST ! -F ${ST1} && TEST -F ${F}; THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 69]
+070- 00000                     SHAR_TOUCH='touch -am -t $1$2$3$4$5$6.$7 "$8"'
+********** ERROR: Unsupported opcode found in statement [#4 on line 70]
+071- 00000                   ELIF TOUCH -AM ${ST2} ${F} >/DEV/NULL 2>&1 && \
+********** ERROR: Unsupported opcode found in statement [#4 on line 71]
+072- 00000                      TEST ! -F ${ST2} && TEST ! -F ${ST2TR} && TEST -F ${F}; THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 72]
+073- 00000                     SHAR_TOUCH='touch -am $3$4$5$6$1$2.$7 "$8"'
+********** ERROR: Unsupported opcode found in statement [#4 on line 73]
+074- 00000                   ELIF TOUCH -AM ${ST3} ${F} >/DEV/NULL 2>&1 && \
+********** ERROR: Unsupported opcode found in statement [#4 on line 74]
+075- 00000                      TEST ! -F ${ST3} && TEST -F ${F}; THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 75]
+076- 00000                     SHAR_TOUCH='touch -am $3$4$5$6$2 "$8"'
+********** ERROR: Unsupported opcode found in statement [#4 on line 76]
+077- 00000                   ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 77]
+078- 00000                     SHAR_TOUCH=:
+********** ERROR: Unsupported opcode found in statement [#4 on line 78]
+079- 00000                     ECHO
+********** ERROR: Unsupported opcode found in statement [#4 on line 79]
+080- 00000                     ${ECHO} 'WARNING: not restoring timestamps.  Consider getting and'
+********** ERROR: Unsupported opcode found in statement [#4 on line 80]
+081- 00000                     ${ECHO} 'installing GNU `touch'\'', DISTRIBUTED IN GNU COREUTILS...'
+********** ERROR: Unsupported opcode found in statement [#4 on line 81]
+082- 00000                     ECHO
+********** ERROR: Unsupported opcode found in statement [#4 on line 82]
+083- 00000                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 83]
+084- 00000                   RM -F ${ST1} ${ST2} ${ST2TR} ${ST3} ${F}
+********** ERROR: Unsupported opcode found in statement [#4 on line 84]
+085- 00000                   #
+********** ERROR: Unsupported opcode found in statement [#4 on line 85]
+086- 00000                   IF TEST ! -D ${LOCK_DIR}
+********** ERROR: Unsupported opcode found in statement [#4 on line 86]
+087- 00000                   THEN : ; ELSE ${ECHO} 'lock directory '${LOCK_DIR}' exists'
+********** ERROR: Unsupported opcode found in statement [#4 on line 87]
+088- 00000                     EXIT 1
+********** ERROR: Unsupported opcode found in statement [#4 on line 88]
+089- 00000                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 89]
+090- 00000                   IF MKDIR ${LOCK_DIR}
+********** ERROR: Unsupported opcode found in statement [#4 on line 90]
+091- 00000                   THEN ${ECHO} 'x - created lock directory `'${LOCK_DIR}\''.'
+********** ERROR: Unsupported opcode found in statement [#4 on line 91]
+092- 00000                   ELSE ${ECHO} 'x - failed to create lock directory `'${LOCK_DIR}\''.'
+********** ERROR: Unsupported opcode found in statement [#4 on line 92]
+093- 00000                     EXIT 1
+********** ERROR: Unsupported opcode found in statement [#4 on line 93]
+094- 00000                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 94]
+095- 00000                   # ============= T ==============
+********** ERROR: Unsupported opcode found in statement [#4 on line 95]
+096- 00000                   IF TEST -F 't' && TEST "$FIRST_PARAM" != -C; THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 96]
+097- 00000                     ${ECHO} 'x -SKIPPING t (file already exists)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 97]
+098- 00000                   ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 98]
+099- 00000                   ${ECHO} 'x - extracting t (text)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 99]
+100- 00000                     SED 's/^X//' << 'SHAR_EOF' > 't' &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 100]
+101- 00000                   X		START	100
+102- 00000                   X		LDA 	HOWMANY
+********** ERROR: Duplicate label found [#3 on line 102]
+103- 00003                   X		SUB	#1		SUBTRACT 1 FROM HOWMANY
+********** ERROR: Duplicate label found [#3 on line 103]
+104- 00006                   X		STA	C		STORE C INTO ACC
+********** ERROR: Duplicate label found [#3 on line 104]
+105- 00009                   X		LDA	#0		LOAD 0 INTO A
+********** ERROR: Duplicate label found [#3 on line 105]
+106- 0000C                   X		STA 	D		STORE 0 INTO D
+********** ERROR: Duplicate label found [#3 on line 106]
+107- 0000F                   X		LDA	C		LOADS C
+********** ERROR: Duplicate label found [#3 on line 107]
+108- 00012                   LOOP		COMP	#0		COMPARES C TO ZERO
+109- 00015                   X		JLT	FINISH
+********** ERROR: Duplicate label found [#3 on line 109]
+110- 00018                   X		LDA	C		LOAD C INTO ACC
+********** ERROR: Duplicate label found [#3 on line 110]
+111- 0001B                   X		MUL 	#3		ADD MULT FOR 3 SPACES OF MEMORY
+********** ERROR: Duplicate label found [#3 on line 111]
+112- 0001E                   X		RMO 	A,X 		INDEX REGISTERS A INTO X
+********** ERROR: Duplicate label found [#3 on line 112]
+113- 00020                   X		LDT 	NUMBERARRAY,X
+********** ERROR: Duplicate label found [#3 on line 113]
+114- 00023                   X		LDA	D
+********** ERROR: Duplicate label found [#3 on line 114]
+115- 00026                   X		MUL	#3		MAKES AMPLE STORAGE
+********** ERROR: Duplicate label found [#3 on line 115]
+116- 00029                   X		RMO	A,X
+********** ERROR: Duplicate label found [#3 on line 116]
+117- 0002B                   X		STT	B,X		FINSIHED B[D] = NUMARRAY[C]
+********** ERROR: Duplicate label found [#3 on line 117]
+118- 0002E                   X		LDA	C			
+********** ERROR: Duplicate label found [#3 on line 118]
+119- 00031                   X		SUB 	#1		DECREMENET C BY 1
+********** ERROR: Duplicate label found [#3 on line 119]
+120- 00034                   X		STA	C
+********** ERROR: Duplicate label found [#3 on line 120]
+121- 00037                   X		LDA	D
+********** ERROR: Duplicate label found [#3 on line 121]
+122- 0003A                   X		ADD	#1		
+********** ERROR: Duplicate label found [#3 on line 122]
+123- 0003D                   X		STA	D		ADD 1 TO D
+********** ERROR: Duplicate label found [#3 on line 123]
+124- 00040                   X		J 	LOOP		FINSIH LOOP
+********** ERROR: Duplicate label found [#3 on line 124]
+125- 00043                   FINISH		RSUB
+126- 00046                   X				
+********** ERROR: Unsupported opcode found in statement [#4 on line 126]
+127- 00046                   X					
+********** ERROR: Unsupported opcode found in statement [#4 on line 127]
+128- 00046                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 128]
+129- 00046                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 129]
+130- 00046                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 130]
+131- 00046                   HOWMANY 	WORD 	#10
+132- 00049                   C		RESW   	1
+133- 0004C                   D		RESW 	1
+134- 0004F                   NUMBERARRAY	WORD	#10
+135- 00052                   X		WORD 	#9
+********** ERROR: Duplicate label found [#3 on line 135]
+136- 00055                   X		WORD 	#8		LOADS 1-10 INTO NUMBERARRAY
+********** ERROR: Duplicate label found [#3 on line 136]
+137- 00058                   X		WORD 	#7
+********** ERROR: Duplicate label found [#3 on line 137]
+138- 0005B                   X		WORD	#6
+********** ERROR: Duplicate label found [#3 on line 138]
+139- 0005E                   X		WORD	#5
+********** ERROR: Duplicate label found [#3 on line 139]
+140- 00061                   X		WORD 	#4
+********** ERROR: Duplicate label found [#3 on line 140]
+141- 00064                   X		WORD	#3
+********** ERROR: Duplicate label found [#3 on line 141]
+142- 00067                   X		WORD	#2
+********** ERROR: Duplicate label found [#3 on line 142]
+143- 0006A                   X		WORD	#1
+********** ERROR: Duplicate label found [#3 on line 143]
+144- 0006D                   B		RESW	10
+145- 0008B                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 145]
+146- 0008B                   X		END
+********** ERROR: Duplicate label found [#3 on line 146]
+147- 0008B                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 147]
+148- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 148]
+149- 0008B                     (SET 20 15 02 02 11 05 12 't'; EVAL "$SHAR_TOUCH") &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 149]
+150- 0008B                     CHMOD 0644 't'
+********** ERROR: Unsupported opcode found in statement [#4 on line 150]
+151- 0008B                   IF TEST $? -NE 0
+********** ERROR: Unsupported opcode found in statement [#4 on line 151]
+152- 0008B                   THEN ${ECHO} 'restore of t failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 152]
+153- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 153]
+154- 0008B                     IF ${MD5CHECK}
+********** ERROR: Unsupported opcode found in statement [#4 on line 154]
+155- 0008B                     THEN (
+********** ERROR: Unsupported opcode found in statement [#4 on line 155]
+156- 0008B                          ${MD5SUM} -C >/DEV/NULL 2>&1 || ${ECHO} 't: MD5 check failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 156]
+157- 0008B                          ) << \SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 157]
+158- 0008B                   7C47F85502A9C15E0D7977B5B2CB31C2  T
+********** ERROR: Unsupported opcode found in statement [#4 on line 158]
+159- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 159]
+160- 0008B                     ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 160]
+161- 0008B                   TEST `LC_ALL=C WC -C < 't'` -NE 757 && \
+********** ERROR: Unsupported opcode found in statement [#4 on line 161]
+162- 0008B                     ${ECHO} 'restoration warning:  size of t is not 757'
+********** ERROR: Unsupported opcode found in statement [#4 on line 162]
+163- 0008B                     FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 163]
+164- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 164]
+165- 0008B                   # ============= DOC ==============
+********** ERROR: Unsupported opcode found in statement [#4 on line 165]
+166- 0008B                   IF TEST -F 'doc' && TEST "$FIRST_PARAM" != -C; THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 166]
+167- 0008B                     ${ECHO} 'x -SKIPPING doc (file already exists)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 167]
+168- 0008B                   ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 168]
+169- 0008B                   ${ECHO} 'x - extracting doc (text)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 169]
+170- 0008B                     SED 's/^X//' << 'SHAR_EOF' > 'doc' &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 170]
+171- 0008B                   THE PROGRAM IS FOR DAVID HUGHES (N00814425) WRITTEN 2/2/15 AND SUBMITTED TO 
+********** ERROR: Unsupported opcode found in statement [#4 on line 171]
+172- 0008B                   ROGER EGGEN SYSTEM SOFTWARE CLASS. THE PROGRAM WRITTEN IN ASSEMBLY LANGUAGE 
+********** ERROR: Unsupported opcode found in statement [#4 on line 172]
+173- 0008B                   TAKES IN INTEGERS GOING FROM 10 DOWN TO 1 AND REVERSES THEM TO BECOME 1 
+********** ERROR: Unsupported opcode found in statement [#4 on line 173]
+174- 0008B                   THROUGH 10. THE PROGRAM WRITTEN IN C WHICH I STARTED FIRST TO MAKE SURE I HAD A STABLE 
+********** ERROR: Unsupported opcode found in statement [#4 on line 174]
+175- 0008B                   ALGORITHM LOOKS LIKE THE FOLLOWING:
+********** ERROR: Unsupported opcode found in statement [#4 on line 175]
+176- 0008B                   #INCLUDE <STDIO.H>
+********** ERROR: Unsupported opcode found in statement [#4 on line 176]
+177- 0008B                   INT MAIN()
+********** ERROR: Unsupported opcode found in statement [#4 on line 177]
+178- 0008B                   {
+********** ERROR: Unsupported opcode found in statement [#4 on line 178]
+179- 0008B                   X    INT HOWMANY = 10;
+********** ERROR: Unsupported opcode found in statement [#4 on line 179]
+180- 0008B                   X	INT C, D;
+********** ERROR: Unsupported opcode found in statement [#4 on line 180]
+181- 0008B                   X	INT NUMBERARRAY[10] = {10,9,8,7,6,5,4,3,2,1};
+********** ERROR: Unsupported opcode found in statement [#4 on line 181]
+182- 0008B                   X	INT B[10];
+********** ERROR: Unsupported opcode found in statement [#4 on line 182]
+183- 0008B                   X   FOR (C = HOWMANY - 1, D = 0; C >= 0; C--, D++){
+********** ERROR: Unsupported opcode found in statement [#4 on line 183]
+184- 0008B                   X      B[D] = NUMBERARRAY[C];
+********** ERROR: Unsupported opcode found in statement [#4 on line 184]
+185- 0008B                   X  }
+********** ERROR: Unsupported opcode found in statement [#4 on line 185]
+186- 0008B                   X   RETURN 0;
+********** ERROR: Unsupported opcode found in statement [#4 on line 186]
+187- 0008B                   }
+********** ERROR: Unsupported opcode found in statement [#4 on line 187]
+188- 0008B                   IT WAS DIRECTLY TRANSLATED TO THE ASSEMBLY LANGUAGE LINE BY LINE AND WORKS TO 
+********** ERROR: Unsupported opcode found in statement [#4 on line 188]
+189- 0008B                   PRODUCE THE OBJECTIVE. THE "WORD" LOCATION(10) BEGINS AT LINE 14F WHERE ITS SHOWS 
+********** ERROR: Unsupported opcode found in statement [#4 on line 189]
+190- 0008B                   THE ARRAY BEFORE IT WAS REVERED AND ENDS AT LINE 16A. THE REVERSED "WORD" ARRAY STARTS 
+********** ERROR: Unsupported opcode found in statement [#4 on line 190]
+191- 0008B                   IMMEDIATELY IN THE NEXT LOCATION FROM 16D AND GOES TO 18A.
+********** ERROR: Unsupported opcode found in statement [#4 on line 191]
+192- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 192]
+193- 0008B                     (SET 20 15 02 02 12 58 00 'doc'; EVAL "$SHAR_TOUCH") &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 193]
+194- 0008B                     CHMOD 0644 'doc'
+********** ERROR: Unsupported opcode found in statement [#4 on line 194]
+195- 0008B                   IF TEST $? -NE 0
+********** ERROR: Unsupported opcode found in statement [#4 on line 195]
+196- 0008B                   THEN ${ECHO} 'restore of doc failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 196]
+197- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 197]
+198- 0008B                     IF ${MD5CHECK}
+********** ERROR: Unsupported opcode found in statement [#4 on line 198]
+199- 0008B                     THEN (
+********** ERROR: Unsupported opcode found in statement [#4 on line 199]
+200- 0008B                          ${MD5SUM} -C >/DEV/NULL 2>&1 || ${ECHO} 'doc: MD5 check failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 200]
+201- 0008B                          ) << \SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 201]
+202- 0008B                   1E2EA0CDBC259D21BC4CC164F84965CA  DOC
+********** ERROR: Unsupported opcode found in statement [#4 on line 202]
+203- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 203]
+204- 0008B                     ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 204]
+205- 0008B                   TEST `LC_ALL=C WC -C < 'doc'` -NE 883 && \
+********** ERROR: Unsupported opcode found in statement [#4 on line 205]
+206- 0008B                     ${ECHO} 'restoration warning:  size of doc is not 883'
+********** ERROR: Unsupported opcode found in statement [#4 on line 206]
+207- 0008B                     FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 207]
+208- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 208]
+209- 0008B                   # ============= T.LST ==============
+********** ERROR: Unsupported opcode found in statement [#4 on line 209]
+210- 0008B                   IF TEST -F 't.lst' && TEST "$FIRST_PARAM" != -C; THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 210]
+211- 0008B                     ${ECHO} 'x -SKIPPING t.lst (file already exists)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 211]
+212- 0008B                   ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 212]
+213- 0008B                   ${ECHO} 'x - extracting t.lst (text)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 213]
+214- 0008B                     SED 's/^X//' << 'SHAR_EOF' > 't.lst' &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 214]
+215- 0008B                   *********************************************
+********** ERROR: Unsupported opcode found in statement [#4 on line 215]
+216- 0008B                   UNIVERSITY OF NORTH FLORIDA: SIC/XE ASSEMBLER
+********** ERROR: Unsupported opcode found in statement [#4 on line 216]
+217- 0008B                   VERSION DATE 11/12/2002
+********** ERROR: Unsupported opcode found in statement [#4 on line 217]
+218- 0008B                   ACCOUNT: N00814425; MON FEB  2 11:54:43 2015
+********** ERROR: Unsupported opcode found in statement [#4 on line 218]
+219- 0008B                   *********************************************
+********** ERROR: Unsupported opcode found in statement [#4 on line 219]
+220- 0008B                   ASSEMBLER REPORT
+********** ERROR: Unsupported opcode found in statement [#4 on line 220]
+221- 0008B                   ----------------
+********** ERROR: Unsupported opcode found in statement [#4 on line 221]
+222- 0008B                   X     LOC   OBJECT CODE       SOURCE CODE
+********** ERROR: Unsupported opcode found in statement [#4 on line 222]
+223- 0008B                   X     ---   -----------       -----------
+********** ERROR: Unsupported opcode found in statement [#4 on line 223]
+224- 0008B                   001- 00100                   		START	100
+********** ERROR: Unsupported opcode found in statement [#4 on line 224]
+225- 0008B                   002- 00100 032043            		LDA 	HOWMANY
+********** ERROR: Unsupported opcode found in statement [#4 on line 225]
+226- 0008B                   003- 00103 1D0001            		SUB	#1		SUBTRACT 1 FROM HOWMANY
+********** ERROR: Unsupported opcode found in statement [#4 on line 226]
+227- 0008B                   004- 00106 0F2040            		STA	C		STORE C INTO ACC
+********** ERROR: Unsupported opcode found in statement [#4 on line 227]
+228- 0008B                   005- 00109 010000            		LDA	#0		LOAD 0 INTO A
+********** ERROR: Unsupported opcode found in statement [#4 on line 228]
+229- 0008B                   006- 0010C 0F203D            		STA 	D		STORE 0 INTO D
+********** ERROR: Unsupported opcode found in statement [#4 on line 229]
+230- 0008B                   007- 0010F 032037            		LDA	C		LOADS C
+********** ERROR: Unsupported opcode found in statement [#4 on line 230]
+231- 0008B                   008- 00112 290000            LOOP		COMP	#0		COMPARES C TO ZERO
+********** ERROR: Unsupported opcode found in statement [#4 on line 231]
+232- 0008B                   009- 00115 3B202B            		JLT	FINISH
+********** ERROR: Unsupported opcode found in statement [#4 on line 232]
+233- 0008B                   010- 00118 03202E            		LDA	C		LOAD C INTO ACC
+********** ERROR: Unsupported opcode found in statement [#4 on line 233]
+234- 0008B                   011- 0011B 210003            		MUL 	#3		ADD MULT FOR 3 SPACES OF MEMORY
+********** ERROR: Unsupported opcode found in statement [#4 on line 234]
+235- 0008B                   012- 0011E AC01              		RMO 	A,X 		INDEX REGISTERS A INTO X
+********** ERROR: Unsupported opcode found in statement [#4 on line 235]
+236- 0008B                   013- 00120 77A02C            		LDT 	NUMBERARRAY,X
+********** ERROR: Unsupported opcode found in statement [#4 on line 236]
+237- 0008B                   014- 00123 032026            		LDA	D
+********** ERROR: Unsupported opcode found in statement [#4 on line 237]
+238- 0008B                   015- 00126 210003            		MUL	#3		MAKES AMPLE STORAGE
+********** ERROR: Unsupported opcode found in statement [#4 on line 238]
+239- 0008B                   016- 00129 AC01              		RMO	A,X
+********** ERROR: Unsupported opcode found in statement [#4 on line 239]
+240- 0008B                   017- 0012B 87A03F            		STT	B,X		FINSIHED B[D] = NUMARRAY[C]
+********** ERROR: Unsupported opcode found in statement [#4 on line 240]
+241- 0008B                   018- 0012E 032018            		LDA	C			
+********** ERROR: Unsupported opcode found in statement [#4 on line 241]
+242- 0008B                   019- 00131 1D0001            		SUB 	#1		DECREMENET C BY 1
+********** ERROR: Unsupported opcode found in statement [#4 on line 242]
+243- 0008B                   020- 00134 0F2012            		STA	C
+********** ERROR: Unsupported opcode found in statement [#4 on line 243]
+244- 0008B                   021- 00137 032012            		LDA	D
+********** ERROR: Unsupported opcode found in statement [#4 on line 244]
+245- 0008B                   022- 0013A 190001            		ADD	#1		
+********** ERROR: Unsupported opcode found in statement [#4 on line 245]
+246- 0008B                   023- 0013D 0F200C            		STA	D		ADD 1 TO D
+********** ERROR: Unsupported opcode found in statement [#4 on line 246]
+247- 0008B                   024- 00140 3F2FCF            		J 	LOOP		FINSIH LOOP
+********** ERROR: Unsupported opcode found in statement [#4 on line 247]
+248- 0008B                   025- 00143 4F0000            FINISH		RSUB
+********** ERROR: Unsupported opcode found in statement [#4 on line 248]
+249- 0008B                   026- 00146 00000A            HOWMANY 	WORD 	#10
+********** ERROR: Unsupported opcode found in statement [#4 on line 249]
+250- 0008B                   027- 00149                   C		RESW   	1
+********** ERROR: Unsupported opcode found in statement [#4 on line 250]
+251- 0008B                   028- 0014C                   D		RESW 	1
+********** ERROR: Unsupported opcode found in statement [#4 on line 251]
+252- 0008B                   029- 0014F 00000A            NUMBERARRAY	WORD	#10
+********** ERROR: Unsupported opcode found in statement [#4 on line 252]
+253- 0008B                   030- 00152 000009            		WORD 	#9
+********** ERROR: Unsupported opcode found in statement [#4 on line 253]
+254- 0008B                   031- 00155 000008            		WORD 	#8		LOADS 1-10 INTO NUMBERARRAY
+********** ERROR: Unsupported opcode found in statement [#4 on line 254]
+255- 0008B                   032- 00158 000007            		WORD 	#7
+********** ERROR: Unsupported opcode found in statement [#4 on line 255]
+256- 0008B                   033- 0015B 000006            		WORD	#6
+********** ERROR: Unsupported opcode found in statement [#4 on line 256]
+257- 0008B                   034- 0015E 000005            		WORD	#5
+********** ERROR: Unsupported opcode found in statement [#4 on line 257]
+258- 0008B                   035- 00161 000004            		WORD 	#4
+********** ERROR: Unsupported opcode found in statement [#4 on line 258]
+259- 0008B                   036- 00164 000003            		WORD	#3
+********** ERROR: Unsupported opcode found in statement [#4 on line 259]
+260- 0008B                   037- 00167 000002            		WORD	#2
+********** ERROR: Unsupported opcode found in statement [#4 on line 260]
+261- 0008B                   038- 0016A 000001            		WORD	#1
+********** ERROR: Unsupported opcode found in statement [#4 on line 261]
+262- 0008B                   039- 0016D                   B		RESW	10
+********** ERROR: Unsupported opcode found in statement [#4 on line 262]
+263- 0008B                   040- 0018B                   		END
+********** ERROR: Unsupported opcode found in statement [#4 on line 263]
+264- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 264]
+265- 0008B                     (SET 20 15 02 02 11 54 43 't.lst'; EVAL "$SHAR_TOUCH") &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 265]
+266- 0008B                     CHMOD 0644 't.lst'
+********** ERROR: Unsupported opcode found in statement [#4 on line 266]
+267- 0008B                   IF TEST $? -NE 0
+********** ERROR: Unsupported opcode found in statement [#4 on line 267]
+268- 0008B                   THEN ${ECHO} 'restore of t.lst failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 268]
+269- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 269]
+270- 0008B                     IF ${MD5CHECK}
+********** ERROR: Unsupported opcode found in statement [#4 on line 270]
+271- 0008B                     THEN (
+********** ERROR: Unsupported opcode found in statement [#4 on line 271]
+272- 0008B                          ${MD5SUM} -C >/DEV/NULL 2>&1 || ${ECHO} 't.lst: MD5 check failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 272]
+273- 0008B                          ) << \SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 273]
+274- 0008B                   24206C4D7DA7C3E4D7DC722196F24FF7  T.LST
+********** ERROR: Unsupported opcode found in statement [#4 on line 274]
+275- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 275]
+276- 0008B                     ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 276]
+277- 0008B                   TEST `LC_ALL=C WC -C < 't.lst'` -NE 2224 && \
+********** ERROR: Unsupported opcode found in statement [#4 on line 277]
+278- 0008B                     ${ECHO} 'restoration warning:  size of t.lst is not 2224'
+********** ERROR: Unsupported opcode found in statement [#4 on line 278]
+279- 0008B                     FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 279]
+280- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 280]
+281- 0008B                   # ============= T.OBJ ==============
+********** ERROR: Unsupported opcode found in statement [#4 on line 281]
+282- 0008B                   IF TEST -F 't.obj' && TEST "$FIRST_PARAM" != -C; THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 282]
+283- 0008B                     ${ECHO} 'x -SKIPPING t.obj (file already exists)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 283]
+284- 0008B                   ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 284]
+285- 0008B                   ${ECHO} 'x - extracting t.obj (text)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 285]
+286- 0008B                     SED 's/^X//' << 'SHAR_EOF' > 't.obj' &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 286]
+287- 0008B                   000100
+********** ERROR: Unsupported opcode found in statement [#4 on line 287]
+288- 0008B                   000000
+********** ERROR: Unsupported opcode found in statement [#4 on line 288]
+289- 0008B                   032043
+********** ERROR: Unsupported opcode found in statement [#4 on line 289]
+290- 0008B                   1D0001
+********** ERROR: Unsupported opcode found in statement [#4 on line 290]
+291- 0008B                   0F2040
+********** ERROR: Unsupported opcode found in statement [#4 on line 291]
+292- 0008B                   010000
+********** ERROR: Unsupported opcode found in statement [#4 on line 292]
+293- 0008B                   0F203D
+********** ERROR: Unsupported opcode found in statement [#4 on line 293]
+294- 0008B                   032037
+********** ERROR: Unsupported opcode found in statement [#4 on line 294]
+295- 0008B                   290000
+********** ERROR: Unsupported opcode found in statement [#4 on line 295]
+296- 0008B                   3B202B
+********** ERROR: Unsupported opcode found in statement [#4 on line 296]
+297- 0008B                   03202E
+********** ERROR: Unsupported opcode found in statement [#4 on line 297]
+298- 0008B                   210003
+********** ERROR: Unsupported opcode found in statement [#4 on line 298]
+299- 0008B                   AC01
+********** ERROR: Unsupported opcode found in statement [#4 on line 299]
+300- 0008B                   77A02C
+********** ERROR: Unsupported opcode found in statement [#4 on line 300]
+301- 0008B                   032026
+********** ERROR: Unsupported opcode found in statement [#4 on line 301]
+302- 0008B                   210003
+********** ERROR: Unsupported opcode found in statement [#4 on line 302]
+303- 0008B                   AC01
+********** ERROR: Unsupported opcode found in statement [#4 on line 303]
+304- 0008B                   87A03F
+********** ERROR: Unsupported opcode found in statement [#4 on line 304]
+305- 0008B                   032018
+********** ERROR: Unsupported opcode found in statement [#4 on line 305]
+306- 0008B                   1D0001
+********** ERROR: Unsupported opcode found in statement [#4 on line 306]
+307- 0008B                   0F2012
+********** ERROR: Unsupported opcode found in statement [#4 on line 307]
+308- 0008B                   032012
+********** ERROR: Unsupported opcode found in statement [#4 on line 308]
+309- 0008B                   190001
+********** ERROR: Unsupported opcode found in statement [#4 on line 309]
+310- 0008B                   0F200C
+********** ERROR: Unsupported opcode found in statement [#4 on line 310]
+311- 0008B                   3F2FCF
+********** ERROR: Unsupported opcode found in statement [#4 on line 311]
+312- 0008B                   4F0000
+********** ERROR: Unsupported opcode found in statement [#4 on line 312]
+313- 0008B                   00000A
+********** ERROR: Unsupported opcode found in statement [#4 on line 313]
+314- 0008B                   !
+********** ERROR: Unsupported opcode found in statement [#4 on line 314]
+315- 0008B                   00014C
+********** ERROR: Unsupported opcode found in statement [#4 on line 315]
+316- 0008B                   000000
+********** ERROR: Unsupported opcode found in statement [#4 on line 316]
+317- 0008B                   !
+********** ERROR: Unsupported opcode found in statement [#4 on line 317]
+318- 0008B                   00014F
+********** ERROR: Unsupported opcode found in statement [#4 on line 318]
+319- 0008B                   000000
+********** ERROR: Unsupported opcode found in statement [#4 on line 319]
+320- 0008B                   00000A
+********** ERROR: Unsupported opcode found in statement [#4 on line 320]
+321- 0008B                   000009
+********** ERROR: Unsupported opcode found in statement [#4 on line 321]
+322- 0008B                   000008
+********** ERROR: Unsupported opcode found in statement [#4 on line 322]
+323- 0008B                   000007
+********** ERROR: Unsupported opcode found in statement [#4 on line 323]
+324- 0008B                   000006
+********** ERROR: Unsupported opcode found in statement [#4 on line 324]
+325- 0008B                   000005
+********** ERROR: Unsupported opcode found in statement [#4 on line 325]
+326- 0008B                   000004
+********** ERROR: Unsupported opcode found in statement [#4 on line 326]
+327- 0008B                   000003
+********** ERROR: Unsupported opcode found in statement [#4 on line 327]
+328- 0008B                   000002
+********** ERROR: Unsupported opcode found in statement [#4 on line 328]
+329- 0008B                   000001
+********** ERROR: Unsupported opcode found in statement [#4 on line 329]
+330- 0008B                   !
+********** ERROR: Unsupported opcode found in statement [#4 on line 330]
+331- 0008B                   00018B
+********** ERROR: Unsupported opcode found in statement [#4 on line 331]
+332- 0008B                   000100
+********** ERROR: Unsupported opcode found in statement [#4 on line 332]
+333- 0008B                   !
+********** ERROR: Unsupported opcode found in statement [#4 on line 333]
+334- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 334]
+335- 0008B                     (SET 20 15 02 02 11 54 43 't.obj'; EVAL "$SHAR_TOUCH") &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 335]
+336- 0008B                     CHMOD 0644 't.obj'
+********** ERROR: Unsupported opcode found in statement [#4 on line 336]
+337- 0008B                   IF TEST $? -NE 0
+********** ERROR: Unsupported opcode found in statement [#4 on line 337]
+338- 0008B                   THEN ${ECHO} 'restore of t.obj failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 338]
+339- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 339]
+340- 0008B                     IF ${MD5CHECK}
+********** ERROR: Unsupported opcode found in statement [#4 on line 340]
+341- 0008B                     THEN (
+********** ERROR: Unsupported opcode found in statement [#4 on line 341]
+342- 0008B                          ${MD5SUM} -C >/DEV/NULL 2>&1 || ${ECHO} 't.obj: MD5 check failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 342]
+343- 0008B                          ) << \SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 343]
+344- 0008B                   028BF5907AD918B6A1B0AB1F43AC9D7A  T.OBJ
+********** ERROR: Unsupported opcode found in statement [#4 on line 344]
+345- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 345]
+346- 0008B                     ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 346]
+347- 0008B                   TEST `LC_ALL=C WC -C < 't.obj'` -NE 305 && \
+********** ERROR: Unsupported opcode found in statement [#4 on line 347]
+348- 0008B                     ${ECHO} 'restoration warning:  size of t.obj is not 305'
+********** ERROR: Unsupported opcode found in statement [#4 on line 348]
+349- 0008B                     FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 349]
+350- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 350]
+351- 0008B                   # ============= SIC.LOG ==============
+********** ERROR: Unsupported opcode found in statement [#4 on line 351]
+352- 0008B                   IF TEST -F 'sic.log' && TEST "$FIRST_PARAM" != -C; THEN
+********** ERROR: Unsupported opcode found in statement [#4 on line 352]
+353- 0008B                     ${ECHO} 'x -SKIPPING sic.log (file already exists)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 353]
+354- 0008B                   ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 354]
+355- 0008B                   ${ECHO} 'x - extracting sic.log (text)'
+********** ERROR: Unsupported opcode found in statement [#4 on line 355]
+356- 0008B                     SED 's/^X//' << 'SHAR_EOF' > 'sic.log' &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 356]
+357- 0008B                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 357]
+358- 0008B                   COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+********** ERROR: Unsupported opcode found in statement [#4 on line 358]
+359- 0008B                   D 100-200
+********** ERROR: Unsupported opcode found in statement [#4 on line 359]
+360- 0008B                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 360]
+361- 0008B                   0100 0320431D 00010F20 40010000 0F203D03
+********** ERROR: Unsupported opcode found in statement [#4 on line 361]
+362- 0008B                   0110 20372900 003B202B 03202E21 0003AC01
+********** ERROR: Unsupported opcode found in statement [#4 on line 362]
+363- 0008B                   0120 77A02C03 20262100 03AC0187 A03F0320
+********** ERROR: Unsupported opcode found in statement [#4 on line 363]
+364- 0008B                   0130 181D0001 0F201203 20121900 010F200C
+********** ERROR: Unsupported opcode found in statement [#4 on line 364]
+365- 0008B                   0140 3F2FCF4F 00000000 0AFFFF90 00007900   "WORD" 10 BEGINS HERE 14F 
+********** ERROR: Unsupported opcode found in statement [#4 on line 365]
+366- 0008B                   0150 000A0000 09000008 00000700 00060000
+********** ERROR: Unsupported opcode found in statement [#4 on line 366]
+367- 0008B                   0160 05000004 00000300 00020000 01000001    ENDS HERE AT 16A THEN REVERSE STARTS 16D
+********** ERROR: Unsupported opcode found in statement [#4 on line 367]
+368- 0008B                   0170 00000200 00030000 04000005 00000600
+********** ERROR: Unsupported opcode found in statement [#4 on line 368]
+369- 0008B                   0180 00070000 08000009 00000A00 000AFFFF    ENDS HERE AT 18A
+********** ERROR: Unsupported opcode found in statement [#4 on line 369]
+370- 0008B                   0190 FE00000A 4F00003F 2FCF0F20 0C190001
+********** ERROR: Unsupported opcode found in statement [#4 on line 370]
+371- 0008B                   01A0 0320120F 20121D00 01032018 87A03F03
+********** ERROR: Unsupported opcode found in statement [#4 on line 371]
+372- 0008B                   01B0 AC012621 002C0320 0177A000 03AC202E
+********** ERROR: Unsupported opcode found in statement [#4 on line 372]
+373- 0008B                   01C0 21202B03 00003B20 3729203D 0300000F
+********** ERROR: Unsupported opcode found in statement [#4 on line 373]
+374- 0008B                   01D0 20400100 010F2043 1DFFFF03 FFFFFFFF
+********** ERROR: Unsupported opcode found in statement [#4 on line 374]
+375- 0008B                   01E0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+********** ERROR: Unsupported opcode found in statement [#4 on line 375]
+376- 0008B                   01F0 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+********** ERROR: Unsupported opcode found in statement [#4 on line 376]
+377- 0008B                   0200 FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF
+********** ERROR: Unsupported opcode found in statement [#4 on line 377]
+378- 0008B                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 378]
+379- 0008B                   COMMAND: S(TART, R(UN, E(NTER, D(UMP, H(COUNT, B(KPT, F(ILES, T(RACE, Q(UIT?
+********** ERROR: Unsupported opcode found in statement [#4 on line 379]
+380- 0008B                   X
+********** ERROR: Unsupported opcode found in statement [#4 on line 380]
+381- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 381]
+382- 0008B                     (SET 20 15 02 02 12 57 45 'sic.log'; EVAL "$SHAR_TOUCH") &&
+********** ERROR: Unsupported opcode found in statement [#4 on line 382]
+383- 0008B                     CHMOD 0644 'sic.log'
+********** ERROR: Unsupported opcode found in statement [#4 on line 383]
+384- 0008B                   IF TEST $? -NE 0
+********** ERROR: Unsupported opcode found in statement [#4 on line 384]
+385- 0008B                   THEN ${ECHO} 'restore of sic.log failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 385]
+386- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 386]
+387- 0008B                     IF ${MD5CHECK}
+********** ERROR: Unsupported opcode found in statement [#4 on line 387]
+388- 0008B                     THEN (
+********** ERROR: Unsupported opcode found in statement [#4 on line 388]
+389- 0008B                          ${MD5SUM} -C >/DEV/NULL 2>&1 || ${ECHO} 'sic.log: MD5 check failed'
+********** ERROR: Unsupported opcode found in statement [#4 on line 389]
+390- 0008B                          ) << \SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 390]
+391- 0008B                   B7AEC3083A4DBE78808DF31EB7D4335C  SIC.LOG
+********** ERROR: Unsupported opcode found in statement [#4 on line 391]
+392- 0008B                   SHAR_EOF
+********** ERROR: Unsupported opcode found in statement [#4 on line 392]
+393- 0008B                     ELSE
+********** ERROR: Unsupported opcode found in statement [#4 on line 393]
+394- 0008B                   TEST `LC_ALL=C WC -C < 'sic.log'` -NE 958 && \
+********** ERROR: Unsupported opcode found in statement [#4 on line 394]
+395- 0008B                     ${ECHO} 'restoration warning:  size of sic.log is not 958'
+********** ERROR: Unsupported opcode found in statement [#4 on line 395]
+396- 0008B                     FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 396]
+397- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 397]
+398- 0008B                   IF RM -FR ${LOCK_DIR}
+********** ERROR: Unsupported opcode found in statement [#4 on line 398]
+399- 0008B                   THEN ${ECHO} 'x - removed lock directory `'${LOCK_DIR}\''.'
+********** ERROR: Unsupported opcode found in statement [#4 on line 399]
+400- 0008B                   ELSE ${ECHO} 'x - failed to remove lock directory `'${LOCK_DIR}\''.'
+********** ERROR: Unsupported opcode found in statement [#4 on line 400]
+401- 0008B                     EXIT 1
+********** ERROR: Unsupported opcode found in statement [#4 on line 401]
+402- 0008B                   FI
+********** ERROR: Unsupported opcode found in statement [#4 on line 402]
+403- 0008B                   EXIT 0
+********** ERROR: Unsupported opcode found in statement [#4 on line 403]

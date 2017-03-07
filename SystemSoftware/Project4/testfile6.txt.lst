@@ -1,0 +1,16 @@
+Loc     Object Code       Source Code
+---     -----------       -----------
+
+100                 ADDRES    START    100                               
+Invalid numonic BEGIN
+100      692000     NOW      +LDB     #BEGIN              load base register 
+104                 XXX       BASE     BEGIN              tell assembler  
+104      03200C     YYY       LDA      BE                 A <- (m..m+2)    
+107                 EN        RESW     4                  
+113      000002     BE        WORD     2                              
+116                 JUNK      RESW     2200                              
+1ADE                THERE     RESW     1                              
+ERROR: Invalid base provided
+1AE1     034000     ZZZ       LDA      JUNK                               
+1AE4     0F2FF7     MMM       STA      THERE                              
+1AE7                          END      NOW 

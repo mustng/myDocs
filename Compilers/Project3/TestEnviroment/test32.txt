@@ -1,0 +1,11 @@
+/*
+  Error: Function foo not declared.
+*/
+
+int x;
+
+void main(void)
+{
+   x = 1;
+   foo(x);
+}

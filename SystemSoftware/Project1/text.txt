@@ -1,0 +1,7 @@
+David Hughes project number 1  for cop3404 Roger Eggen
+01/19/15 
+Project hashes a text file and stores it. Also if a collision occurs it will report it. 
+If a duplicate key is attempted to be stored it is rejected and reported. 
+The hash function used adds the ASCII values of every character in the key and mods it to the location of the hash table.
+The other function uses the ASCII values to sort if a string number value or ASCII value between 48 to 57 In the end it
+stores all values "hashed" with the duplicates created.

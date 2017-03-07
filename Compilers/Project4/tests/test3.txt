@@ -1,0 +1,9 @@
+void main (void){
+
+	int x;
+	while (x + y == m + n / 2){
+		w = q - (3 * (q / 3));
+		i = 1;  
+	}
+	x = 4;
+}

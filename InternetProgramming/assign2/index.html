@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<head>
+</head>
+<body>
+<menu>
+  <box><a class="active" href="../index.html">Home</a></box>
+  <box><a href="../assign1/index.html">Assignment 1</a></box>
+  <box><a href="index.html">Assignment 2</a></box>
+  <box><a href="../assign3/index.html">Assignment 3</a></box>
+  <box><a href="../assign4/index.html">Assignment 4</a></box>
+  <box><a href="../assign5/login.php">Assignment 5</a></box>
+  <box><a href="../assign6/index.php">Assignment 6</a></box>
+  <box><a href="../assign7/index.php">Assignment 7</a></box>
+  <box><a href="mailto:maildavidhughes@yahoo.com">Email Me</a></box>
+</menu>
+<TITLE>COP 4813 : Internet Programming</TITLE>
+<H1>Welcome to the driving test </H1>
+<H2>Answer the questions to the best of your ability </H2>
+
+<form id="input">
+  <font size='5'>Your heading south and turn right. What direction are you headed? </font>
+  	<br><br><input type="text" name='box' id='box'><br><br>
+  </form> 
+
+<form action="">
+<font size='5'> Your lane is ending in a quarter of a mile. What should you do?</font><BR>
+  <input name="direction" type="radio" id="radio1" name="dir" value="right"> cautiously switch lanes	
+  <input name="direction" type="radio" id="radio2" name="dir" value="left"> stay till the lane ends
+  <input name="direction" type="radio" id="radio3" name="dir" value="straight"> 
+  	speed up into the emergency lane until you find a opening<br><br>
+</form> 
+
+<form action="">
+<font size='5'>You are driving into a dangerous rain storm. What should you do? Check all that apply...</font><BR>
+<input type="checkbox" name="vehicle" id="bx1" value="Car">Turn on your headlights
+<input type="checkbox" name="vehicle" id="bx2" value="Car">Turn on your hazards
+<input type="checkbox" name="vehicle" id="bx3" value="Car"> Turn on your wipers
+<input type="checkbox" name="vehicle" id="bx4" value="Car"> Speed up</form><br><br>
+
+<form>
+<font size='5'>You are pulling a trailer and start to wobble left and right. What should you do?</font><BR><BR>
+<select id="opt">
+  <option>Please make a selection</option>
+  <option>hit the brakes</option>
+  <option>release the gas</option>
+</select></form><br><br>
+
+<button onclick="myFunction()">Submit</button>
+<INPUT onclick="location.reload();" type="Reset" value="Reset">
+
+<script>
+
+function myFunction() {
+	var points = 0;
+    var input = document.getElementById("box");			//takes in input from box
+    var r1 = document.getElementById("radio1").checked;		//boolean for radio buttons
+    var r2 = document.getElementById("radio2").checked;
+    var r3 = document.getElementById("radio3").checked;
+    var b1 = document.getElementById("bx1").checked;		//boolean for check boxes
+    var b2 = document.getElementById("bx2").checked;
+    var b3 = document.getElementById("bx3").checked;
+    var b4 = document.getElementById("bx4").checked;
+    var c = document.getElementById("opt").selectedIndex;  //index of drop down
+        
+     	if (!input.value.localeCompare("")){
+    		document.getElementById("printout").innerHTML = 
+    			"<font size='3' color='#ff0000'><b>Need to input something in the text box!</b></font>";
+    		return;
+    	}
+     	else if (!input.value.toLowerCase().localeCompare("west")){
+    		points += 10;
+    	}
+     	else{
+			//no points
+     	}
+     	if(!r1 && !r2 && !r3){    //make sure something is clicked
+     		document.getElementById("printout").innerHTML = 
+    			"<font size='3' color='#ff0000'><b>Please select a radio button!</b></font>";
+    		return;
+     	}
+     	else if(r1){
+     		points+= 10;
+     	}
+     	if(!b1 && !b2 &&!b3 && !b4){	//make sure something is checked
+     		document.getElementById("printout").innerHTML = 
+    			"<font size='3' color='#ff0000'><b>Need to check something!</b></font>";
+    		return;
+     	}
+     	if(b1){
+     		points += 3;
+     	}
+     	if(b3){
+     		points += 3;
+     	}
+     	if (c == 0){
+     		document.getElementById("printout").innerHTML = 
+    			"<font size='3' color='#ff0000'><b>Need to make a selection!</b></font>";
+    		return;
+     	}
+     	else if (c == 2){
+     		points += 14;
+     	}
+        if (points == 40){
+        	document.getElementById("printout").innerHTML = "You're a great driver!";
+        }
+        else if (points >= 26){
+        	document.getElementById("printout").innerHTML = "You are an OK driver";
+        }
+        else{
+        	document.getElementById("printout").innerHTML = "Recomend driving school for you!";
+        }
+}
+
+</script>
+<p id="printout"><i>TRY YOUR LUCK</i></p>
+<br>
+
+<font size='5'><a href="chart/index.html">Flow Chart</a></font>
+</body>
+</html>

@@ -1,0 +1,21 @@
+The program is for David Hughes (n00814425) written 2/2/15 and submitted to 
+Roger Eggen System Software class. The program written in assembly language 
+takes in integers going from 10 down to 1 and reverses them to become 1 
+through 10. The program written in C which I started first to make sure I had a stable 
+algorithm looks like the following:
+#include <stdio.h>
+int main()
+{
+    int howMany = 10;
+	int c, d;
+	int numberArray[10] = {10,9,8,7,6,5,4,3,2,1};
+	int b[10];
+   for (c = howMany - 1, d = 0; c >= 0; c--, d++){
+      b[d] = numberArray[c];
+  }
+   return 0;
+}
+It was directly translated to the assembly language line by line and works to 
+produce the objective. The "word" location(10) begins at line 14F where its shows 
+the array before it was revered and ends at line 16C. The reversed "word" array starts 
+immediately in the next location from 16D and goes to 18A.

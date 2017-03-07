@@ -1,0 +1,9 @@
+/*
+  Error: Last function declared is not main.
+*/
+
+void main(void)
+{ }
+
+void foo(void)
+{ }

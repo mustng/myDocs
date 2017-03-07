@@ -1,0 +1,20 @@
+The program is for David Hughes (n00814425) written 3/24/15 and submitted to
+ Roger Eggen System Software class. The following project 3 runs through Sic
+ Xe assembly code and translates addresses to each line. Its checks for
+ duplicates, makes sure start is on the first line, and checks many LTORG 
+issues that may come up. The Sic Xe project code must be in the following 
+format for this to work:
+Col 1-8    label optional
+Col 9      blank
+Col 10     + optional
+Col 11-17  mnemonic
+Col 18     blank
+Col 19     #, @, =  ... optional
+Col 20-29  (operand) label, register, ',',X optional  ...
+Col 30-31  blank
+Col 32-80  comments optional (NO PERIOD REQUIRED)
+The SicOps file  must also be included and is scanned in at run time to help 
+calculate all the addresses. It is hashed into a table of size 300. In
+the end as the addresses are created and they are also stored into a separate hash
+tables for the future project 4. 
+

@@ -1,0 +1,20 @@
+
+	The following program is for David Hughes (n00814425) written 11/16/15 
+and submitted to Rogger Eggen Operating System class. The program should be 
+executed with 2 values, the 1st number is the number of page frames and the
+2nd is the number of pages per process. When the program is then ran it 
+loads random numbers from 1 to the the 2nd number typed in and then it calculates 
+the number of errors that are caused by sorting each one.  The sorting used 
+is FIFO, clock, optimal, and LRU. All are really good algorithms and some 
+like the clock which was discussed in class as being used with Linux systems 
+today. Based on my testing the optimal sorting showed to be the best sorting 
+algorithm. The issue with this is the computer doesn't know what the next processes 
+are going to be so it wont show to be near as good in reality. Clock , LRU, and 
+FCFS all seemed to go neck and neck with each other on every test. The smaller the 
+total array size of the FCFS would beat LRU and Clock but as it grew it seemed to be 
+slightly worse. I would say Clock is second in speed in my opinion and LRU is a hair 
+behind it. Both prove to be good sorting systems. This leaves FCFS or FIFO in last 
+although it is simple and very easy to to code. These other sorting algorithms being 
+slightly more complex is why I would imagine are sticking around for the long haul 
+compared to FCFS.
+

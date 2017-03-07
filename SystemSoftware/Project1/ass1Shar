@@ -1,0 +1,274 @@
+#!/bin/sh
+# This is a shell archive (produced by GNU sharutils 4.7).
+# To extract the files from this archive, save it to some FILE, remove
+# everything before the `#!/bin/sh' line above, then type `sh FILE'.
+#
+lock_dir=_sh29973
+# Made on 2015-01-19 22:23 EST by <n00814425@osprey.unfcsd.unf.edu>.
+# Source directory was `/home/25/n00814425'.
+#
+# Existing files will *not* be overwritten, unless `-c' is specified.
+#
+# This shar contains:
+# length mode       name
+# ------ ---------- ------------------------------------------
+#     36 -rw-r--r-- makefile
+#   2918 -rw-r--r-- p12.java
+#     24 -rwxrwxrwx p1
+#    527 -rw-r--r-- text.txt
+#
+MD5SUM=${MD5SUM-md5sum}
+f=`${MD5SUM} --version | egrep '^md5sum .*(core|text)utils'`
+test -n "${f}" && md5check=true || md5check=false
+${md5check} || \
+  echo 'Note: not verifying md5sums.  Consider installing GNU coreutils.'
+save_IFS="${IFS}"
+IFS="${IFS}:"
+gettext_dir=FAILED
+locale_dir=FAILED
+first_param="$1"
+for dir in $PATH
+do
+  if test "$gettext_dir" = FAILED && test -f $dir/gettext \
+     && ($dir/gettext --version >/dev/null 2>&1)
+  then
+    case `$dir/gettext --version 2>&1 | sed 1q` in
+      *GNU*) gettext_dir=$dir ;;
+    esac
+  fi
+  if test "$locale_dir" = FAILED && test -f $dir/shar \
+     && ($dir/shar --print-text-domain-dir >/dev/null 2>&1)
+  then
+    locale_dir=`$dir/shar --print-text-domain-dir`
+  fi
+done
+IFS="$save_IFS"
+if test "$locale_dir" = FAILED || test "$gettext_dir" = FAILED
+then
+  echo=echo
+else
+  TEXTDOMAINDIR=$locale_dir
+  export TEXTDOMAINDIR
+  TEXTDOMAIN=sharutils
+  export TEXTDOMAIN
+  echo="$gettext_dir/gettext -s"
+fi
+if (echo "testing\c"; echo 1,2,3) | grep c >/dev/null
+then if (echo -n test; echo 1,2,3) | grep n >/dev/null
+     then shar_n= shar_c='
+'
+     else shar_n=-n shar_c= ; fi
+else shar_n= shar_c='\c' ; fi
+f=shar-touch.$$
+st1=200112312359.59
+st2=123123592001.59
+st2tr=123123592001.5 # old SysV 14-char limit
+st3=1231235901
+
+if touch -am -t ${st1} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st1} && test -f ${f}; then
+  shar_touch='touch -am -t $1$2$3$4$5$6.$7 "$8"'
+
+elif touch -am ${st2} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st2} && test ! -f ${st2tr} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$1$2.$7 "$8"'
+
+elif touch -am ${st3} ${f} >/dev/null 2>&1 && \
+   test ! -f ${st3} && test -f ${f}; then
+  shar_touch='touch -am $3$4$5$6$2 "$8"'
+
+else
+  shar_touch=:
+  echo
+  ${echo} 'WARNING: not restoring timestamps.  Consider getting and'
+  ${echo} 'installing GNU `touch'\'', distributed in GNU coreutils...'
+  echo
+fi
+rm -f ${st1} ${st2} ${st2tr} ${st3} ${f}
+#
+if test ! -d ${lock_dir}
+then : ; else ${echo} 'lock directory '${lock_dir}' exists'
+  exit 1
+fi
+if mkdir ${lock_dir}
+then ${echo} 'x - created lock directory `'${lock_dir}\''.'
+else ${echo} 'x - failed to create lock directory `'${lock_dir}\''.'
+  exit 1
+fi
+# ============= makefile ==============
+if test -f 'makefile' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING makefile (file already exists)'
+else
+${echo} 'x - extracting makefile (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 'makefile' &&
+p1.class: p12.java 
+X	javac p12.java
+SHAR_EOF
+  (set 20 15 01 19 22 04 46 'makefile'; eval "$shar_touch") &&
+  chmod 0644 'makefile'
+if test $? -ne 0
+then ${echo} 'restore of makefile failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'makefile: MD5 check failed'
+       ) << \SHAR_EOF
+5b78c8b46639530fd0c19bd591751b08  makefile
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'makefile'` -ne 36 && \
+  ${echo} 'restoration warning:  size of makefile is not 36'
+  fi
+fi
+# ============= p12.java ==============
+if test -f 'p12.java' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING p12.java (file already exists)'
+else
+${echo} 'x - extracting p12.java (binary)'
+  sed 's/^X//' << 'SHAR_EOF' | uudecode &&
+begin 600 p12.java
+M#0II;7!O<G0@:F%V82YI;RY&:6QE.PT*:6UP;W)T(&IA=F$N:6\N1FEL94YO
+M=$9O=6YD17AC97!T:6]N.PT*:6UP;W)T(&IA=F$N=71I;"Y38V%N;F5R.PT*
+M#0IP=6)L:6,@8VQA<W,@<#$R('L-"@EP=6)L:6,@<W1A=&EC('9O:60@;6%I
+M;B`H4W1R:6YG6UT@87)G<RE[#0H)"4AA<VA486)L92!T86)L92`](&YE=R!(
+M87-H5&%B;&4H-3`I.PT*"0ET<GD@>PT*"0D)4V-A;FYE<B!I;G!U="`](&YE
+M=R!38V%N;F5R("AN97<@1FEL92AA<F=S6S!=*2D[#0H)"0EW:&EL92@@:6YP
+M=70N:&%S3F5X=$QI;F4H*2E[#0H)"0D)4W1R:6YG(&QI;F4@/2!I;G!U="YN
+M97AT3&EN92@I.PT*"0D)"6EF("AI<TYU;6)E<BAL:6YE*2E[#0H)"0D)"5-T
+M<FEN9R!;72!A(#T@;&EN92YS<&QI="@B("(I.PT*"0D)"0ET86)L92YA9&0H
+M85LP72P@26YT96=E<BYP87)S94EN="AA6S%=*2D[#0H)"0D)?0T*"0D)"65L
+M<V4@>PT*"0D)"0EI;G0@:3L-"@D)"0D):68H*&D@/2!T86)L92YF:6YD*&QI
+M;F4N=')I;2@I*2D@/3T@+3$I>PT*"0D)"0D)4WES=&5M+F]U="YP<FEN=&QN
+M*")$:60@;F]T(&9I;F0@(B`K(&QI;F4@*3L-"@D)"0D)?2!E;'-E('L-"@D)
+M"0D)"5-Y<W1E;2YO=70N<')I;G1L;B@B1F]U;F0@(B`K(&QI;F4@*R`B("(@
+M*R!T86)L92YG971686QU92AI*2`K("(@870@(B`K(&DI.PT*"0D)"0E]#0H)
+M"0D)?0T*"0D)?0T*"0D)"0T*"0E](&-A=&-H("A&:6QE3F]T1F]U;F1%>&-E
+M<'1I;VX@92D@>PT*"0D)+R\@5$]$3R!!=71O+6=E;F5R871E9"!C871C:"!B
+M;&]C:PT*"0D)92YP<FEN=%-T86-K5')A8V4H*3L-"@D)?0T*"0D-"@D)#0H)
+M?0T*#0H)#0H)<'5B;&EC('-T871I8R!B;V]L96%N(&ES3G5M8F5R*%-T<FEN
+M9R!N86UE*7L-"@D)8VAA<B!;771E;7`@/2!N86UE+G1O0VAA<D%R<F%Y*"D[
+M#0H)"69O<B`H:6YT(&D@/2`P.R!I(#P@=&5M<"YL96YG=&@[(&DK*RD@>PD)
+M+R]R971U<FYS('1R=64@:68@=&AE<F4@:7,@82!N=6UB97(@:6X@87)R87D-
+M"@D)"6EN="!T96UP,B`]("AI;G0I('1E;7!;:5T[#0H)"0EI9B`H=&5M<#(@
+M/B`T-R`F)B!T96UP,B`\(#4X("D-"@D)"0ER971U<FX@=')U93L-"@D)"0T*
+M"0E]#0H)"7)E='5R;B!F86QS93L-"@E]#0H-"GT-"@T*8VQA<W,@2&%S:%1A
+M8FQE>PT*"0T*"7!R:79A=&4@2&%S:$]B:F5C="!;72!T86)L93L-"@D-"@EP
+M=6)L:6,@2&%S:%1A8FQE*&EN="!S:7IE*7L-"@D)#0H)"71A8FQE(#T@;F5W
+M($AA<VA/8FIE8W1;<VEZ95T[#0H)?0T*"0T*"7!U8FQI8R!I;G0@:&%S:"A3
+M=')I;F<@;F%M92D@>PD)"0DO+T9I;F0@05-#24D@;G5M8F5R(&UE=&AO9`T*
+M"0EI;G0@87-C:6D@/2`P.PT*"0EC:&%R(%M==&5M<"`](&YA;64N=&]#:&%R
+M07)R87DH*3L-"@D)9F]R("AI;G0@:2`](#`[(&D@/"!T96UP+FQE;F=T:#L@
+M:2LK*2![#0H)"0EI;G0@=&5M<#(@/2`H:6YT*2!T96UP6VE=.PT*"0D):68@
+M*'1E;7`R(#X@.38I#0H)"0D)87-C:6D@/2!A<V-I:2`K('1E;7`R.PT*"0E]
+M#0H)"7)E='5R;B!A<V-I:2`E('1A8FQE+FQE;F=T:#L-"@E]#0H)#0H)<'5B
+M;&EC('9O:60@861D*%-T<FEN9R!K97DL(&EN="!V86QU92E[#0H)"6EN="!I
+M(#T@:&%S:"AK97DI.PT*"0EI9B`H9FEN9"AK97DI("$]("TQ*7L-"@D)"5-Y
+M<W1E;2YO=70N<')I;G1L;B@B15)23U(@(B`K(&ME>2`K("(@86QR96%D>2!E
+M>&ES=',@870@;&]C871I;VX@(BL@:2D[#0H)"0ER971U<FX[#0H)"7T-"@D)
+M=VAI;&4@*'1A8FQE(%MI72`A/2!N=6QL*7L-"@D)"5-Y<W1E;2YO=70N<')I
+M;G1L;BAK97D@*R`B($-O;&QI9&5D('=I=&@@(BL@=&%B;&5;:5TN:V5Y*3L-
+M"@D)"6DK*SL-"@D)?0T*"0ET86)L95MI72`](&YE=R!(87-H3V)J96-T("AK
+M97D@+"!V86QU92D[#0H)"5-Y<W1E;2YO=70N<')I;G1L;B@B4W1O<F5D("(K
+M(&ME>2`K("(@(B`K('9A;'5E("L@(B!A="!L;V-A=&EO;B`B("L@:2D[#0H)
+M?0T*"0T*"7!U8FQI8R!V;VED('!R:6YT5&%B;&4H*2![#0H)"69O<B`H:6YT
+M(&D@/2`P.R!I(#P@=&%B;&4N;&5N9W1H.R!I*RLI#0H)"0EI9B`H=&%B;&5;
+M:5T@(3T@;G5L;"D-"@D)"0E3>7-T96TN;W5T+G!R:6YT;&XH:2`K("(Z("(@
+M*R!T86)L95MI72YK97D@*R`B.B`B("L@=&%B;&5;:5TN=F%L=64I.PT*"7T-
+M"@D-"@EP=6)L:6,@:6YT(&9I;F0@*%-T<FEN9R!K97DI>PT*"0EI;G0@:2`]
+M(&AA<V@H:V5Y*3L-"@D)=VAI;&4@*'1A8FQE(%MI72`A/2!N=6QL*7L-"@D)
+M"6EF("AK97DN97%U86QS*'1A8FQE6VE=+FME>2DI('L-"@D)"0ER971U<FX@
+M:3L-"@D)"7T-"@D)"6DK*SL-"@D)?0T*"0D-"@D)<F5T=7)N("TQ.PT*"7T-
+M"@D-"@EP=6)L:6,@:6YT(&=E=%9A;'5E*&EN="!I*7L-"@D):68@*'1A8FQE
+M6VE=("$](&YU;&PI>PT*"0D)<F5T=7)N('1A8FQE6VE=+G9A;'5E.PT*"0E]
+M#0H)"7)E='5R;B!);G1E9V5R+DU!6%]604Q513L-"@E]#0H)#0I]#0H-"F-L
+M87-S($AA<VA/8FIE8W1[#0H)<'5B;&EC(%-T<FEN9R!K97D[#0H)<'5B;&EC
+M(&EN="!V86QU93L-"@D-"@EP=6)L:6,@2&%S:$]B:F5C="A3=')I;F<@:RP@
+M:6YT('8I>PT*"0D-"@D):V5Y(#T@:SL-"@D)=F%L=64@/2!V.PT*"0D-"@E]
+M#0I]#0H-"B\O4W1R:6YG6UT@<W1R(#T@;F5W(%-T<FEN9ULU,%T[#0HO+VEN
+M="!;72!I;B`](&YE=R!I;G0@6S4P73L-"B\O07)R87E,:7-T('1E<W0@/2!N
+M97<@07)R87E,:7-T/$]B:F5C=',^*"D[#0HO+VIA=F$N:6\N1FEL92!F:6QE
+M(#T@;F5W(&IA=F$N:6\N1FEL92@B<#%T97-T+G1X="(I.PT*+R]38V%N;F5R
+M(&EN<'5T(#T@;F5W(%-C86YN97(@*&9I;&4I.PT*+R]I;G0@>"`](#`[#0HO
+M+V1O>PT*+R\)=&5S="YA9&0H:6YP=70N;F5X="AX*2D[#0HO+PE3>7-T<V5M
+M+F]U="YP<FEN=&QN*'1E<W0N9V5T*'@I*3L-"B\O"7@K*SL-"B\O"6EF("AT
+F97-T+F=E="`H>"DN9V5T5'EP92@I(#T](%-T<FEN9RD-"@D)#0HO
+`
+end
+SHAR_EOF
+  (set 20 15 01 19 22 07 21 'p12.java'; eval "$shar_touch") &&
+  chmod 0644 'p12.java'
+if test $? -ne 0
+then ${echo} 'restore of p12.java failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'p12.java: MD5 check failed'
+       ) << \SHAR_EOF
+f396c1d076b02f059be67e4a2a6e56ae  p12.java
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'p12.java'` -ne 2918 && \
+  ${echo} 'restoration warning:  size of p12.java is not 2918'
+  fi
+fi
+# ============= p1 ==============
+if test -f 'p1' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING p1 (file already exists)'
+else
+${echo} 'x - extracting p1 (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 'p1' &&
+#!/bin/bash
+java p12 $1
+SHAR_EOF
+  (set 20 15 01 19 22 05 14 'p1'; eval "$shar_touch") &&
+  chmod 0777 'p1'
+if test $? -ne 0
+then ${echo} 'restore of p1 failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'p1: MD5 check failed'
+       ) << \SHAR_EOF
+026600ccb7817dace378e724e562ac4e  p1
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'p1'` -ne 24 && \
+  ${echo} 'restoration warning:  size of p1 is not 24'
+  fi
+fi
+# ============= text.txt ==============
+if test -f 'text.txt' && test "$first_param" != -c; then
+  ${echo} 'x -SKIPPING text.txt (file already exists)'
+else
+${echo} 'x - extracting text.txt (text)'
+  sed 's/^X//' << 'SHAR_EOF' > 'text.txt' &&
+David Hughes project number 1  for cop3404 Roger Eggen
+01/19/15 
+Project hashes a text file and stores it. Also if a collision occurs it will report it. 
+If a duplicate key is attempted to be stored it is rejected and reported. 
+The hash function used adds the ASCII values of every character in the key and mods it to the location of the hash table.
+The other function uses the ASCII values to sort if a string number value or ASCII value between 48 to 57 In the end it
+stores all values "hashed" with the duplicates created.
+SHAR_EOF
+  (set 20 15 01 19 22 19 32 'text.txt'; eval "$shar_touch") &&
+  chmod 0644 'text.txt'
+if test $? -ne 0
+then ${echo} 'restore of text.txt failed'
+fi
+  if ${md5check}
+  then (
+       ${MD5SUM} -c >/dev/null 2>&1 || ${echo} 'text.txt: MD5 check failed'
+       ) << \SHAR_EOF
+38763398a2086ab6bd309a241197b6f3  text.txt
+SHAR_EOF
+  else
+test `LC_ALL=C wc -c < 'text.txt'` -ne 527 && \
+  ${echo} 'restoration warning:  size of text.txt is not 527'
+  fi
+fi
+if rm -fr ${lock_dir}
+then ${echo} 'x - removed lock directory `'${lock_dir}\''.'
+else ${echo} 'x - failed to remove lock directory `'${lock_dir}\''.'
+  exit 1
+fi
+exit 0

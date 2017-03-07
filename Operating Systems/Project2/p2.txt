@@ -1,0 +1,16 @@
+﻿The following program is for David Hughes (n00814425) written 
+10/30/15 and submitted to Rogger Eggen Operating System class. 
+The following code uses pipes that messages are sent between process
+ 1 and the store manager and process 2 and the store manager. 
+The store manager reads the messages and writes it to a log file 
+of all the transactions that have been done. Meanwhile a display is 
+up at the terminal that a user can poke at both stores and get 
+updates on what they have done by pressing 1 for process 1 or 2 for
+ process 2. The file must be executed with 4 arguments in order of 
+INIT.DAT LOG.DAT TRANS1 TRANS2. The code is split up from the main
+ where the store manager header handles all of the store manager 
+processes while the transactions process header handles the processes.
+The lib.h file has many erroneous functions that help prevent errors
+ the enum patch and other functions that helped diagnose or read and 
+write to the tables. The Transaction process takes place of both stores
+because they both do the same functions. Otherwise tried to use 1 signal to interupt each one.

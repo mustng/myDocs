@@ -1,0 +1,11 @@
+Dear Class,
+Please see me in person if you have any questions after running the program with a prompt of 35000.
+The number of successes and failures should be the same for every single load factor for both lp and qp.
+qp uses base 2 not base e.
+Also note that all probe lengths should be >=1 and that averages should be computed to 2 decimal places.
+The big thing is that the same data is inserted into all tables so that denominators for successes and failures
+should always be the same.
+Again, if you have any questions please see me in person and we will run your program. On this one it is
+very difficult to see the errors using email.
+Best regards,
+Ken M

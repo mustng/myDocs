@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<head>
+</head>
+<body>
+<menu>
+  <box><a class="active" href="../index.html">Home</a></box>
+  <box><a href="../assign1/index.html">Assignment 1</a></box>
+  <box><a href="../assign2/index.html">Assignment 2</a></box>
+  <box><a href="index.html">Assignment 3</a></box>
+  <box><a href="../assign4/index.html">Assignment 4</a></box>
+  <box><a href="../assign5/login.php">Assignment 5</a></box>
+  <box><a href="../assign6/index.php">Assignment 6</a></box>
+  <box><a href="../assign7/index.php">Assignment 7</a></box>
+  <box><a href="mailto:maildavidhughes@yahoo.com">Email Me</a></box>
+</menu>
+<TITLE>COP 4813 :  Assignment 3</TITLE>
+
+<center>
+<H1> Sum, Mean, Median, Mode, Variance and Std Dev Calculator</H1>
+
+<p>Please fill in the box with numbers separated by commas no whitespace. ex "3,7,4,2,4,1"</p>
+<form id='data'>
+	<textarea rows="4" cols="50" id='box' name='numbers'></textarea><br><br>
+	<input type='button' value='Submit' onClick='takeValues()'>
+	<input type='reset'>
+</form><br>	
+<table>
+  <tr>
+    <th>Functions:</th>
+    <th>Calculation</th>
+  </tr>
+  <tr>
+    <td>NumCount:</td>
+    <td><span id="printNum">%</span></td>
+  </tr>
+  <tr>
+    <td>Summation:</td>
+    <td><span id="sum">%</span></td>
+  </tr>
+  <tr>
+    <td>Mean:</td>
+    <td><span id="mean">%</span></td>
+  </tr>
+  <tr>
+    <td>Median:</td>
+    <td><span id="median">%</span></td>
+  </tr>
+  <tr>
+    <td>Mode:</td>
+    <td><span id="mode">%</span></td>
+  </tr>
+  <tr>
+    <td>Variance:</td>
+    <td><span id="var">%</span></td>
+  </tr>
+  <tr>
+    <td>StdDev:</td>
+    <td><span id="StdDev">%</span></td>
+  </tr>
+</table>
+</center>	
+ <script src="Statistics.js"></script>
+ <center><font size='5'><a href="solutions/index.html">Test Results and Web Site Sources</a></font></center>
+</body>
+</html>

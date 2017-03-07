@@ -1,0 +1,10 @@
+
+ // test 51, should pass
+ void main(void) /* good nested */
+ {
+    int x;
+    {
+       int x;
+    }
+    return;
+ }

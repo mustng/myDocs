@@ -1,0 +1,10 @@
+/*
+  Error: Variable y used before it is declared.
+*/
+
+int x;
+
+void main(void)
+{
+   y=5;
+}

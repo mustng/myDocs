@@ -1,0 +1,86 @@
+body {
+	background-image: url(../wallpafes.jpg);
+    background-size: 100%;
+}
+H1,H2 {
+    text-align: center;
+}
+H1,H2,p{
+	font-family: "Verdana", Times, serif;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+img.pic {									/*Main pic diplayed*/
+    border-radius: 8px;
+	display: block;
+	margin: 30px 30px 30px 30px;
+	margin-left: auto;
+    margin-right: auto;
+}
+div.polaroid {							/*Used for 3 pics displays*/
+    width: 294px;
+}
+
+div.rotate_right {
+    float: left;
+	display: block;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+div.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+}
+a:link {
+    color: darkblue;
+}
+
+/* visited link */
+a:visited {
+    color: darkgreen;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkred;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+menu {
+	border-radius: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+box {
+    float: left;
+}
+
+box a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+box a:hover {
+    background-color: #111;
+}

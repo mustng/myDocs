@@ -1,0 +1,18 @@
+/* test for basic functionality of proj 3 - should fail */
+/* test 3 - 2 methods, scope check on b */
+
+int x;
+int y;
+
+int my ( float b, int u)
+{
+	int z;
+	z = z+y;
+	return z;
+}
+
+void main ( void )
+{
+	int z;
+	z = x + b;
+}
